@@ -1,6 +1,5 @@
 <?php
 include("includes/header.php");
-include("includes/footer.php");
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -12,20 +11,14 @@ include("includes/footer.php");
             padding: 0;
             overflow: scroll;
             display: grid;
-            gap: 10px;
-            /*background-image: url(images/betere_flatgebouw.png);*/
-            /*background-repeat: no-repeat;*/
-            /*background-attachment: scroll;*/
-            /*background-size: 100% auto;*/
         }
+
 
         .buttons {
             width: 120px;
             display: block;
             margin-bottom: 10px;
             padding: 40px;
-
-            /* Nieuwe toevoeging: */
             z-index: 2;
         }
 
@@ -74,11 +67,21 @@ include("includes/footer.php");
 
         .flatgebouw{
             background-image: url("images/betere_flatgebouw.png");
-            background-size: cover;  /* of background-size: contain; afhankelijk van het gewenste effect */
+            background-size: contain;  /* of background-size: contain; afhankelijk van het gewenste effect */
             background-repeat: no-repeat;
             width: 100vw;
-           max-height: 100%;
+            margin: 0; /* Voeg dit toe om de standaardmarges van het body-element te verwijderen */
+            border-
         }
+
+        #wizard1, #wizard2, #wizard3, #wizard4, #wizard5, #wizard6, #wizard7, #wizard8, #wizard9, #wizard10, #wizard11, #wizard12 {
+            position: fixed;
+            top: 50%;
+            bottom: 50%;
+        }
+
+
+
 
     </style>
 </head>
@@ -125,6 +128,7 @@ include("includes/footer.php");
 </div>
 
 <!-- Wizard-vensters -->
+
 
 <div class="wizard-container" id="wizard1">
     <div class="wizard-content">
@@ -232,6 +236,7 @@ include("includes/footer.php");
         <p>Dit is de inhoud van wizard 12.</p>
     </div>
 </div>
+</div>
 
 <script>
     // Function to open the wizard window
@@ -272,5 +277,8 @@ include("includes/footer.php");
 
 
 </script>
+<?php
+include("includes/footer.php");
+?>
 </body>
 </html>
