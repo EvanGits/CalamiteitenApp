@@ -1,5 +1,5 @@
 <?php
-include("includes/header.php");
+    include("includes/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -35,9 +35,10 @@ include("includes/header.php");
 
         .wizard-content {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            position: relative;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100vw;
+            height: 100vh;
         }
 
         .close-button {
@@ -58,14 +59,16 @@ include("includes/header.php");
             border-radius: 10px;
         }
 
-        .close-button{
+        .close-button
+        {
             width: 10%;
             float: inline-end;
         }
 
 
 
-        .flatgebouw{
+        .flatgebouw
+        {
             background-image: url("images/betere_flatgebouw.png");
             background-size: contain;  /* of background-size: contain; afhankelijk van het gewenste effect */
             background-repeat: no-repeat;

@@ -1,6 +1,5 @@
 <?php 
-include("includes/header.php");  
-include("includes/footer.php"); 
+include("includes/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -8,7 +7,8 @@ include("includes/footer.php");
 <head>
     <title>quiztest</title>
     <style>
-        .hidden {
+        .hidden
+        {
             display: none;
         }
     </style>
@@ -195,7 +195,8 @@ include("includes/footer.php");
         function fisherYatesShuffle(&$array)
         {
             $count = count($array);
-            for ($i = $count - 1; $i > 0; $i--) {
+            for ($i = $count - 1; $i > 0; $i--)
+            {
                 $j = mt_rand(0, $i);
                 $temp = $array[$i];
                 $array[$i] = $array[$j];
@@ -232,15 +233,18 @@ include("includes/footer.php");
         const userAnswers = <?php echo json_encode($userAnswers); ?>;
         let correctAnswers = 0;
 
-        function showElement(element) {
+        function showElement(element)
+        {
             element.classList.remove('hidden');
         }
 
-        function hideElement(element) {
+        function hideElement(element)
+        {
             element.classList.add('hidden');
         }
 
-        function showQuestionAndAnswer(index) {
+        function showQuestionAndAnswer(index)
+        {
             questionsContainer.innerHTML = '';
 
             const question = questionsArray[index];
@@ -280,7 +284,8 @@ include("includes/footer.php");
             });
         }
 
-        function showAnswer(answer, isCorrect) {
+        function showAnswer(answer, isCorrect)
+        {
             const answerDiv = document.createElement('div');
             answerDiv.innerHTML = `
                             <h3>Antwoord</h3>
@@ -292,11 +297,13 @@ include("includes/footer.php");
             questionsContainer.appendChild(answerDiv);
 
             const nextButton = document.getElementById('volgendeAnswer');
-            nextButton.addEventListener('click', function () {
+            nextButton.addEventListener('click', function ()
+            {
                 hideElement(answerDiv);
                 currentQuestionIndex++;
 
-                if (currentQuestionIndex < questionsArray.length) {
+                if (currentQuestionIndex < questionsArray.length)
+                {
                     showQuestionAndAnswer(currentQuestionIndex);
                 } else
                 {
@@ -306,7 +313,8 @@ include("includes/footer.php");
             });
         }
 
-        startButton.addEventListener('click', function () {
+        startButton.addEventListener('click', function ()
+        {
             hideElement(startQuiz);
             showElement(questionsContainer);
             showQuestionAndAnswer(currentQuestionIndex);
@@ -314,5 +322,7 @@ include("includes/footer.php");
 
     </script>
 </body>
-
+<?php
+    include("includes/footer.php");
+?>
 </html>
