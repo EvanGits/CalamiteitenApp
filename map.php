@@ -15,12 +15,26 @@
 
 
         .buttons {
-            width: 120px;
+            width: 20vw; /* Gebruik vw (viewport width) in plaats van pixels voor breedte */
             display: block;
-            margin-bottom: 10px;
-            padding: 40px;
+            margin-bottom: 2vh; /* Gebruik vh (viewport height) in plaats van pixels voor marge onderaan */
+            padding: 4vw; /* Gebruik vw voor padding */
             z-index: 2;
+            position: absolute;
         }
+
+        .button1 { top: 10%; left: 10%; }
+        .button2 { top: 20%; left: 20%; }
+        .button3 { top: 30%; left: 30%; }
+        .button4 { top: 40%; left: 40%; }
+        .button5 { top: 50%; left: 50%; }
+        .button6 { top: 60%; left: 60%; }
+        .button7 { top: 70%; left: 70%; }
+        .button8 { top: 80%; left: 80%; }
+        .button9 { top: 90%; left: 75%; }
+        .button10 { top: 100%; left: 10%; }
+        .button11 { top: 110%; left: 20%; }
+        .button12 { top: 255%; left: 65%; }
 
 
         .wizard-container {
@@ -69,12 +83,13 @@
 
         .flatgebouw
         {
-            background-image: url("images/betere_flatgebouw.png");
-            background-size: contain;  /* of background-size: contain; afhankelijk van het gewenste effect */
+            background-image: url(images/betere_flatgebouw.png);
+            background-size: contain;
             background-repeat: no-repeat;
             width: 100vw;
-            margin: 0; /* Voeg dit toe om de standaardmarges van het body-element te verwijderen */
-            border-
+            height: calc(100vw / (2161 / 9318)); /* Hoogte wordt berekend op basis van de aspect ratio van de afbeelding */
+            margin: 0;
+
         }
 
         #wizard1, #wizard2, #wizard3, #wizard4, #wizard5, #wizard6, #wizard7, #wizard8, #wizard9, #wizard10, #wizard11, #wizard12 {
@@ -285,3 +300,10 @@ include("includes/footer.php");
 ?>
 </body>
 </html>
+
+
+
+
+
+
+
