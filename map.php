@@ -17,24 +17,23 @@
         .buttons {
             width: 20vw; /* Gebruik vw (viewport width) in plaats van pixels voor breedte */
             display: block;
-            margin-bottom: 2vh; /* Gebruik vh (viewport height) in plaats van pixels voor marge onderaan */
             padding: 4vw; /* Gebruik vw voor padding */
             z-index: 2;
             position: absolute;
         }
 
-        .button1 { top: 10%; left: 10%; }
-        .button2 { top: 20%; left: 20%; }
-        .button3 { top: 30%; left: 30%; }
-        .button4 { top: 40%; left: 40%; }
-        .button5 { top: 50%; left: 50%; }
-        .button6 { top: 60%; left: 60%; }
-        .button7 { top: 70%; left: 70%; }
-        .button8 { top: 80%; left: 80%; }
-        .button9 { top: 90%; left: 75%; }
-        .button10 { top: 100%; left: 10%; }
-        .button11 { top: 110%; left: 20%; }
-        .button12 { top: 255%; left: 65%; }
+        .button1 { top: 32%; left: 10%; }
+        .button2 { top: 53%; left: -2%; }
+        .button3 { top: 63%; left: 45%; }
+        .button4 { top: 85%; left: 45%; }
+        .button5 { top: 104%; left: 50%; }
+        .button6 { top: 121%; left: 30%; }
+        .button7 { top: 140%; left: 35%; }
+        .button8 { top: 157%; left: 57%; }
+        .button9 { top: 174%; left: 34%; }
+        .button10 { top: 191%; left: 80%; }
+        .button11 { top: 210%; left: 3%; }
+        .button12 { top: 209%; left: 65%; }
 
 
         .wizard-container {
