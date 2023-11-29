@@ -1,6 +1,4 @@
-<?php
-include("includes/header.php");
-?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -198,35 +196,35 @@ $questionsArray = [
         "correctAnswer" => 1,],
 ];
 $answerArray = [
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
-    "Test antwoord 2",
-    "Test antwoord 1",
+    "Ga niet rennen. Dit verhoogt de kans op vallen. Verlaat in een normaal tempo het gebouw. Door te bellen naar het interne alarmnummer, zorg je ervoor dat anderen ook geïnformeerd worden en het gebouw kunnen verlaten.",
+    "Je weet niet van welk letsel er sprake is. Als je niet bent opgeleid, kun je onbedoeld de toestand verergeren. Informeer daarom zo snel mogelijk de bhv'er door het interne alarmnummer te bellen. De bhv'er is opgeleid om op te treden bij deze omstandigheden.",
+    "Ga nooit terug een brandend gebouw in. Geef aan de bhv'er en/of brandweer door waar je iemand in het gebouw hebt gezien.",
+    "Als je de handbrandmelder indrukt, zal in het hele gebouw het ontruimingsalarm afgaan. Je waarschuwt aanwezigen dat ze het gebouw moeten verlaten. Denk aan je eigen veiligheid. Ga geen brand blussen als je hier niet voor opgeleid bent. Bel zo snel mogelijk het interne alarmnummer om de bhv'ers te informeren. De bhv'ers zijn hier wel voor opgeleid.",
+    "Bij een calamiteit is het zaak snel te handelen. Help mee door de instructies van de bhv'ers op te volgen. Het gaat hier om jouw veiligheid, maar ook die van de bhv'ers en anderen.",
+    "Het sluiten van de binnendeuren kan je leven redden. Als er brand uitbreekt heb je meer kans en tijd om veilig te vluchten. Doordat de zuurstoftoevoer naar de brand wordt verminderd, zal de snelheid van de brandontwikkeling worden vertraagd.",
+    "Spullen zijn vervangbaar. Maar belangrijker, als je ergens doorheen moet kruipen en je moet je spullen daar achterlaten of je valt en de spullen vallen op de grond. Dan worden jouw spullen nieuwe obstakels voor anderen.",
+    "Een verzamelplaats is de plek waar iedereen zich in veiligheid kan brengen bij een ontruiming van een gebouw (of een andere noodsituatie). Doordat iedereen op deze plaats verzamelt kan hier worden nagegaan of alle medewerkers, studenten en eventuele bezoekers aanwezig zijn of dat er nog mensen worden vermist. Het is daarom van belang dat de verzamelplaats niet wordt verlaten zonder dat hier toestemming voor is verleend door de bhv'er. Mocht je iemand missen, meld dit dan bij de bhv'er. Op de grotere locaties van het KW1C zijn meerdere verzamelplaatsen aangewezen, zodat er een alternatief is als een verzamelplaats niet bereikbaar is.",
+    "Ga niet rennen. Dit verhoogt de kans op vallen. Verlaat in een normaal tempo het gebouw. Blijf met de klas bij elkaar. De docent kan dan direct overzien of iedereen op een veilige manier buitengekomen is. Mocht je anderen op de route naar buiten tegenkomen die niet weten wat ze moeten doen, begeleid hen dan via de dichtstbijzijnde vluchtroute naar buiten.",
+    "Ga nooit terug een brandend gebouw in. Ga ook niet zelf op zoek, maar geef dit door aan de bhv'er en/of docent, zodat de bhv'ers gericht kunnen zoeken naar de vermiste persoon. De bhv'ers zijn hiervoor opgeleid.",
+    "Mindervaliden kunnen mogelijk niet zelfstandig gebruikmaken van de trap. Of ze kunnen niet zien welke kant het wel of juist niet veilig is. Sommige mindervaliden zijn niet-zelfredzaam. Door hen te helpen om veilig het gebouw te verlaten blijft er niemand achter in het gebouw. Mocht je de mindervaliden niet zelf kunnen helpen, bel dan het interne alarmnummer. De bhv'ers komen jou en de mindervaliden helpen.",
+    "Reguliere liften zijn niet ontworpen om te gebruiken bij brand. Als de stroom uitvalt komt de lift stil te staan en zit je opgesloten.",
+    "Laat het slachtoffer niet alleen. Probeer het slachtoffer gerust te stellen en geef aan dat je het interne alarmnummer belt om de bhv'ers te informeren. Blijf bij het slachtoffer totdat de bhv'ers aanwezig zijn. Geen de bhv'ers ruimte, maar blijf wel in de buurt. Het kan zijn dat de bhv'ers (of ambulancemedewerkers) nog aanvullende vragen hebben.",
+    "Je weet niet van welk letsel er sprake is. Als je niet bent opgeleid, kun je onbedoeld de toestand verergeren. Informeer daarom zo snel mogelijk de bhv'er door het interne alarmnummer te bellen. De bhv'er is opgeleid om op te treden bij deze omstandigheden.",
+    "Op het moment dat het ontruimingsalarm afgaat, dan begeef je je direct naar buiten. Je gaat naar de dichtstbijzijnde verzamelplaats.",
+    "De route waardoor je naar binnen bent gegaan is niet altijd de kortste en veiligste route. Let daarom altijd op de vluchtroute en nooddeuren die zijn aangegeven met de groen verlichte borden met een witte pijl.",
+    "Als er sprake is van een bommelding geldt dat je al je spullen meeneemt naar buiten toe. Waarom? Als de hulpdiensten komen om de bom te zoeken, is ieder object mogelijk de bom. Hoe meer spullen van jou al meegenomen zijn, hoe minder spullen zij hoeven te doorzoeken.",
+    "De bhv'ers hebben met elkaar contact via de portofoon. De bhv'er weet dus ook wanneer een calamiteit is opgelost en de situatie weer veilig is. Je mag dus pas weer terug het gebouw in als de bhv'er dit aangeeft.",
+    "Een verzamelplaats is de plek waar iedereen zich in veiligheid kan brengen bij een ontruiming van een gebouw (of een andere noodsituatie). Doordat iedereen op deze plaats verzamelt kan hier worden nagegaan of alle medewerkers, studenten en eventuele bezoekers aanwezig zijn of dat er nog mensen worden vermist. Het is daarom van belang dat de verzamelplaats niet wordt verlaten zonder dat hier toestemming voor is verleend door de bhv'er. Mocht je iemand missen, meld dit dan bij de bhv'er. Op de grotere locaties van het KW1C zijn meerdere verzamelplaatsen aangewezen, zodat er een alternatief is als een verzamelplaats niet bereikbaar is.",
+    "Op alle locaties van het Koning Willem I College hangen alarmkaarten. Deze hangen in bijna alle ruimtes. Hierop is onder andere vermeld wat het interne alarmnummer van die locatie is en wat er van je verwacht wordt tijdens een calamiteit.",
+    "Het is prima als je het landelijke alarmnummer belt, maar neem altijd contact op met het interne alarmnummer. Waarom? Het Koning Willem I College heeft veel locaties. Veel van deze locaties zijn vrij groot. Als een ambulance vertrekt naar het Koning Willem I College weten ze niet waar ze precies moeten zijn. Als je het interne alarmnummer belt, worden de bhv'ers ingeschakeld. Zij kunnen de ambulance opvangen en begeleiden naar de juiste plaats. Daarnaast zijn bhv'ers opgeleid om eerste hulp te verlenen. Zij zijn nagenoeg altijd sneller ter plaatse dan de ambulance. Hoe sneller zij worden opgeroepen, hoe eerder er hulp aanwezig is bij het slachtoffer. Bij een brand kunnen de bhv'ers mogelijk nog een bluspoging ondernemen en ze kunnen ondersteunen bij een ontruiming. De locaties van het Koning Willem I College hebben een eigen intern alarmnummer. Je kunt het interne alarmnummer vinden op de alarmkaart. De alarmkaart hangt in alle ruimtes en is duidelijk te herkennen.",
+    "Een verzamelplaats is de plek waar iedereen zich in veiligheid kan brengen bij een ontruiming van een gebouw (of een andere noodsituatie). Doordat iedereen op deze plaats verzamelt kan hier worden nagegaan of alle medewerkers, studenten en eventuele bezoekers aanwezig zijn of dat er nog mensen worden vermist. Het is daarom van belang dat de verzamelplaats niet wordt verlaten zonder dat hier toestemming voor is verleend door de bhv'er. Mocht je iemand missen, meld dit dan bij de bhv'er. Op de grotere locaties van het KW1C zijn meerdere verzamelplaatsen aangewezen, zodat er een alternatief is als een verzamelplaats niet bereikbaar is.",
+    "advies",
+    "advies",
+    "advies",
+    "advies",
+    "advies",
+    "advies",
+    "advies",
 ];
 
 // Combine questions and answers into a single array
@@ -237,6 +235,8 @@ foreach ($questionsArray as $key => $question) {
 
 // Shuffle the combined array
 fisherYatesShuffle($combinedArray);
+
+$combinedArray = array_slice($combinedArray, 0, 10);
 
 // Separate the shuffled array back into questions and answers
 $shuffledQuestionsArray = [];
