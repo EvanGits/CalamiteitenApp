@@ -23,7 +23,7 @@ include ("initialize.php");
                         <li><a href="<?php echo WWW_ROOT . '/makers.php'; ?>" class="text-light fs-4">Makers</a></li>
                         
                 <!-- Meldknop --> 
-                        <li><a href="<?php echo WWW_ROOT . '/'; ?>" class="text-light fs-2 btn btn-danger">!</a></li>  
+                        <li><a href="<?php echo WWW_ROOT . '/meldknop.php'; ?>" class="text-light fs-2 btn btn-danger">!</a></li>  
                     </ul> 
                 </nav>
        
