@@ -1,6 +1,5 @@
 <?php
 include("includes/header.php");  
-include("includes/footer.php"); 
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +11,7 @@ include("includes/footer.php");
     <body> 
         <div class="navbar p-4 border border-2 border-secondary">
                 <div class="col-12 col-md-8">
-                    <h1 class= "meldknop-titel">Calaminator<h1> 
+                    <h1 class= "meldknop-titel">Contact melding<h1> 
                 </div>
         </div>
     <style>
@@ -78,19 +77,18 @@ include("includes/footer.php");
             </button>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
                 <div class="accordion-body">
-                    <h3>Nummerlijst:</h3> 
                         <p>
-                            Jacob van Maerlantstraat: <a class="single" href="#">06 - 1840 5695</a>
+                            Jacob van Maerlantstraat: <a class="number" href="#">06 - 1840 5695</a>
                             <p> 
-                            Marathonloop: 
+                            Marathonloop:             <a class="number" href="#">073 6249 726</a>
                             <p> 
-                            Onderwijsboulevard: 
+                            Onderwijsboulevard:       <a class="number" href="#">073 - 6249 443</a>
                             <p> 
-                            Stadionlaan: 
+                            Stadionlaan:              <a class="number" href="#">06 - 2881 6348</a>
                             <p> 
-                            Vlijmenseweg: 
+                            Vlijmenseweg:             <a class="number" href="#">073 - 6249 626</a>
                             <p> 
-                            Weidonklaan: 
+                            Weidonklaan:              <a class="number" href="#">073 - 6249 422</a>
                         </p>
                 </div>
             </div>
@@ -100,11 +98,10 @@ include("includes/footer.php");
             </button>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
                 <div class="accordion-body">
-                    <h3>Nummerlijst:</h3> 
                         <p>
-                            De Kleine Elst:  
+                            De Kleine Elst:           <a class="number" href="#">073 - 6456 620</a>
                             <p> 
-                            Meester Vriensstraat:  
+                            Meester Vriensstraat:     <a class="number" href="#">073 - 645 8000</a>
                         </p>
                 </div>
             </div>
@@ -114,11 +111,10 @@ include("includes/footer.php");
             </button>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion3">
                 <div class="accordion-body">
-                    <h3>Nummerlijst:</h3> 
                         <p>
-                            Beversestraat:  
+                            Beversestraat:            <a class="number" href="#">088 - 017 5555</a>
                             <p> 
-                            Jan van Cuijkstraat:   
+                            Jan van Cuijkstraat:      <a class="number" href="#">088 - 017 5555</a>
                         </p>
                 </div>
             </div>
@@ -129,13 +125,12 @@ include("includes/footer.php");
             </button>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion4">
                 <div class="accordion-body">
-                    <h3>Nummerlijst:</h3> 
                         <p>
-                            Euterpelaan:   
+                            Euterpelaan:              <a class="number" href="#">088 - 017 5555</a>
                             <p> 
-                            Gasstraat Oost:  
+                            Gasstraat Oost:           <a class="number" href="#">088 - 017 5555</a>  
                             <p> 
-                            Nelson Mandelaboulevard:  
+                            Nelson Mandelaboulevard:  <a class="number" href="#">088 - 017 5555</a>    
                         </p>
                 </div>
             </div>
@@ -145,9 +140,8 @@ include("includes/footer.php");
             </button>
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion5">
                 <div class="accordion-body">
-                    <h3>Nummerlijst:</h3> 
                         <p>
-                            Ringbaan-Oost: 
+                            Ringbaan-Oost:            <a class="number" href="#">088 - 2937 779</a>
                         </p>
                 </div>
             </div>
@@ -157,9 +151,8 @@ include("includes/footer.php");
             </button>
             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion6">
                 <div class="accordion-body">
-                    <h3>Nummerlijst:</h3> 
                         <p>
-                            Udenseweg:  
+                            Udenseweg:               <a class="number" href="#">088 - 017 5555</a>
                         </p>
                 </div>
             </div>
@@ -169,11 +162,10 @@ include("includes/footer.php");
             </button>
             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion7">
                 <div class="accordion-body">
-                    <h3>Nummerlijst:</h3> 
                         <p>
                             Muntelaar: 
                             <p> 
-                            R. Evers:  
+                            R. Evers:                <a class="number" href="#">088 - 017 5555</a>
                         </p>
                 </div>
             </div>
@@ -197,5 +189,8 @@ include("includes/footer.php");
   });
 }
 </script>
+</body>
 
-    </body>
+<?php 
+include("includes/footer.php"); 
+?>
