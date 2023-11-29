@@ -1,77 +1,34 @@
 <?php
+//Header 
 include("includes/header.php");  
 ?>
 
 <!DOCTYPE html>
 <html lang="nl">
     <head>
+
+      <!-- Opmaak --> 
+      <link rel="stylesheet" href= css/stylesheets.css>
+
+    <!-- Titel --> 
         <title>Map</title>
     </head>
 
+    <!-- Kop --> 
     <body> 
         <div class="navbar p-4 border border-2 border-secondary">
                 <div class="col-12 col-md-8">
                     <h1 class= "meldknop-titel">Contact melding<h1> 
                 </div>
         </div>
-    <style>
-        :root{
-           --bs-max-width: 100%; 
-        }
-
-        .accordion-menu {
-        --bs-accordion-color: black;
-        --bs-accordion-bg: var(--bs-body-bg);
-        --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
-        --bs-accordion-border-color: #000000;
-        --bs-accordion-border-width: 1px;
-        --bs-accordion-border-radius: var(--bs-border-radius);
-        --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
-        --bs-accordion-btn-padding-x: 1.25rem;
-        --bs-accordion-btn-padding-y: 1rem;
-        --bs-accordion-btn-color: white;
-        --bs-accordion-btn-bg: #d94e5b;
-        --bs-accordion-btn-icon-width: 1.25rem;
-        --bs-accordion-btn-icon-transform: rotate(-180deg);
-        --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-        --bs-accordion-body-padding-x: 1.25rem;
-        --bs-accordion-body-padding-y: 1rem;
-        --bs-accordion-active-color: white;
-        --bs-accordion-active-bg: #d94e5b;
-        max-width: var(--bs-max-width); 
-        margin: 0 auto;
-    }
-
-        .accordion-items{
-        color: var(--bs-accordion-color);
-        background-color: var(--bs-accordion-bg);
-    }
-
-        .accordion-buttons{
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-            font-size: 1rem;
-            color: var(--bs-accordion-btn-color);
-            text-align: left;
-            background-color: var(--bs-accordion-btn-bg);
-            border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
-            border-radius: 0;
-            overflow-anchor: none;
-            transition: var(--bs-accordion-transition);
-            margin-top: 1.5rem; 
-    }
-        .accordion-body{
-            border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
-    }
-    </style> 
-     
-     
+    
+    
+    <!-- Algemeen knoppenoverzicht/lijst --> 
     <div class="accordion-menu" id="Menu">
         <div class="accordion-items">
+
+
+         <!-- s'Hertogenbosch knop (1) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 s'Hertogenbosch
             </button>
@@ -93,6 +50,7 @@ include("includes/header.php");
                 </div>
             </div>
 
+            <!-- Rosmalen knop (2) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 Rosmalen 
             </button>
@@ -106,6 +64,7 @@ include("includes/header.php");
                 </div>
             </div>
 
+            <!-- Cuijk knop (3) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                 Cuijk 
             </button>
@@ -119,7 +78,7 @@ include("includes/header.php");
                 </div>
             </div>
 
-
+            <!-- Oss knop (4) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                 Oss 
             </button>
@@ -135,6 +94,7 @@ include("includes/header.php");
                 </div>
             </div>
 
+             <!-- Tilburg knop (5) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                 Tilburg 
             </button>
@@ -146,6 +106,7 @@ include("includes/header.php");
                 </div>
             </div>
 
+             <!-- Uden knop (6) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                 Uden 
             </button>
@@ -157,6 +118,7 @@ include("includes/header.php");
                 </div>
             </div>
 
+             <!-- Veghel knop (7) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                 Veghel 
             </button>
@@ -173,6 +135,7 @@ include("includes/header.php");
     </div>
     </div>
 
+<!--JavaScript element voor functie van accordion knoppen --> 
 <script>
 	var acc = document.getElementsByClassName("accordion");
 		var i;
@@ -191,6 +154,7 @@ include("includes/header.php");
 </script>
 </body>
 
+<!-- Footer --> 
 <?php 
 include("includes/footer.php"); 
 ?>
