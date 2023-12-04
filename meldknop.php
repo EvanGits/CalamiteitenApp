@@ -18,7 +18,7 @@ include("includes/header.php");
     <body> 
         <div class="navbar p-4 border border-2 border-secondary">
                 <div class="col-12 col-md-8">
-                    <h1 class= "meldknop-titel">Contact melding<h1> 
+                    <h1 class= "meldknop-titel">Meldkamer alarmnummers<h1> 
                 </div>
         </div>
     
