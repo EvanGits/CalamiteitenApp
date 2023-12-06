@@ -88,3 +88,19 @@
     
     background-color: var(--bs-accordion-btn-bg); 
 }
+
+/*header van de pagina*/
+.rodebalktop{
+    background-color: #F9100C;
+    height: 2.8125rem;
+   }
+
+/*footer van de pagina*/ 
+   .rodebalkonderaan{
+    background-color: #F9100C;
+    height: 13.875rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ 
+   }
