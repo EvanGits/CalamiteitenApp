@@ -115,7 +115,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       height: calc(126vw / (2140 / 9291)); /* Hoogte wordt berekend op basis van de aspect ratio van de afbeelding */
-      background-position: center top -44px;
+      background-position: center top 266px;
   }
 
   .buttons{
