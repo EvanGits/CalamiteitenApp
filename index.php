@@ -50,10 +50,38 @@
       z-index: 1;
   }
 
+
+
+  .vierkantlogo.fixed{
+      position: fixed;
+      top: 0;
+      margin-top: 30px;
+      height: 100px;
+
+  }
+
+
   /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
   .Quizbutton.fixed {
       position: fixed;
       top: 0;
+      right: 250px;
+      margin-top: 40px;
+      width: 50px;
+      font-size: 70px;
+      padding-left: 82px;
+      padding-right: 218px;
+  }
+
+  .makersbutton.fixed{
+      position: fixed;
+      top: 0;
+      left: 32px;
+      margin-top: 40px;
+      width: 50px;
+      font-size: 70px;
+      padding-right: 257px;
+      padding-left: 43px;
   }
 
 
@@ -89,7 +117,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       height: calc(126vw / (2140 / 9291)); /* Hoogte wordt berekend op basis van de aspect ratio van de afbeelding */
-      margin: 0;
+      background-position: center top -44px;
   }
 
   .buttons{
@@ -153,18 +181,31 @@
     <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
 </div>
 <script>
-$(document).ready(function() {
-var quizButton = $(".Quizbutton");
-var quizOffset = quizButton.offset().top;
+    $(document).ready(function () {
+        // Vierkantlogo
+        var logo = $(".vierkantlogo");
+        var logoOffset = logo.offset().top;
 
-$(window).scroll(function() {
-if ($(window).scrollTop() > quizOffset) {
-quizButton.addClass("fixed");
-} else {
-quizButton.removeClass("fixed");
-}
-});
-});
+        $(window).scroll(function () {
+            logo.toggleClass("fixed", $(window).scrollTop() > logoOffset);
+        });
+
+        // Makersbutton
+        var makersButton = $(".makersbutton");
+        var makersOffset = makersButton.offset().top;
+
+        $(window).scroll(function () {
+            makersButton.toggleClass("fixed", $(window).scrollTop() > makersOffset);
+        });
+
+        // Quizbutton
+        var quizButton = $(".Quizbutton");
+        var quizOffset = quizButton.offset().top;
+
+        $(window).scroll(function () {
+            quizButton.toggleClass("fixed", $(window).scrollTop() > quizOffset);
+        });
+    });
 </script>
 </body>
 </html>
