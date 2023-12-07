@@ -16,12 +16,10 @@
    height: 45px;
   }
 
-  .Index-titel{
-   text-align: center;
-   font-size: 160px;
-   color: #F9100C;
-   margin-top: 116px;
-      font-family: Candara, Serif, serif;
+  .Index-logo img{
+      width: 634px;
+      position: absolute;
+      left: 164px;
   }
 
   .makersbutton{
@@ -139,8 +137,8 @@
  <a href="meldknop.php" class="meldknopi">i</a>
 </div>
 
-<h1 class="Index-titel">
- Calm
+<h1 class="Index-logo">
+<img src="images/logo_def-01.png" alt="calmlogo">
 </h1>
 
 <button class="makersbutton">
