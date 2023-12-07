@@ -20,9 +20,9 @@ include("includes/header.php");
 
     <!-- Kop --> 
     <body> 
-        <div class="navbar p-4 border border-2 border-secondary">
+        <div class="navbar p-4">
                 <div class="col-12 col-md-8">
-                    <h1 class= "meldknop-titel">Meldkamer alarmnummers<h1> 
+                    <h1 class= "meldknop-titel">KW1C Alarmnummers<h1> 
                 </div>
         </div>
 
@@ -60,7 +60,7 @@ include("includes/header.php");
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 Rosmalen 
             </button>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion2">
                 <div class="accordion-body">
                         <p>
                             De Kleine Elst:           <a class= "number" href="tel:+073 - 6456 620">073 - 6456 620</a>  
