@@ -5,7 +5,11 @@ include("includes/header.php");
 
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
+    <head> 
+    
+    <!-- Header --> 
+    <div class= "rodebalktop">
+    </div>
 
       <!-- Opmaak --> 
       <link rel="stylesheet" href= css/stylesheets.css>
@@ -21,6 +25,8 @@ include("includes/header.php");
                     <h1 class= "meldknop-titel">Meldkamer alarmnummers<h1> 
                 </div>
         </div>
+
+
     
     
     <!-- Algemeen knoppenoverzicht/lijst --> 
@@ -35,17 +41,17 @@ include("includes/header.php");
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
                 <div class="accordion-body">
                         <p>
-                            Jacob van Maerlantstraat: <a class="number" href="#">06 - 1840 5695</a>
+                            Jacob van Maerlantstraat: <a class= "number" href="tel:+06 - 1840 5695">06 - 1840 5695</a> 
                             <p> 
-                            Marathonloop:             <a class="number" href="#">073 6249 726</a>
+                            Marathonloop:             <a class= "number" href="tel:+073 - 6249 726">073 - 6249 726</a>  
                             <p> 
-                            Onderwijsboulevard:       <a class="number" href="#">073 - 6249 443</a>
+                            Onderwijsboulevard:       <a class= "number" href="tel:+073 - 6249 443">073 - 6249 443</a> 
                             <p> 
-                            Stadionlaan:              <a class="number" href="#">06 - 2881 6348</a>
+                            Stadionlaan:              <a class= "number" href="tel:+06 - 2881 6348">06 - 2881 6348</a>  
                             <p> 
-                            Vlijmenseweg:             <a class="number" href="#">073 - 6249 626</a>
+                            Vlijmenseweg:             <a class= "number" href="tel:+073 - 6249 626">073 - 6249 626</a> 
                             <p> 
-                            Weidonklaan:              <a class="number" href="#">073 - 6249 422</a>
+                            Weidonklaan:              <a class= "number" href="tel:+073 - 6249 626">073 - 6249 626</a> 
                         </p>
                 </div>
             </div>
@@ -57,9 +63,9 @@ include("includes/header.php");
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
                 <div class="accordion-body">
                         <p>
-                            De Kleine Elst:           <a class="number" href="#">073 - 6456 620</a>
+                            De Kleine Elst:           <a class= "number" href="tel:+073 - 6456 620">073 - 6456 620</a>  
                             <p> 
-                            Meester Vriensstraat:     <a class="number" href="#">073 - 645 8000</a>
+                            Meester Vriensstraat:     <a class= "number" href="tel:+073 - 645 8000">0073 - 645 8000</a>   
                         </p>
                 </div>
             </div>
@@ -71,9 +77,9 @@ include("includes/header.php");
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion3">
                 <div class="accordion-body">
                         <p>
-                            Beversestraat:            <a class="number" href="#">088 - 017 5555</a>
+                            Beversestraat:            <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>   
                             <p> 
-                            Jan van Cuijkstraat:      <a class="number" href="#">088 - 017 5555</a>
+                            Jan van Cuijkstraat:      <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>  
                         </p>
                 </div>
             </div>
@@ -85,11 +91,11 @@ include("includes/header.php");
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion4">
                 <div class="accordion-body">
                         <p>
-                            Euterpelaan:              <a class="number" href="#">088 - 017 5555</a>
+                            Euterpelaan:              <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>   
                             <p> 
-                            Gasstraat Oost:           <a class="number" href="#">088 - 017 5555</a>  
+                            Gasstraat Oost:           <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>     
                             <p> 
-                            Nelson Mandelaboulevard:  <a class="number" href="#">088 - 017 5555</a>    
+                            Nelson Mandelaboulevard:  <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>       
                         </p>
                 </div>
             </div>
@@ -101,7 +107,7 @@ include("includes/header.php");
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion5">
                 <div class="accordion-body">
                         <p>
-                            Ringbaan-Oost:            <a class="number" href="#">088 - 2937 779</a>
+                            Ringbaan-Oost:            <a class= "number" href="tel:+088 - 2937 779">088 - 2937 779</a>  
                         </p>
                 </div>
             </div>
@@ -113,7 +119,7 @@ include("includes/header.php");
             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion6">
                 <div class="accordion-body">
                         <p>
-                            Udenseweg:               <a class="number" href="#">088 - 017 5555</a>
+                            Udenseweg:                <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a> 
                         </p>
                 </div>
             </div>
@@ -127,7 +133,7 @@ include("includes/header.php");
                         <p>
                             Muntelaar: 
                             <p> 
-                            R. Evers:                <a class="number" href="#">088 - 017 5555</a>
+                            R. Evers:                <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>
                         </p>
                 </div>
             </div>
@@ -154,7 +160,7 @@ include("includes/header.php");
 </script>
 </body>
 
-<!-- Footer --> 
-<?php 
-include("includes/footer.php"); 
-?>
+<footer> 
+<div class= "rodebalkonderaan">
+    </div>
+</footer>
