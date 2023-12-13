@@ -199,8 +199,8 @@
   }
 
   .intro-tekst {
-      margin-top: -99rem;
-      padding-right: 392px;
+      margin-top: -102rem;
+      padding-right: 410px;
       padding-left: 20px;
   }
 
@@ -227,7 +227,7 @@
   .wizard-content-intro{
       color: white;
       FONT-FAMILY: Candara, serif;
-      font-size: 50px;
+      font-size: 48px;
 
   }
 
@@ -308,9 +308,10 @@
         <h2>Welkom bij de Applicatie</h2>
         <br>
         <p>Een ongeval op het Koning Willem I College… wat nu? <br> <br>
-            Iedereen wil aan het einde van de dag weer veilig naar huis toe kunnen gaan. Daarom
+            Iedereen wil aan het einde van de dag weer veilig naar huis. Daarom
             streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
-            Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval (met letsel) voordoen. Met deze applicatie hopen
+            Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
+            Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
             wij jou te hebben geïnformeerd als dat gebeurt.
         </p>
 
