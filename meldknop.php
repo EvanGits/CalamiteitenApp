@@ -16,6 +16,14 @@ include("includes/header.php");
 
     <!-- Titel --> 
         <title>Map</title>
+
+
+    <!-- Homeknop --> 
+    <div class="homeknop-vak">
+        <a href="index.php" class="homeknop-pijl"><</a>
+    </div>
+
+
     </head>
 
     <!-- Kop --> 
@@ -32,9 +40,7 @@ include("includes/header.php");
     <!-- Algemeen knoppenoverzicht/lijst --> 
     <div class="accordion-menu" id="Menu">
         <div class="accordion-items">
-
-
-         <!-- s'Hertogenbosch knop (1) --> 
+            <!-- s'Hertogenbosch knop (1) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 s'Hertogenbosch
             </button>
@@ -55,21 +61,25 @@ include("includes/header.php");
                         </p>
                 </div>
             </div>
+        </div>
 
-            <!-- Rosmalen knop (2) --> 
-            <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                Rosmalen 
-            </button>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion2">
-                <div class="accordion-body">
-                        <p>
-                            De Kleine Elst:           <a class= "number" href="tel:+073 - 6456 620">073 - 6456 620</a>  
-                            <p> 
-                            Meester Vriensstraat:     <a class= "number" href="tel:+073 - 645 8000">0073 - 645 8000</a>   
-                        </p>
-                </div>
+        <div class="accordion-items">
+                <!-- Rosmalen knop (2) --> 
+                <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Rosmalen 
+                </button>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                            <p>
+                                De Kleine Elst:           <a class= "number" href="tel:+073 - 6456 620">073 - 6456 620</a>  
+                                <p> 
+                                Meester Vriensstraat:     <a class= "number" href="tel:+073 - 645 8000">0073 - 645 8000</a>   
+                            </p>
+                    </div>
+                </div> 
             </div>
-
+        
+        <div class="accordion-items">
             <!-- Cuijk knop (3) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                 Cuijk 
@@ -83,7 +93,10 @@ include("includes/header.php");
                         </p>
                 </div>
             </div>
+        </div>
+        
 
+        <div class="accordion-items">
             <!-- Oss knop (4) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                 Oss 
@@ -99,7 +112,9 @@ include("includes/header.php");
                         </p>
                 </div>
             </div>
+        </div>
 
+        <div class="accordion-items">
              <!-- Tilburg knop (5) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                 Tilburg 
@@ -111,7 +126,9 @@ include("includes/header.php");
                         </p>
                 </div>
             </div>
+        </div>
 
+        <div class="accordion-items">
              <!-- Uden knop (6) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                 Uden 
@@ -123,7 +140,9 @@ include("includes/header.php");
                         </p>
                 </div>
             </div>
+        </div>
 
+        <div class="accordion-items">
              <!-- Veghel knop (7) --> 
             <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                 Veghel 

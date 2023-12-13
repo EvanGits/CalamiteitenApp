@@ -1,5 +1,5 @@
 :root{ 
---accordion-width: 60vw; 
+--accordion-width: 72vw; 
 --text-font: Candara, serif;
 }
 
@@ -36,6 +36,8 @@
 /*titelkopje van meldknop-pagina*/ 
 .meldknop-titel{
     font-family: var(--text-font); 
+    font-size: 10vw; 
+    font-weight: bold;
     text-align: center; 
     color: #F9100C;  
 }
@@ -66,6 +68,22 @@
     
 }
 
+.homeknop-vak{ 
+    display: flex; 
+    background-color: #F9100C;
+    width: 10vw;
+    margin-top: 1.875rem;
+    height: auto;
+    justify-content: center;
+}
+
+.homeknop-pijl{
+    font-size: 3.25rem;
+    font-family: var(--text-font);
+    color: white; 
+}
+
+
 /*overzicht van accordion buttons*/ 
 .accordion-items{
     color: var(--bs-accordion-color);
@@ -78,7 +96,7 @@
     display: flex; 
     align-items: center;
     width: var(--accordion-width);  
-    height: 10%; 
+    height: 8.8vh; 
     padding: 1vh 30vw; 
     font-size: 1.5rem;
     font-family: var(--text-font); 
