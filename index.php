@@ -5,7 +5,7 @@
 <head>
  <title>Home</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    
+
  <style>
   *{
    margin: 0;
@@ -122,52 +122,115 @@
       background-image: url("images/Gebouw_met_lucht_2.0-01.png");
       background-size: contain;
       background-repeat: no-repeat;
-      height: calc(126vw / (2140 / 9291)); /* Hoogte wordt berekend op basis van de aspect ratio van de afbeelding */
+      height: calc(116vw / (2140 / 9291)); /* Hoogte wordt berekend op basis van de aspect ratio van de afbeelding */
       background-position: center top 266px;
   }
 
   .buttons{
       display: grid;
-      justify-content: space-between;
       width: 184px;
-      margin-top: 329px;
-  }
-
-  .wizard-container-intro{
-      display: none; /* Zorg ervoor dat dit wordt overschreven als de wizard wordt geopend */
-      position: fixed;
-      background-color: rgba(0, 0, 0, 0.6);
-      width: 52vw;
-      height: 66vh;
-      top: 535px;
-      border-bottom-right-radius: 23%;
-      border-top-right-radius: 23%;
-      z-index: 4;
+      position: relative;
 
   }
 
-  .wizard-content-intro{
-      color: white;
-      FONT-FAMILY: Candara, serif;
-      font-size: 40px;
-      padding-top: 90px;
-      padding-right: 38px;
+
+  .button1{
+      top: 120rem;
+      left: 300px;
+  }
+
+  .button2{
+      top: 124rem;
+      left: 119px;
+  }
+
+.button3{
+    top: 136rem;
+    left: 419px;
+}
+
+  .button4{
+      top: 145rem;
+      left: 401px;
+  }
+
+  .button5{
+      top: 150rem;
+      left: 450px;
+  }
+
+  .button6{
+      top: 164rem;
+      left: 300px;
+  }
+
+.button7{
+    top: 173rem;
+    left: 450px;
+}
+
+.button8{
+    top: 181rem;
+    left: 380px;
+}
+
+  .button9{
+      top: 190rem;
+      left: 300px;
+  }
+
+
+.button10{
+    top: 199rem;
+    left: 629px;
+}
+
+  .button11{
+      top: 207rem;
+  }
+
+  .button12{
+      top: 197rem;
+      left: 521px;
+  }
+
+  .intro-wizard-background {
+      width: 816px;
+  }
+
+  .intro-tekst {
+      margin-top: -99rem;
+      padding-right: 392px;
       padding-left: 20px;
   }
 
 
-  .close-button-intro {
-      position: absolute;
-      top: 33rem;
-      left: 509px;
+
+  .close-area-intro{
+    position: absolute;
+      top: 44rem;
+      left: 737px;
+      width: 82px;
+      height: 257px;
       cursor: pointer;
-      width: 42px;
-      height: 212px;
+    background-color: transparent; /* Maak de achtergrond transparant */
+}
+
+  .wizard-container-intro {
+      display: none;
+      position: fixed;
+      top: 424px;
+      z-index: 4;
   }
 
-  .close-button-intro.left {
-      left: 80px; /* Pas hier de gewenste afstand vanaf de linkerzijde aan */
+
+  .wizard-content-intro{
+      color: white;
+      FONT-FAMILY: Candara, serif;
+      font-size: 50px;
+
   }
+
 
   .wizard-container {
       display: none;
@@ -189,11 +252,42 @@
 
 
 
-  #wizard1, #wizard2, #wizard3, #wizard4, #wizard5, #wizard6, #wizard7, #wizard8, #wizard9, #wizard10, #wizard11, #wizard12 {
-      position: fixed;
-      top: 50%;
-      bottom: 50%;
+ .wizard-content {
+     position: fixed;
+     bottom: 0;
+     font-family: Candara, serif;
+     color: white;
   }
+
+ .verdieping1{
+     width: 646px;
+     position: absolute;
+     top: 30%;
+     right: 0;
+     border-color: white;
+     border-style: solid;
+     border-width: 168px;
+     left: 0;
+
+ }
+
+  .info-wizard {
+      position: absolute;
+      top: 82rem;
+      font-size: 52px;
+      border-color: #0e85c726;
+      border-width: 40px;
+      border-style: solid;
+      left: 0;
+      right: 0;
+      background-color: #0e85c7d6;
+ }
+
+  .wizard-container{
+      z-index: 3;
+  }
+
+
 
 
 
@@ -207,7 +301,10 @@
 <!-- Wizard-venster voor introductie -->
 <div class="wizard-container-intro" id="introWizard">
     <div class="wizard-content-intro">
-        <img src="images/slide.png" class="close-button-intro" id="closeIntroWizard" onclick="closeIntroWizard()" alt="Close Wizard">
+        <img src="images/wizard.png" alt="wizard-background" class="intro-wizard-background">
+        <div class="close-area-intro" id="closeIntroWizard"></div>
+        <div class="intro-tekst">
+
         <h2>Welkom bij de Applicatie</h2>
         <br>
         <p>Een ongeval op het Koning Willem I College… wat nu? <br> <br>
@@ -217,6 +314,7 @@
             wij jou te hebben geïnformeerd als dat gebeurt.
         </p>
 
+        </div>
     </div>
 </div>
 
@@ -278,8 +376,11 @@
 <div class="wizard-container" id="wizard1">
     <div class="wizard-content">
         <span class="close-button" id="close1">X</span>
+        <img src="images/verdieping1.png" alt="verdieping1" class="verdieping1">
+        <div class="info-wizard">
         <h2>Wizard 1</h2>
         <p>Dit is de inhoud van wizard 1.</p>
+        </div>
     </div>
 </div>
 
@@ -390,10 +491,6 @@
 
     function closeIntroWizard() {
         var introWizard = document.getElementById('introWizard');
-        var closeIntroButton = document.getElementById('closeIntroWizard');
-
-        // Move the close button to the left when closing the wizard
-        closeIntroButton.style.left = "80px"; // Adjust the left position as needed
 
         // Close the intro wizard
         introWizard.style.display = "none";
@@ -404,6 +501,11 @@
     });
 
     document.getElementById('closeIntroWizard').addEventListener('click', function () {
+        closeIntroWizard();
+    });
+
+    // Voeg een event listener toe voor de close-area-intro
+    document.querySelector('.close-area-intro').addEventListener('click', function () {
         closeIntroWizard();
     });
 </script>
