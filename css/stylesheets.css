@@ -139,7 +139,9 @@
     margin-top: 3vh; 
    }
 
-   
+    .number{
+        color: white; 
+    }
 
 
    /* BELANGRIJK: Probeer rode kleur voor opmaak in één variabele te stoppen, die voor elk element logisch gebruikt kan worden. 
