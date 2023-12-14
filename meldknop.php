@@ -26,7 +26,7 @@ include("includes/header.php");
     <!-- Kop --> 
     
         <div class="navbar">
-                <div class="col-12 col-md-8">
+                <div class="col-12">
                     <h1 class="meldknop-titel">KW1C Alarmnummers</h1><h1> 
                 </h1></div>
         </div>
