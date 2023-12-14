@@ -47,7 +47,7 @@ include("includes/header.php");
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
                 <div class="accordion-body">
                         <p>
-                            Jacob van Maerlantstraat: <a class= "number" href="tel:+06 - 1840 5695">06 - 1840 5695</a> 
+                            J. van Maerlantstraat: <a class= "number" href="tel:+06 - 1840 5695">06 - 1840 5695</a> 
                             <p> 
                             Marathonloop:             <a class= "number" href="tel:+073 - 6249 726">073 - 6249 726</a>  
                             <p> 
@@ -89,7 +89,7 @@ include("includes/header.php");
                         <p>
                             Beversestraat:            <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>   
                             <p> 
-                            Jan van Cuijkstraat:      <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>  
+                            J. van Cuijkstraat:      <a class= "number" href="tel:+088 - 017 5555">088 - 017 5555</a>  
                         </p>
                 </div>
             </div>
