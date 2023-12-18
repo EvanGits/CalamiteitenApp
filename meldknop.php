@@ -20,16 +20,18 @@ include("includes/header.php");
 
     <!-- Homeknop --> 
     <div class="homeknop-vak">
-        <a href="index.php" class="homeknop-pijl">&lt;</a>
+        <a href="index.php" class="homeknop-pijl">
+            <img class="pijl-img" src="images/arrow_left.jpg">
+        </a>
     </div>
 
+
     <!-- Kop --> 
-    
-        <div class="navbar">
-                <div class="col-12">
-                    <h1 class="meldknop-titel">KW1C Alarmnummers</h1><h1> 
-                </h1></div>
-        </div>
+
+    <div class="col-12">
+        <h1 class="meldknop-titel">KW1C Alarmnummers</h1>
+    </div>
+      
 
     <!-- Algemeen knoppenoverzicht/lijst --> 
     <div class="accordion-menu" id="Menu">   
@@ -102,7 +104,7 @@ include("includes/header.php");
                             </p><p> 
                             Gasstraat Oost:                     <a class="number" href="tel:+088 - 017 5555">088 - 017 5555</a>
                             </p><p>   
-                            Nelson Mandelaboulevard:            <a class="number" href="tel:+088 - 017 5555">088 - 017 5555</a> 
+                            Nelson Mandelablvd:                 <a class="number" href="tel:+088 - 017 5555">088 - 017 5555</a> 
                         </p>
                 </div>
             </div>
@@ -138,6 +140,8 @@ include("includes/header.php");
 </div>
 </body> 
 
+
+<!--Footer--> 
 <footer> 
 <div class="rodebalkonderaan">
     </div>
