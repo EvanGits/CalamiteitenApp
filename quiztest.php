@@ -268,7 +268,7 @@
         </h1>
         <div id="startQuiz">
 
-            <p>
+            <p class="startQuizText">
                 Hey! Fijn dat je de tijd neemt om deze test te maken. In deze test krijg je informatie over hoe je met
                 calamiteiten moet<br> omgaan en kun je ook voor jezelf zien hoe jouw kennis ervoor staat. Alvast
                 succes😊
@@ -279,6 +279,7 @@
         <div id="questions" class="hidden"></div>
 
         <script>
+
             const startButton = document.getElementById('start');
             const startQuiz = document.getElementById('startQuiz');
             const questionsContainer = document.getElementById('questions');
@@ -308,14 +309,16 @@
                 questionDiv.innerHTML = `
                 <h2 class="question">${question.question}</h2><br>
                 <p class="choice">
-                    ${question.options.map((option, i) => `
+
+                    ${question.options.map((option, i) => `<div class="test">
                         <input type="radio" id="antwoord${i + 1}" name="antwoorden" value="${i + 1}" required>
-                        ${option.type === 'image' ? `<img src="${option.content}"><br>` : `<label for="antwoord${i + 1}">${option.content}</label><br>`}
+                        ${option.type === 'image' ? `<img src="${option.content}"><br>` : `<label class="labelChoice" for="antwoord${i + 1}">${option.content}</label><br></div>`}
                     `).join('')}
+
                 </p>
                 <div class="quiz-buttons">
-                    <a href="index.php">Home</a>
-                    <button id="volgendeQuestion">volgende</button>
+                    <a class="homeLink" href="index.php">HOME</a>
+                    <button id="volgendeQuestion">VOLGENDE</button>
                 </div>
 
             `;
