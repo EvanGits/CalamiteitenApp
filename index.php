@@ -31,7 +31,7 @@
       font-size: 86px;
       background-color: #F9100C;
       border-color: #F9100C;
-      font-family: Candara, serif;
+      font-family: Tahoma, serif;
       padding-left: 150px;
       padding-right: 150px;
       position: absolute;
@@ -41,7 +41,7 @@
   }
 
   .Quizbutton{
-      font-family: Candara, serif;
+      font-family: Tahoma, serif;
       font-size: 86px;
       background-color: #F9100C;
       border-color: #F9100C;
@@ -106,7 +106,7 @@
       right: 0;
       margin-top: 30px;
       height: 122px;
-      font-family: Candara, serif;
+      font-family: Tahoma, serif;
       text-align: center;
 
   }
@@ -199,22 +199,19 @@
   }
 
   .intro-tekst {
-      margin-top: -102rem;
+      margin-top: -104rem;
       padding-right: 410px;
       padding-left: 20px;
   }
 
-
-
-  .close-area-intro{
-    position: absolute;
-      top: 44rem;
-      left: 737px;
-      width: 82px;
-      height: 257px;
-      cursor: pointer;
-    background-color: transparent; /* Maak de achtergrond transparant */
+.pijltje-wizard{
+    width: 398px;
+    position: fixed;
+    top: 68rem;
+    left: 36rem;
 }
+
+
 
   .wizard-container-intro {
       display: none;
@@ -226,7 +223,7 @@
 
   .wizard-content-intro{
       color: white;
-      FONT-FAMILY: Candara, serif;
+      FONT-FAMILY: Tahoma, serif;
       font-size: 48px;
 
   }
@@ -242,54 +239,142 @@
       align-items: center;
   }
 
-  .wizard-content {
-      background-color: #fff;
-      position: fixed;
-      background-color: rgba(0, 0, 0, 0.6);
-      width: 100vw;
-      height: 100vh;
-  }
-
 
 
  .wizard-content {
      position: fixed;
      bottom: 0;
-     font-family: Candara, serif;
+     font-family: Tahoma, serif;
      color: white;
+     width: 100vw;
+     height: 100vh;
   }
 
- .verdieping1{
-     width: 646px;
-     position: absolute;
-     top: 30%;
-     right: 0;
-     border-color: white;
-     border-style: solid;
-     border-width: 168px;
-     left: 0;
 
- }
-
-  .info-wizard {
+  .info-wizard  {
       position: absolute;
-      top: 82rem;
-      font-size: 52px;
-      border-color: #0e85c726;
-      border-width: 40px;
-      border-style: solid;
-      left: 0;
-      right: 0;
-      background-color: #0e85c7d6;
- }
+      margin-top: 80rem;
+      font-size: 28px;
+      margin-left: 77px;
+  }
+  .wizard2-tekst{
+      position: absolute;
+      margin-top: 1269px;
+      font-size: 28px;
+      margin-left: 77px;
+      padding-left: 10px;
+      padding-right: 70px;
+  }
 
   .wizard-container{
       z-index: 3;
   }
 
+  .wizard-gebouw {
+      width: 967px;
+      position: fixed;
+      top: 41rem;
+      height: 1001px;
+  }
 
 
+  .close-button {
+      font-size: 50px;
+      position: absolute;
+      top: 55rem;
+      left: 54rem;
+  }
 
+ 
+  .wizard-container#wizard6 {
+      z-index: 20;
+  }
+
+  .wizard-container#wizard7 {
+      z-index: 30;
+  }
+
+  .wizard-container#wizard8 {
+      z-index: 40;
+  }
+
+  .wizard-container#wizard9 {
+      z-index: 50;
+  }
+
+  .wizard-container#wizard10 {
+      z-index: 60;
+  }
+
+  .wizard-container#wizard11 {
+      z-index: 70;
+  }
+
+  .wizard-container#wizard12 {
+      z-index: 80;
+  }
+
+  .bhv-vest{
+      width: 245px;
+      position: absolute;
+      top: 56rem;
+      left: 331px;
+      border: solid white 10px;
+  }
+.plattegrond{
+    width: 245px;
+    position: absolute;
+    top: 55rem;
+    left: 22rem;
+}
+
+.rookmelder{
+    width: 245px;
+    position: absolute;
+    top: 56rem;
+    left: 335px;
+}
+
+.wizard3-tekst{
+    position: absolute;
+    margin-top: 1256px;
+    font-size: 28px;
+    margin-left: 77px;
+    padding-left: 21px;
+    padding-right: 70px;
+}
+
+.wizard4-tekst{
+    position: absolute;
+    margin-top: 1165px;
+    font-size: 28px;
+    margin-left: 77px;
+    padding-left: 21px;
+    padding-right: 70px;
+}
+
+.blusdeken{
+    width: 245px;
+    position: absolute;
+    top: 56rem;
+    left: 335px;
+}
+
+.wizard5-tekst{
+    position: absolute;
+    margin-top: 1276px;
+    font-size: 28px;
+    margin-left: 77px;
+    padding-left: 21px;
+    padding-right: 70px;
+}
+
+.brandblusser{
+    width: 245px;
+    position: absolute;
+    top: 56rem;
+    left: 335px ;
+}
 
  </style>
 </head>
@@ -302,7 +387,7 @@
 <div class="wizard-container-intro" id="introWizard">
     <div class="wizard-content-intro">
         <img src="images/wizard.png" alt="wizard-background" class="intro-wizard-background">
-        <div class="close-area-intro" id="closeIntroWizard"></div>
+        <img src="images/Pijltjes_wizard-01.png" alt="pijltje-wizard" class="pijltje-wizard" id="closeIntroWizard">
         <div class="intro-tekst">
 
         <h2>Welkom bij de Applicatie</h2>
@@ -376,53 +461,81 @@
 
 <div class="wizard-container" id="wizard1">
     <div class="wizard-content">
+        <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
         <span class="close-button" id="close1">X</span>
-        <img src="images/verdieping1.png" alt="verdieping1" class="verdieping1">
+        <img src="images/bhv-vest.jpg" alt="bhv-vest" class="bhv-vest">
         <div class="info-wizard">
-        <h2>Wizard 1</h2>
-        <p>Dit is de inhoud van wizard 1.</p>
+        <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning Willem I College is het team van
+            bedrijfshulpverleners (bhv’ers). <br>Bhv’ers zijn getrainde medewerkers die specifieke taken en
+            verantwoordelijkheden hebben als zich een calamiteit voordoet. </p>
         </div>
     </div>
 </div>
 
 <div class="wizard-container" id="wizard2">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close2">X</span>
-        <h2>Wizard 2</h2>
-        <p>Dit is de inhoud van wizard 2.</p>
+        <img src="images/plattegrond.png" alt="plattegrond" class="plattegrond">
+        <div class="wizard2-tekst">
+        <p>Veiligheid heeft bij het Koning Willem I College een hoge prioriteit.
+            <br>Er zijn maatregelen getroffen om ervoor te zorgen dat onze locaties veilig
+            kunnen worden ontruimd tijdens calamiteiten. Een belangrijk hulpmiddel dat
+            we hiervoor gebruiken, is de ontruimingsplattegrond.</p>
+        </div>
     </div>
 </div>
 
 
 <div class="wizard-container" id="wizard3">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close3">X</span>
-        <h2>Wizard 3</h2>
-        <p>Dit is de inhoud van wizard 3.</p>
+        <img src="images/rookmelder.png" alt="rookmelder" class="rookmelder">
+        <div class="wizard3-tekst">
+        <p>Automatische melders activeren zelf het brandalarm wanneer er rook
+            of hitte wordt gedetecteerd. Een verschil met de handbrandmelders is
+            dat het ontruimingsalarm alleen in dat specifiek deel van het gebouw
+            afgaat. De andere delen van het gebouw volgen als de brand niet wordt gedoofd.</p>
+        </div>
     </div>
 </div>
 
 
 
 <div class="wizard-container" id="wizard4">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close4">X</span>
-        <h2>Wizard 4</h2>
-        <p>Dit is de inhoud van wizard 4.</p>
+        <img src="images/blusdeken.png" alt="blusdeken" class="blusdeken">
+        <div class="wizard4-tekst">
+        <p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om
+            kleine branden te doven door de zuurstof af te snijden en de vlammen te smoren.
+        <br>
+            De blusdekens worden in de regel alleen gebruikt door de bhv’ers tijdens een
+            calamiteit. Veiligheid is een gedeelde verantwoordelijkheid. Alleen samen kunnen
+            we ervoor zorgen dat de blusdekens beschikbaar en bereikbaar zijn, zodat de bhv’ers
+            niet mispakken tijdens een calamiteit
+        </p>
+        </div>
     </div>
 </div>
 
 
 <div class="wizard-container" id="wizard5">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close5">X</span>
-        <h2>Wizard 5</h2>
-        <p>Dit is de inhoud van wizard 5.</p>
+        <img src="images/brandblusser.png" alt="brandblusser" class="brandblusser">
+        <div class="wizard5-tekst">
+        <p>Een brandblusser is een draagbaar apparaat dat specifiek is ontworpen om beginnende
+            branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat een kleine brand zich uitbreidt..</p>
     </div>
 </div>
 
 
 <div class="wizard-container" id="wizard6">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close6">X</span>
         <h2>Wizard 6</h2>
@@ -431,6 +544,7 @@
 </div>
 
 <div class="wizard-container" id="wizard7">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close7">X</span>
         <h2>Wizard 7</h2>
@@ -440,6 +554,7 @@
 
 
 <div class="wizard-container" id="wizard8">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close8">X</span>
         <h2>Wizard 8</h2>
@@ -450,6 +565,7 @@
 
 
 <div class="wizard-container" id="wizard9">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close9">X</span>
         <h2>Wizard 9</h2>
@@ -459,6 +575,7 @@
 
 
 <div class="wizard-container" id="wizard10">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close10">X</span>
         <h2>Wizard 10</h2>
@@ -468,6 +585,7 @@
 
 
 <div class="wizard-container" id="wizard11">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close11">X</span>
         <h2>Wizard 11</h2>
@@ -477,6 +595,7 @@
 
 
 <div class="wizard-container" id="wizard12">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
         <span class="close-button" id="close12">X</span>
         <h2>Wizard 12</h2>
@@ -485,92 +604,102 @@
 </div>
 
 
-<script>
-    function openIntroWizard() {
-        document.getElementById('introWizard').style.display = "flex";
-    }
-
-    function closeIntroWizard() {
-        var introWizard = document.getElementById('introWizard');
-
-        // Close the intro wizard
-        introWizard.style.display = "none";
-    }
-
-    window.addEventListener('load', function () {
-        openIntroWizard();
-    });
-
-    document.getElementById('closeIntroWizard').addEventListener('click', function () {
-        closeIntroWizard();
-    });
-
-    // Voeg een event listener toe voor de close-area-intro
-    document.querySelector('.close-area-intro').addEventListener('click', function () {
-        closeIntroWizard();
-    });
-</script>
-
-<script>
-    // Function to open the wizard window
-    function openWizard(wizardId) {
-        document.getElementById(wizardId).style.display = "flex";
-    }
-
-    // Function to close the wizard window
-    function closeWizard(wizardId) {
-        document.getElementById(wizardId).style.display = "none";
-    }
-
-    $(document).ready(function () {
-        // Vierkantlogo
-        var logo = $(".vierkantlogo");
-        var logoOffset = logo.offset().top;
-
-        $(window).scroll(function () {
-            logo.toggleClass("fixed", $(window).scrollTop() > logoOffset);
-        });
-
-        // Makersbutton
-        var makersButton = $(".makersbutton");
-        var makersOffset = makersButton.offset().top;
-
-        $(window).scroll(function () {
-            makersButton.toggleClass("fixed", $(window).scrollTop() > makersOffset);
-        });
-
-        // Quizbutton
-        var quizButton = $(".Quizbutton");
-        var quizOffset = quizButton.offset().top;
-
-        $(window).scroll(function () {
-            quizButton.toggleClass("fixed", $(window).scrollTop() > quizOffset);
-        });
-
-        // Add click event listeners for all buttons
-        for (let i = 1; i <= 12; i++) {
-            const buttonId = "button" + i;
-            const wizardId = "wizard" + i;
-
-            // Open the wizard when the button is clicked
-            document.getElementById(buttonId).addEventListener("click", function() {
-                openWizard(wizardId);
-            });
-
-            // Close the wizard when the close button is clicked
-            document.getElementById("close" + i).addEventListener("click", function() {
-                closeWizard(wizardId);
-
-            });
+    <script>
+        function openIntroWizard() {
+            document.getElementById('introWizard').style.display = "flex";
         }
-    });
 
-    function openIntroWizard() {
-        document.getElementById('introWizard').style.display = "flex";
-        $(".vierkantlogo, .makersbutton, .Quizbutton").removeClass("fixed");
-    }
+        function showIntroWizardElements() {
+            // Maak het pijltje van de intro-wizard zichtbaar
+            $(".pijltje-wizard").css("display", "block");
 
-</script>
+            // Maak de achtergrond van de intro-wizard zichtbaar
+            $(".intro-wizard-background").css("display", "block");
+        }
+
+        function closeIntroWizard() {
+            var introWizard = document.getElementById('introWizard');
+            var closeArea = document.querySelector('.pijltje-wizard');
+
+            // Sluit de intro wizard
+            introWizard.style.display = "none";
+
+            // Toon het sluitingsgebied
+            closeArea.style.display = "block";
+
+            // Maak het pijltje en de achtergrond van de intro-wizard zichtbaar
+            showIntroWizardElements();
+        }
+
+        window.addEventListener('load', function () {
+            openIntroWizard();
+        });
+
+        document.getElementById('closeIntroWizard').addEventListener('click', function () {
+            closeIntroWizard();
+        });
+    </script>
+
+    <script>
+        // Function to open the wizard window
+        function openWizard(wizardId) {
+            document.getElementById(wizardId).style.display = "flex";
+        }
+
+        // Function to close the wizard window
+        function closeWizard(wizardId) {
+            document.getElementById(wizardId).style.display = "none";
+        }
+
+        $(document).ready(function () {
+            // Vierkantlogo
+            var logo = $(".vierkantlogo");
+            var logoOffset = logo.offset().top;
+
+            $(window).scroll(function () {
+                logo.toggleClass("fixed", $(window).scrollTop() > logoOffset);
+            });
+
+            // Makersbutton
+            var makersButton = $(".makersbutton");
+            var makersOffset = makersButton.offset().top;
+
+            $(window).scroll(function () {
+                makersButton.toggleClass("fixed", $(window).scrollTop() > makersOffset);
+            });
+
+            // Quizbutton
+            var quizButton = $(".Quizbutton");
+            var quizOffset = quizButton.offset().top;
+
+            $(window).scroll(function () {
+                quizButton.toggleClass("fixed", $(window).scrollTop() > quizOffset);
+            });
+
+            // Add click event listeners for all buttons
+            for (let i = 1; i <= 12; i++) {
+                const buttonId = "button" + i;
+                const wizardId = "wizard" + i;
+
+                // Open the wizard when the button is clicked
+                document.getElementById(buttonId).addEventListener("click", function() {
+                    openWizard(wizardId);
+                });
+
+                // Close the wizard when the close button is clicked
+                document.getElementById("close" + i).addEventListener("click", function() {
+                    closeWizard(wizardId);
+
+                });
+            }
+        });
+
+        function openIntroWizard() {
+            document.getElementById('introWizard').style.display = "flex";
+            $(".vierkantlogo, .makersbutton, .Quizbutton").removeClass("fixed");
+        }
+
+    </script>
 
 </body>
 </html>
