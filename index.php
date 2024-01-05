@@ -605,34 +605,58 @@
 
 
     <script>
-        function openIntroWizard() {
-            document.getElementById('introWizard').style.display = "flex";
+        // Functie om een cookie in te stellen
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
 
-        function showIntroWizardElements() {
-            // Maak het pijltje van de intro-wizard zichtbaar
-            $(".pijltje-wizard").css("display", "block");
-
-            // Maak de achtergrond van de intro-wizard zichtbaar
-            $(".intro-wizard-background").css("display", "block");
+        // Functie om de waarde van een cookie op te halen
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
         }
 
+        // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
+        function handleIntroWizard() {
+            var introWizard = document.getElementById('introWizard');
+
+            // Controleer of de cookie is ingesteld
+            if (getCookie('introWizardClosed') !== 'true') {
+                // Toon de intro-wizard als de cookie niet is ingesteld
+                introWizard.style.display = "flex";
+            } else {
+                // Verberg de intro-wizard als de cookie is ingesteld
+                introWizard.style.display = "none";
+            }
+        }
+
+        // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
         function closeIntroWizard() {
             var introWizard = document.getElementById('introWizard');
-            var closeArea = document.querySelector('.pijltje-wizard');
 
             // Sluit de intro wizard
             introWizard.style.display = "none";
 
-            // Toon het sluitingsgebied
-            closeArea.style.display = "block";
-
-            // Maak het pijltje en de achtergrond van de intro-wizard zichtbaar
-            showIntroWizardElements();
+            // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
+            setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
         }
 
         window.addEventListener('load', function () {
-            openIntroWizard();
+            handleIntroWizard();
         });
 
         document.getElementById('closeIntroWizard').addEventListener('click', function () {
