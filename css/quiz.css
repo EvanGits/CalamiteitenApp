@@ -23,7 +23,7 @@ body
 }
 body, button
 {
-    font-family: "Candara Regular";
+    font-family: "Tahoma";
 }
 /*text*/
 h1, .choice
@@ -65,7 +65,7 @@ footer
     padding: 17px;
     margin:  0 5px 5px 5px;
     width: 66vw;
-    height: 264px;
+    height: auto;
     background-color: red;
     border: 5px solid white;
     box-shadow: 0 0 0 5px red;
@@ -140,7 +140,7 @@ button, .homeLink
     padding: 17px;
     margin: 0 5px 27px 5px;
     width: 66vw;
-    height: 271px;
+    height: auto;
     background-color: red;
     border: 5px solid white;
     box-shadow: 0 0 0 5px red;

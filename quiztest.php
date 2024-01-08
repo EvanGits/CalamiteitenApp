@@ -145,7 +145,7 @@
                 "correctAnswer" => 1,],
             ["question" => "Aan welk bord herken je een verzamelplaats?",
                 "options" => [
-                    ["type" => "image", "content" => "images.verzamel-fout.png"],
+                    ["type" => "image", "content" => "images/verzamel-fout.png"],
                     ["type" => "image", "content" => "images/verzamelplaats.png"],
                 ],
                 "correctAnswer" => 2,],
