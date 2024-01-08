@@ -1,90 +1,178 @@
-/*navigatiemenu*/
-.navbar-kw1c{
-    background-color: #0E85C7; 
-}
-
-/*footer*/
-.footer-kw1c{
-    background:  #808080;
-}
-
-
-/*MAKERS-PAGINA*/ 
-
-/*titelkopje van makers-pagina */ 
-.makers-titel{ 
-    text-decoration: underline;
-}
-
-/*opmaak voor profielvenster (versie1 -- blauw) */  
-.makers-venster1{
-    background-color: #E5F1F9;  
-}
-
-/*opmaak voor profielvenster (versie2 -- wit) */  
-.makers-venster2{
-    background-color: #FFFFFF;  
-}
-
-/*MELDKNOP-PAGINA */ 
-
-/*titelkopje van meldknop-pagina*/ 
-.meldknop-titel{
-    text-decoration: underline;
-}
-
-/*properties voor alle accordion knoppen*/ 
-.accordion-menu {
-    --bs-accordion-color: #FFFF;
-    --bs-accordion-bg: var(--bs-body-bg);
-    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
-    --bs-accordion-border-color: #ed2124;
-    --bs-accordion-border-width: 1px;
-    --bs-accordion-border-radius: var(--bs-border-radius);
-    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
-    --bs-accordion-btn-padding-x: 1.25rem;
-    --bs-accordion-btn-padding-y: 1rem;
-    --bs-accordion-btn-color: rgb(249, 242, 242);
-    --bs-accordion-btn-bg: #ed2124;
-    --bs-accordion-btn-icon-width: 1.25rem;
-    --bs-accordion-btn-icon-transform: rotate(-180deg);
-    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    --bs-accordion-body-padding-x: 1.25rem;
-    --bs-accordion-body-padding-y: 1rem;
-    --bs-accordion-active-color: #FFFF;
-    --bs-accordion-active-bg: #d94e5b;
-    max-width: var(--bs-max-width); 
-    margin: 0 auto;
-}
-
-/*overzicht van accordion buttons*/ 
-.accordion-items{
-    color: var(--bs-accordion-color);
-    background-color: var(--bs-accordion-bg);
-}
-
-/*buttons van de meldknop-pagina */ 
-.accordion-buttons{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-    font-size: 2rem;
-    justify-content: center;
-    color: var(--bs-accordion-btn-color);
-    text-align: left;
-    background-color: var(--bs-accordion-btn-bg);
-    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
-    margin-top: 1.5rem; 
-}
-
-/*tekstvak van accordion buttons*/ 
-.accordion-body{
+:root{ 
+    --accordion-width: 72vw; 
+    --text-font: Tahoma, regular;
+    --theme-color: #f9100c; 
+    }
     
-    background-color: var(--bs-accordion-btn-bg); 
-}
+    /*navigatiemenu*/
+    .navbar-kw1c{
+        background-color: #0E85C7; 
+    }
+    
+    /*footer*/
+    .footer-kw1c{
+        background:  #808080;
+    }
+
+        
+    /*header van de pagina*/
+    .rodebalktop{
+        background-color: var(--theme-color);
+        height: 3.7vh;
+       }
+    
+    /*footer van de pagina*/ 
+       .rodebalkonderaan{
+        position: relative; 
+        background-color: var(--theme-color);
+        display: flex;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3.7vh; 
+        width: 100%;
+        margin-top: 3vh; 
+       }
+    
+    /*venster van de homeknop*/ 
+    .homeknop-vak{
+        position: absolute; 
+        float: left; 
+        display: flex; 
+        background-color: var(--theme-color);
+        width: 10vw;
+        margin-top: 2vh;
+        height: 15vw;
+        justify-content: center;
+    }
+    
+    /*pijlvenster van de homeknop*/ 
+    .homeknop-pijl{
+        display: flex;
+        font-size: 10vw;
+        font-family: var(--text-font);
+        color: #FFFF; 
+        align-items: center; 
+    }
+
+    /*afbeelding van pijlvenster*/
+    .pijl-img{
+        width: 35vw;
+    }
+
+    /*venster van de meldknop*/ 
+    .meldknop-vak{
+        float: right; 
+        display: flex; 
+        background-color: var(--theme-color);
+        width: 10vw;
+        margin-top: 2vh;
+        height: 15vw;
+        justify-content: center;
+    }
+    
+    
+    /*MAKERS-PAGINA*/ 
+    
+    /*titelkopje van makers-pagina */ 
+    .makers-titel{ 
+        font-family: var(--text-font); 
+        font-size: 12vw; 
+        font-weight: bold;
+        text-align: center; 
+        color: var(--theme-color);  
+        padding: 5vw; 
+    }
+    
+    /*opmaak voor profielvenster (versie1 -- blauw) */  
+    .makers-venster1{
+        background-color: #E5F1F9;  
+    }
+    
+    /*opmaak voor profielvenster (versie2 -- wit) */  
+    .makers-venster2{
+        background-color: #FFFFFF;  
+    }
+    
+    /*MELDKNOP-PAGINA */ 
+    
+    /*titelkopje van meldknop-pagina*/ 
+    .meldknop-titel{
+        font-family: var(--text-font); 
+        font-size: 9vw; 
+        font-weight: bold;
+        text-align: center; 
+        color: var(--theme-color);  
+        padding: 5vw; 
+    }
+    
+    /*properties voor alle accordion knoppen*/ 
+    .accordion-menu {
+        --bs-accordion-color: #FFFF;
+        --bs-accordion-bg: var(
+        --bs-body-bg);
+        --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+        --bs-accordion-border-color: var(--theme-color); 
+        --bs-accordion-border-width: 1px;
+        --bs-accordion-border-radius: var(
+        --bs-border-radius);
+        --bs-accordion-inner-border-radius: calc(var( --bs-border-radius) - (var(--bs-border-width)));
+        --bs-accordion-btn-padding-x: 1.25rem;
+        --bs-accordion-btn-padding-y: 1rem;
+        --bs-accordion-btn-color: rgb(249, 242, 242);
+        --bs-accordion-btn-bg: var(--theme-color);
+        --bs-accordion-btn-icon-width: 1.25rem;
+        --bs-accordion-btn-icon-transform: rotate(-180deg);
+        --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        --bs-accordion-body-padding-x: 1.25rem;
+        --bs-accordion-body-padding-y: 1rem;
+        --bs-accordion-active-color: #FFFF;
+        --bs-accordion-active-bg: #d94e5b;
+        max-width: var(--bs-max-width);
+        margin: 0 auto;
+    }
+    
+    /*overzicht van accordion buttons*/ 
+    .accordion-items{
+        color: var(--bs-accordion-color);
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 4vw; 
+        background-color: var(--bs-accordion-bg);
+        width: var(--accordion-width);
+        border: 2px solid #FFFF;
+        box-shadow: 0 0 0 5px var(--theme-color);
+        margin: 0 auto 1.5rem;
+    }
+    
+    /*buttons van de meldknop-pagina */ 
+    .accordion-buttons{
+        display: flex;
+        align-items: center;
+        height: 8.8vh;
+        padding: 1vh 30vw;
+        font-size: 5vw;
+        font-family: var(--text-font);
+        margin: 0 auto;
+        justify-content: center;
+        color: var(--bs-accordion-btn-color);
+        background-color: var(--bs-accordion-btn-bg);
+        border-radius: 0;
+        overflow-anchor: none;
+        transition: var(--bs-accordion-transition);
+      
+    }
+    
+    /*tekstvak van accordion buttons*/ 
+    .accordion-body{
+        margin: 0 auto; 
+        background-color: var(--bs-accordion-btn-bg);
+        font-family: var(--text-font);
+    }
+    
+    /*opmaak van nummertekst*/ 
+        .number{
+            color: #FFFF; 
+        }
+    

@@ -1,15 +1,38 @@
-<?php 
-//Header
-include("includes/header.php"); 
-?> 
+<?php
+//Header 
+include("includes/header.php");  
+?>
+   
+   <!DOCTYPE html> 
+   <html lang="nl"> 
+   <!-- Header --> 
+    <head>
+   
+    <div class="rodebalktop">
+    </div>
 
-<!-- Titel --> 
-<body>
-    <div class="navbar p-4 border border-2 border-secondary">
-            <div class="col-12 col-md-8">
-                <h1 class= "makers-titel">De Makers<h1> 
-            </div>
-        </div>
+      <!-- Opmaak --> 
+      <link rel="stylesheet" href="css/stylesheets.css">
+
+    <!-- Titel --> 
+        <title>Makers</title>
+
+
+    <!-- Homeknop --> 
+    <div class="homeknop-vak">
+        <a href="index.php" class="homeknop-pijl">
+            <img class="pijl-img" src="images/arrow_left.jpg">
+        </a>
+    </div>
+
+    <!-- Meldknop --> 
+    <div class="meldknop-vak">
+            <a href="index.php" class="">i</a>
+    </div>
+
+    <!-- Kop --> 
+    <div class="col-12">
+        <h1 class="makers-titel">Makers</h1>
     </div>
 
 <!-- Overzicht van makers --> 
@@ -56,7 +79,10 @@ include("includes/header.php");
 </div>
 </body>
 
-<?php 
-//Footer
-include("includes/footer.php");
-?>
+
+<!--Footer--> 
+<footer> 
+<div class="rodebalkonderaan">
+    </div>
+</footer>
+<html> 
