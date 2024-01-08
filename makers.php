@@ -27,7 +27,7 @@ include("includes/header.php");
 
     <!-- Meldknop --> 
     <div class="meldknop-vak">
-            <a href="index.php" class="">i</a>
+            <a href="meldknop.php" class="meldknop-tekst">i</a>
     </div>
 
     <!-- Kop --> 
@@ -37,46 +37,149 @@ include("includes/header.php");
 
 <!-- Overzicht van makers --> 
 <div class= "container mt-5"> 
-    <div class= "row justify-content-center d-flex">
+    <div class= "row-fluid justify-content-center" id="wrapper">
+
+     <!--Overzicht van stagebegeleiders --> 
+
+    <div class="col-12">  
+        <h1 class="makers-kop">Stage-begeleiders</h1>
+    </div>
+
+    <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/rohan.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Rohan van den Braak</b>
+            </div> 
+        </div>
+    </div>
+
+    <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/remco.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Remco Evers</b>
+            </div> 
+        </div>
+    </div>
+
+    <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/daan.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Daan Simons</b>
+            </div> 
+        </div>
+    </div>
+
+    <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/florain.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Florain Verheijen</b>
+            </div> 
+        </div>
+    </div>
+
+    <!--Overzicht van softwaredevelopers --> 
+    <div class="col-12">  
+        <h1 class="makers-kop">Softwaredevelopers</h1>
+    </div>
 
     <!-- Maker --> 
-        <div class= "col-5 p-4 m-3 col-lg-6 makers-venster1 border border-secondary">
-        <img class= "img-fluid" src="<?php echo WWW_ROOT . '/images/profiel.png'?>">  
-            <p> Naam: ... <p>
-            <p> Functie: ... <p> 
+        <div class= "makers-venster">
+            <div class= "makers-afbeelding-vak"> 
+                <img class= "makers-afbeelding" src="images/aisha.png"> 
+
+                <div class= "makers-tekst"> 
+                    <b>Aisha Ambare</b>
+                </div> 
+            </div>
         </div>
 
-    <!-- Maker --> 
-        <div class= "col-5 p-4 m-3 col-lg-6 makers-venster2 border border-secondary">
-            <p> Naam: ... <p>
-            <p> Functie: ... <p> 
+    
+        <!-- Maker --> 
+        <div class= "makers-venster">
+            <div class= "makers-afbeelding-vak"> 
+                <img class= "makers-afbeelding" src="images/tygo.png"> 
+
+                <div class= "makers-tekst"> 
+                    <b>Tygo Bovens</b> 
+                </div> 
+            </div>
         </div>
 
-    <!-- Maker --> 
-        <div class= "col-5 p-4 m-3 col-lg-6 makers-venster2 border border-secondary">
-            <p> Naam: ... <p>
-            <p> Functie: ... <p> 
+        <!-- Maker --> 
+        <div class= "makers-venster">
+            <div class= "makers-afbeelding-vak"> 
+                <img class= "makers-afbeelding" src="images/evan.png"> 
+
+                <div class= "makers-tekst"> 
+                    <b>Evan Geerts</b>
+                </div> 
+            </div>
         </div>
 
-    <!-- Maker --> 
-        <div class= "col-5 p-4 m-3 col-lg-6 makers-venster1 border border-secondary">
-            <p> Naam: ... <p>
-            <p> Functie: ... <p> 
-        </div>
+         <!-- Maker --> 
+         <div class= "makers-venster">
+            <div class= "makers-afbeelding-vak"> 
+                <img class= "makers-afbeelding" src="images/serezo.png"> 
 
-    <!-- Maker --> 
-        <div class= "col-5 p-4 m-3 col-lg-6 makers-venster1 border border-secondary">
-            <p> Naam: ... <p>
-            <p> Functie: ... <p> 
-        </div>
+                <div class= "makers-tekst"> 
+                    <b>Serezo Popelier</b> 
+                </div> 
+            </div>
+        </div>  
+        
+    <!-- Overzicht van mediavormgevers --> 
+    <div class="col-12">  
+        <h1 class="makers-kop">Mediavormgevers</h1>
+    </div>
 
-    <!-- Maker --> 
-        <div class= "col-5 p-4 m-3 col-lg-6 makers-venster1 border border-secondary">
-            <p> Naam: ... <p>
-            <p> Functie: ... <p> 
-        </div>
+         <!-- Maker --> 
+         <div class= "makers-venster">
+            <div class= "makers-afbeelding-vak"> 
+                <img class= "makers-afbeelding" src="images/jens.png"> 
+
+                <div class= "makers-tekst"> 
+                    <b>Jens van Berkel</b>
+                </div> 
+            </div>
+        </div>  
+ 
+         <!-- Maker --> 
+         <div class= "makers-venster">
+            <div class= "makers-afbeelding-vak"> 
+                <img class= "makers-afbeelding" src="images/sem.png"> 
+
+                <div class= "makers-tekst"> 
+                    <b>Sem Ewouds</b>
+                </div> 
+            </div>
+        </div>  
+
+         <!-- Maker --> 
+         <div class= "makers-venster">
+            <div class= "makers-afbeelding-vak"> 
+                <img class= "makers-afbeelding" src="images/colin.png"> 
+
+                <div class= "makers-tekst"> 
+                    <b>Colin Proctor</b> 
+                </div> 
+            </div>
+        </div> 
+
+
+
+
     </div> 
+    </div>
 </div>
+
 </body>
 
 

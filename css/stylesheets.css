@@ -57,7 +57,8 @@
 
     /*afbeelding van pijlvenster*/
     .pijl-img{
-        width: 35vw;
+        width: 190vw;
+        height: auto;
     }
 
     /*venster van de meldknop*/ 
@@ -69,6 +70,16 @@
         margin-top: 2vh;
         height: 15vw;
         justify-content: center;
+        color: #FFFF; 
+    }
+
+    /*tekst van de meldknop (i)*/ 
+    .meldknop-tekst{
+        display: flex; 
+        color: inherit; 
+        text-decoration: none; 
+        font-size: 12vw; 
+        align-items: center; 
     }
     
     
@@ -83,16 +94,52 @@
         color: var(--theme-color);  
         padding: 5vw; 
     }
-    
-    /*opmaak voor profielvenster (versie1 -- blauw) */  
-    .makers-venster1{
-        background-color: #E5F1F9;  
+
+    /*overige kopjes van de makers-pagina */
+    .makers-kop{
+        font-family: var(--text-font); 
+        font-size: 6vw; 
+        font-weight: bold;
+        text-align: left; 
+        color: 0000F;    
+        margin: 20vw 0 7.2vw;
+        
     }
     
-    /*opmaak voor profielvenster (versie2 -- wit) */  
-    .makers-venster2{
-        background-color: #FFFFFF;  
+    /*opmaak voor profielvenster */  
+    .makers-venster{
+        background-color: #FFFF;  
+        margin: 0 auto 4vh;
+        border: 3px solid var(--theme-color); 
+        width: 50vw; 
+        height: auto; 
     }
+
+    /*Het vak van de afbeelding*/ 
+    .makers-afbeelding-vak{
+        margin-top: 1.3vh; 
+    }
+    
+
+    /*postioneering voor de afbeelding*/ 
+    .makers-afbeelding{
+        display: flex;
+        width: 24vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /*opmaak van het tekstvak van elk profielvenster */ 
+    .makers-tekst{
+        height: auto; 
+        background-color: var(--theme-color);
+        margin-top: 1.3vh;
+        color: #FFFF;  
+        font-family: var(--text-font); 
+        padding: 1.3vw;
+        font-size: 3.6vw; 
+    }
+    
     
     /*MELDKNOP-PAGINA */ 
     
