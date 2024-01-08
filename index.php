@@ -196,6 +196,7 @@
 
   .intro-wizard-background {
       width: 816px;
+      margin-top: -62px;
   }
 
   .intro-tekst {
@@ -207,7 +208,7 @@
 .pijltje-wizard{
     width: 398px;
     position: fixed;
-    top: 68rem;
+    top: 64rem;
     left: 36rem;
 }
 
@@ -284,6 +285,7 @@
       position: absolute;
       top: 46rem;
       left: 54rem;
+      font-family: cursive;
   }
 
 
@@ -843,6 +845,9 @@
             closeIntroWizard();
         });
     </script>
+
+
+
 
     <script>
         // Function to open the wizard window
