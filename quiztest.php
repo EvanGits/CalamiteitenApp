@@ -292,11 +292,14 @@
 
             function showElement(element) {
                 element.classList.remove('hidden');
+                element.style.display = 'flex';
             }
 
             function hideElement(element) {
                 element.classList.add('hidden');
+                element.style.display = 'none';
             }
+
 
             function showQuestionAndAnswer(index) {
                 questionsContainer.innerHTML = '';
