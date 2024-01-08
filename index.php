@@ -255,7 +255,7 @@
 
   .info-wizard  {
       position: absolute;
-      margin-top: 70rem;
+      margin-top: 72rem;
       font-size: 28px;
       margin-left: 77px;
   }
@@ -796,6 +796,7 @@
         // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
         function handleIntroWizard() {
             var introWizard = document.getElementById('introWizard');
+            var closeButton = document.getElementById('closeIntroWizard');
 
             // Controleer of de cookie is ingesteld
             if (getCookie('introWizardClosed') !== 'true') {
@@ -804,18 +805,34 @@
             } else {
                 // Verberg de intro-wizard als de cookie is ingesteld
                 introWizard.style.display = "none";
+                // Toon de close button, zodat gebruikers de wizard opnieuw kunnen openen
+                closeButton.style.display = "block";
             }
         }
 
         // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
         function closeIntroWizard() {
             var introWizard = document.getElementById('introWizard');
+            var closeButton = document.getElementById('closeIntroWizard');
 
             // Sluit de intro wizard
             introWizard.style.display = "none";
+            // Toon de close button voor heropenen
+            closeButton.style.display = "block";
 
             // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
             setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
+        }
+
+        // Functie om de introductiewizard opnieuw te openen wanneer de gebruiker op 'close' klikt
+        function reopenIntroWizard() {
+            var introWizard = document.getElementById('introWizard');
+            var closeButton = document.getElementById('closeIntroWizard');
+
+            // Toon de intro-wizard
+            introWizard.style.display = "flex";
+            // Verberg de close button
+            closeButton.style.display = "none";
         }
 
         window.addEventListener('load', function () {
