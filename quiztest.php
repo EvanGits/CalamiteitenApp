@@ -134,7 +134,7 @@
             ["question" => "Wat is een interne alarmkaart?",
                 "options" => [
                     ["type" => "image", "content" => "images/alarmkaart.jpg"],
-                    ["type" => "image", "content" => "e"],
+                    ["type" => "image", "content" => "images/verkeers.png"],
                 ],
                 "correctAnswer" => 1,],
             ["question" => "Welke nummer bel je bij een calamiteit en waar vind je dit nummer?",
@@ -145,8 +145,8 @@
                 "correctAnswer" => 1,],
             ["question" => "Aan welk bord herken je een verzamelplaats?",
                 "options" => [
-                    ["type" => "image", "content" => "e"],
-                    ["type" => "image", "content" => "e"],
+                    ["type" => "image", "content" => "images.verzamel-fout.png"],
+                    ["type" => "image", "content" => "images/verzamelplaats.png"],
                 ],
                 "correctAnswer" => 2,],
             ["question" => "Op welke foto staat een AED?",
@@ -161,13 +161,13 @@
                     ["type" => "image", "content" => "images/aed.jpg"],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Wat is een brandblusser/brandslanghaspel en waar hangen ze?",
+            ["question" => "Wat is een brandblusser / brandslanghaspel en waar hangen ze?",
                 "options" => [
                     ["type" => "text", "content" => "Een hulpmiddel waarmee je een brand kunt doven en die hangen op opvallende plekken in het hele gebouw."],
                     ["type" => "text", "content" => "Een hulpmiddel waarmee  je een klein brandje kunt doven en die hangen altijd naast de wc's in het hele gebouw."],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Waaraan is een vluchtweg/nooduitgang te herkennen en waarom vrijhouden?",
+            ["question" => "Waaraan is een vluchtweg / nooduitgang te herkennen en waarom vrijhouden?",
                 "options" => [
                     ["type" => "text", "content" => "Je kunt deze herkennen aan de groene bordjes met witte pijl boven de deur. Je moet ze vrijhouden om door te kunnen vluchten als er een calamiteit plaatsvindt voor het geval van nood."],
                     ["type" => "text", "content" => "Vluchtwegen en nooduitgangen zijn nergens aan te herkennen, en je moet ze vrijhouden zodat hulpverleners er makkelijk uit kunnen gaan."],
@@ -181,7 +181,7 @@
                 "correctAnswer" => 2,],
             ["question" => "Wat is een automatische brandmelder?",
                 "options" => [
-                    ["type" => "image", "content" => "images/automatische-melder.jpg"],
+                    ["type" => "image", "content" => "images/automitische-melder.jpg"],
                     ["type" => "image", "content" => "images/alarmknop.jpg"],
                 ],
                 "correctAnswer" => 1,],
@@ -213,15 +213,15 @@
             "De bhv'ers hebben met elkaar contact via de portofoon. De bhv'er weet dus ook wanneer een calamiteit is opgelost en de situatie weer veilig is. Je mag dus pas weer terug het gebouw in als de bhv'er dit aangeeft.",
             "Een verzamelplaats is de plek waar iedereen zich in veiligheid kan brengen bij een ontruiming van een gebouw (of een andere noodsituatie). Doordat iedereen op deze plaats verzamelt kan hier worden nagegaan of alle medewerkers, studenten en eventuele bezoekers aanwezig zijn of dat er nog mensen worden vermist. Het is daarom van belang dat de verzamelplaats niet wordt verlaten zonder dat hier toestemming voor is verleend door de bhv'er. Mocht je iemand missen, meld dit dan bij de bhv'er. Op de grotere locaties van het KW1C zijn meerdere verzamelplaatsen aangewezen, zodat er een alternatief is als een verzamelplaats niet bereikbaar is.",
             "Op alle locaties van het Koning Willem I College hangen alarmkaarten. Deze hangen in bijna alle ruimtes. Hierop is onder andere vermeld wat het interne alarmnummer van die locatie is en wat er van je verwacht wordt tijdens een calamiteit.",
-            "Het is prima als je het landelijke alarmnummer belt, maar neem altijd contact op met het interne alarmnummer. Waarom? Het Koning Willem I College heeft veel locaties. Veel van deze locaties zijn vrij groot. Als een ambulance vertrekt naar het Koning Willem I College weten ze niet waar ze precies moeten zijn. Als je het interne alarmnummer belt, worden de bhv'ers ingeschakeld. Zij kunnen de ambulance opvangen en begeleiden naar de juiste plaats. Daarnaast zijn bhv'ers opgeleid om eerste hulp te verlenen. Zij zijn nagenoeg altijd sneller ter plaatse dan de ambulance. Hoe sneller zij worden opgeroepen, hoe eerder er hulp aanwezig is bij het slachtoffer. Bij een brand kunnen de bhv'ers mogelijk nog een bluspoging ondernemen en ze kunnen ondersteunen bij een ontruiming. De locaties van het Koning Willem I College hebben een eigen intern alarmnummer. Je kunt het interne alarmnummer vinden op de alarmkaart. De alarmkaart hangt in alle ruimtes en is duidelijk te herkennen.",
+            "Het is prima als je het landelijke alarmnummer belt, maar neem altijd contact op met het interne alarmnummer. Waarom? Het Koning Willem I College heeft veel locaties. Veel van deze locaties zijn vrij groot. Als een ambulance vertrekt naar het Koning Willem I College weten ze niet waar ze precies moeten zijn. Als je het interne alarmnummer belt, worden de bhv'ers ingeschakeld. Zij kunnen de ambulance opvangen en begeleiden naar de juiste plaats. Daarnaast zijn bhv'ers opgeleid om eerste hulp te verlenen. Zij zijn nagenoeg altijd sneller ter plaatse dan de ambulance. Hoe sneller zij worden opgeroepen, hoe eerder er hulp aanwezig is bij het slachtoffer. Bij een brand kunnen de bhv'ers mogelijk nog een bluspoging ondernemen en ze kunnen ondersteunen bij een ontruiming.",
             "Een verzamelplaats is de plek waar iedereen zich in veiligheid kan brengen bij een ontruiming van een gebouw (of een andere noodsituatie). Doordat iedereen op deze plaats verzamelt kan hier worden nagegaan of alle medewerkers, studenten en eventuele bezoekers aanwezig zijn of dat er nog mensen worden vermist. Het is daarom van belang dat de verzamelplaats niet wordt verlaten zonder dat hier toestemming voor is verleend door de bhv'er. Mocht je iemand missen, meld dit dan bij de bhv'er. Op de grotere locaties van het KW1C zijn meerdere verzamelplaatsen aangewezen, zodat er een alternatief is als een verzamelplaats niet bereikbaar is.",
             "Een AED (automatische externe defibrillator) wordt door de bhv'er gebruikt als een slachtoffer een hartstilstand heeft met als doel het hart van het slachtoffer weer te laten kloppen.",
             "Een EHBO-koffer wordt ook wel eens bhv-koffer genoemd. De EHBO-koffers zijn voorzien van diverse materialen en benodigdheden waarmee bhv'er snel kunt ingrijpen wanneer een slachtoffer letsel heeft opgelopen. ",
-            "[Hier een plaatje opnemen van een brandblusser/brandslanghaspel?] Er mag niets voor brandblussers/brandslanghaspels worden neergezet. Er dient minimaal een meter rondom te worden vrijgehouden. Er zijn verschillende typen brandblussers. In de regel wordt een brandblusser/brandslanghaspel alleen door een bhv'er gebruikt omdat de bhv'er hiervoor is opgeleid.",
-            "[Hier een plaatje opnemen van een bordje?] Het spreekt voor zich dat vluchtwegen en nooduitgangen vrijgehouden moeten worden zodat iedere aanwezige op een veilige manier kan vluchten. In de wet is onder andere opgenomen dat vluchtwegen en nooduitgangen vrij dienen te zijn van obstakels. Het is dus niet vrijblijvend.",
+            "Er mag niets voor brandblussers/brandslanghaspels worden neergezet. Er dient minimaal een meter rondom te worden vrijgehouden. Er zijn verschillende typen brandblussers. In de regel wordt een brandblusser/brandslanghaspel alleen door een bhv'er gebruikt omdat de bhv'er hiervoor is opgeleid.",
+            "Het spreekt voor zich dat vluchtwegen en nooduitgangen vrijgehouden moeten worden zodat iedere aanwezige op een veilige manier kan vluchten. In de wet is onder andere opgenomen dat vluchtwegen en nooduitgangen vrij dienen te zijn van obstakels. Het is dus niet vrijblijvend.",
             "Een handbrandmelder kun je met de hand activeren. Dit kun je doen door middel van het indrukken van het breekglaasje. Na het indrukken wordt het ontruimingsalarm geactiveerd. Hierdoor worden alle aanwezigen gewaarschuwd dat zij het gebouw moeten verlaten.",
             "Een automatische melder wordt geactiveerd door rook en/of temperatuur. Hierna wordt het ontruimingsalarm geactiveerd, zodat alle aanwezigen gewaarschuwd worden dat zij het gebouw moeten verlaten.",
-            "Het is prima als je het landelijke alarmnummer belt, maar neem altijd contact op met het interne alarmnummer. Waarom? Het Koning Willem I College heeft veel locaties. Veel van deze locaties zijn vrij groot. Als een ambulance vertrekt naar het Koning Willem I College weten ze niet waar ze precies moeten zijn. Als je het interne alarmnummer belt, worden de bhv'ers ingeschakeld. Zij kunnen de ambulance opvangen en begeleiden naar de juiste plaats. Daarnaast zijn bhv'ers opgeleid om eerste hulp te verlenen. Zij zijn nagenoeg altijd sneller ter plaatse dan de ambulance. Hoe sneller zij worden opgeroepen, hoe eerder er hulp aanwezig is bij het slachtoffer. Maar ook bij brand kunnen de bhv'ers nog een bluspoging doen en ondersteunen bij een ontruiminging. De locaties van het Koning Willem I College hebben een eigen intern alarmnummer. Je kunt het interne alarmnummer vinden op de alarmkaart. De alarmkaart hangt in alle ruimtes en is duidelijk te herkennen.",
+            "Het is prima als je het landelijke alarmnummer belt, maar neem altijd contact op met het interne alarmnummer. Waarom? Het Koning Willem I College heeft veel locaties. Veel van deze locaties zijn vrij groot. Als een ambulance vertrekt naar het Koning Willem I College weten ze niet waar ze precies moeten zijn. Als je het interne alarmnummer belt, worden de bhv'ers ingeschakeld. Zij kunnen de ambulance opvangen en begeleiden naar de juiste plaats. Daarnaast zijn bhv'ers opgeleid om eerste hulp te verlenen. Zij zijn nagenoeg altijd sneller ter plaatse dan de ambulance. Hoe sneller zij worden opgeroepen, hoe eerder er hulp aanwezig is bij het slachtoffer. Maar ook bij brand kunnen de bhv'ers nog een bluspoging doen en ondersteunen bij een ontruiminging.",
         ];
 
         // Combine questions and answers into a single array
@@ -273,7 +273,7 @@
                 calamiteiten moet<br> omgaan en kun je ook voor jezelf zien hoe jouw kennis ervoor staat. Alvast
                 succes😊
             </p>
-            <button id="start">begin</button>
+            <button id="start">Begin</button>
         </div>
 
         <div id="questions" class="hidden"></div>
@@ -320,8 +320,8 @@
 
                 </p>
                 <div class="quiz-buttons">
-                    <a class="homeLink" href="index.php">HOME</a>
-                    <button id="volgendeQuestion">VOLGENDE</button>
+                    <a class="homeLink" href="index.php">Home</a>
+                    <button id="volgendeQuestion">Volgende</button>
                 </div>
 
             `;
@@ -349,10 +349,16 @@
             function showAnswer(answer, isCorrect) {
                 const answerDiv = document.createElement('div');
                 answerDiv.innerHTML = `
-                        <h3>Antwoord</h3>
-                        <p>${isCorrect ? 'Goed' : 'Fout'}</p><br>
-                        <p>${answer}</p><br>
-                        <button id="volgendeAnswer">volgende</button>
+<div class="questionDiv">
+                        <div class="awnserExpl">
+                            <p class="awnser">${isCorrect ? 'Goed' : 'Fout'}</p><br>
+                            <p>${answer}</p>
+                        </div>
+                        <div class="quiz-buttons">
+                            <a class="homeLink" href="index.php">Home</a>
+                            <button id="volgendeAnswer">Volgende</button>
+                        </div>
+</div>
                     `;
 
                 questionsContainer.appendChild(answerDiv);
@@ -365,8 +371,9 @@
                     if (currentQuestionIndex < questionsArray.length) {
                         showQuestionAndAnswer(currentQuestionIndex);
                     } else {
-                        const resultMessage = `Totaal correcte antwoorden: ${correctAnswers}`;
-                        questionsContainer.innerHTML = `<p>Quiz finished! Thank you!</p><br>${resultMessage}`;
+                        const resultMessage = `Je hebt ${correctAnswers} goede antwoorden, yay?`;
+                        questionsContainer.innerHTML = `<div class="end2"><div class="end"> <p>Je bent klaar met de quiz! Jippie, </p><br>${resultMessage} </div> <a class="homeLink quiz-buttons end-button" href="index.php">Home</a></div>`;
+
                     }
                 });
             }

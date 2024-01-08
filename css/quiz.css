@@ -9,8 +9,8 @@
 }
 img
 {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 /*algemeen*/
 main, .questionDiv, #startQuiz, .test
@@ -35,6 +35,7 @@ h1
     font-weight: bold;
     margin-top: 30px;
     font-size: 48px;
+    margin-bottom: 4vh;
 }
 /*layout*/
 
@@ -56,11 +57,10 @@ footer
 }
 .questionDiv
 {
-    margin-top: 30px;
     flex-direction: column;
     align-items: center;
 }
-.question
+.question, .awnserExpl, .end
 {
     padding: 17px;
     margin:  0 5px 5px 5px;
@@ -70,6 +70,11 @@ footer
     border: 5px solid white;
     box-shadow: 0 0 0 5px red;
     color: white;
+}
+.question
+{
+    height: auto;
+    min-height: 200px;
 }
 .choice
 {
@@ -133,7 +138,7 @@ button, .homeLink
 .startQuizText
 {
     padding: 17px;
-    margin: 27px 5px 27px 5px;
+    margin: 0 5px 27px 5px;
     width: 66vw;
     height: 271px;
     background-color: red;
@@ -141,4 +146,33 @@ button, .homeLink
     box-shadow: 0 0 0 5px red;
     color: white;
     font-size: 24px;
+}
+.awnser
+{
+    font-size: 35px;
+    text-align: center;
+}
+.awnserExpl
+{
+    height: auto;
+}
+.quiz-buttons
+{
+    position: absolute;
+    bottom: 60px;
+    width: 70vw;
+    left: 20vw;
+}
+.end
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.end-button
+{
+    left: 10vw;
+    text-align: center;
+    width: 75vw;
 }
