@@ -173,13 +173,13 @@
                     ["type" => "text", "content" => "Vluchtwegen en nooduitgangen zijn nergens aan te herkennen, en je moet ze vrijhouden zodat hulpverleners er makkelijk uit kunnen gaan."],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Wat is een handbrandmelder?",
+            ["question" => "welke foto is een handbrandmelder?",
                 "options" => [
                     ["type" => "image", "content" => "images/brandblusser.jpg"],
                     ["type" => "image", "content" => "images/alarmknop.jpg"],
                 ],
                 "correctAnswer" => 2,],
-            ["question" => "Wat is een automatische brandmelder?",
+            ["question" => "welke foto is een automatische brandmelder?",
                 "options" => [
                     ["type" => "image", "content" => "images/automitische-melder.jpg"],
                     ["type" => "image", "content" => "images/alarmknop.jpg"],
