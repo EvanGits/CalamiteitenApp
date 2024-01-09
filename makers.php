@@ -40,56 +40,8 @@ include("includes/header.php");
 <div class= "container mt-5"> 
     <div class= "row-fluid justify-content-center" id="wrapper">
 
-     <!--Overzicht van stagebegeleiders --> 
-
-    <div class="col-12">  
-        <h1 class="makers-kop">Stage-begeleiders</h1>
-    </div>
-
-    <div class= "makers-venster">
-        <div class= "makers-afbeelding-vak"> 
-            <img class= "makers-afbeelding" src="images/rohan.png"> 
-
-            <div class= "makers-tekst"> 
-                <b>Rohan van den Braak</b>
-            </div> 
-        </div>
-    </div>
-
-    <div class= "makers-venster">
-        <div class= "makers-afbeelding-vak"> 
-            <img class= "makers-afbeelding" src="images/remco.png"> 
-
-            <div class= "makers-tekst"> 
-                <b>Remco Evers</b>
-            </div> 
-        </div>
-    </div>
-
-    <div class= "makers-venster">
-        <div class= "makers-afbeelding-vak"> 
-            <img class= "makers-afbeelding" src="images/daan.png"> 
-
-            <div class= "makers-tekst"> 
-                <b>Daan Simons</b>
-            </div> 
-        </div>
-    </div>
-
-    <div class= "makers-venster">
-        <div class= "makers-afbeelding-vak"> 
-            <img class= "makers-afbeelding" src="images/florain.png"> 
-
-            <div class= "makers-tekst"> 
-                <b>Florain Verheijen</b>
-            </div> 
-        </div>
-    </div>
-
+    
     <!--Overzicht van softwaredevelopers --> 
-    <div class="col-12">  
-        <h1 class="makers-kop">Softwaredevelopers</h1>
-    </div>
 
     <!-- Maker --> 
         <div class= "makers-venster">
@@ -98,6 +50,7 @@ include("includes/header.php");
 
                 <div class= "makers-tekst"> 
                     <b>Aisha Ambare</b>
+                    <p>Software-developer</p>
                 </div> 
             </div>
         </div>
@@ -110,6 +63,7 @@ include("includes/header.php");
 
                 <div class= "makers-tekst"> 
                     <b>Tygo Bovens</b> 
+                    <p>Software-developer</p>
                 </div> 
             </div>
         </div>
@@ -121,6 +75,7 @@ include("includes/header.php");
 
                 <div class= "makers-tekst"> 
                     <b>Evan Geerts</b>
+                    <p>Software-developer</p>
                 </div> 
             </div>
         </div>
@@ -131,15 +86,13 @@ include("includes/header.php");
                 <img class= "makers-afbeelding" src="images/serezo.png"> 
 
                 <div class= "makers-tekst"> 
-                    <b>Serezo Popelier</b> 
+                    <b>Serezo Popelier</b>
+                    <p>Database-developer</p> 
                 </div> 
             </div>
         </div>  
         
     <!-- Overzicht van mediavormgevers --> 
-    <div class="col-12">  
-        <h1 class="makers-kop">Mediavormgevers</h1>
-    </div>
 
          <!-- Maker --> 
          <div class= "makers-venster">
@@ -148,6 +101,7 @@ include("includes/header.php");
 
                 <div class= "makers-tekst"> 
                     <b>Jens van Berkel</b>
+                    <p>Mediavormgever</p> 
                 </div> 
             </div>
         </div>  
@@ -159,6 +113,7 @@ include("includes/header.php");
 
                 <div class= "makers-tekst"> 
                     <b>Sem Ewouds</b>
+                    <p>Mediavormgever</p>
                 </div> 
             </div>
         </div>  
@@ -169,10 +124,59 @@ include("includes/header.php");
                 <img class= "makers-afbeelding" src="images/colin.png"> 
 
                 <div class= "makers-tekst"> 
-                    <b>Colin Proctor</b> 
+                    <b>Colin Proctor</b>
+                    <p>Mediavormgever</p> 
                 </div> 
             </div>
         </div> 
+
+ <!--Overzicht van stagebegeleiders --> 
+
+ <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/rohan.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Rohan van den Braak</b>
+                <p>Stagebegeleider</p>
+            </div> 
+        </div>
+    </div>
+
+    <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/remco.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Remco Evers</b>
+                <p>Stagebegeleider</p>
+            </div> 
+        </div>
+    </div>
+
+    <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/daan.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Daan Simons</b>
+                <p>Stagebegeleider</p>
+            </div> 
+        </div>
+    </div>
+
+    <div class= "makers-venster">
+        <div class= "makers-afbeelding-vak"> 
+            <img class= "makers-afbeelding" src="images/florain.png"> 
+
+            <div class= "makers-tekst"> 
+                <b>Florain Verheijen</b>
+                <p>Stage-coördinator</p>
+            </div> 
+        </div>
+    </div>
+
+
     </div> 
     </div>
 </body>
