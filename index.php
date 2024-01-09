@@ -12,6 +12,76 @@
    padding: 0;
   }
 
+  .buttons
+  {
+      width: 100px;
+      position: relative;
+
+  }
+
+
+  .button1 {
+      top: 49rem;
+      left: 392px;
+  }
+
+  .button2{
+      top: 118rem;
+      left: 359px;
+  }
+
+
+  .button3{
+      top: 102rem;
+      left: 427px;
+  }
+
+  .button4{
+      top: 60rem;
+      left: -3px;
+  }
+
+  .button5{
+      top: 83rem;
+      left: 174px;
+  }
+
+
+  .button6{
+      top: 69rem;
+      left: -235px;
+  }
+
+  .button7{
+      top: 94rem;
+      right: 249px;
+  }
+
+  .button8{
+      top: 115rem;
+      right: 96px;
+  }
+
+  .button9{
+      top: 71rem;
+      right: 423px;
+  }
+
+
+  .button10{
+      top: 131rem;
+      left: 644px;
+  }
+
+  .button11{
+      top: 111rem;
+  }
+
+  .button12{
+      top: 87rem;
+      left: 427px;
+  }
+
 
 
 
@@ -119,80 +189,23 @@
 
 
   .flatgebouw {
-      background-image: url("images/Gebouw_met_lucht_2.0-01.png");
+      background-image: url(images/Achtergrond.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-      height: calc(116vw / (2140 / 9291)); /* Hoogte wordt berekend op basis van de aspect ratio van de afbeelding */
       background-position: center top 266px;
+      height: 110vh;
+      margin-top: 62vh;
   }
-
-  .buttons{
-      display: grid;
-      width: 184px;
-      position: relative;
-
   }
 
 
-  .button1{
-      top: 120rem;
-      left: 300px;
-  }
 
-  .button2{
-      top: 124rem;
-      left: 119px;
-  }
-
-.button3{
-    top: 136rem;
-    left: 419px;
+  /*Buttons hieronder*/
+.button1{
+    top: ;
 }
 
-  .button4{
-      top: 145rem;
-      left: 401px;
-  }
 
-  .button5{
-      top: 150rem;
-      left: 450px;
-  }
-
-  .button6{
-      top: 164rem;
-      left: 300px;
-  }
-
-.button7{
-    top: 173rem;
-    left: 450px;
-}
-
-.button8{
-    top: 181rem;
-    left: 380px;
-}
-
-  .button9{
-      top: 190rem;
-      left: 300px;
-  }
-
-
-.button10{
-    top: 199rem;
-    left: 629px;
-}
-
-  .button11{
-      top: 207rem;
-  }
-
-  .button12{
-      top: 197rem;
-      left: 521px;
-  }
 
   .intro-wizard-background {
       width: 816px;
@@ -498,6 +511,8 @@
     padding-left: 21px;
     padding-right: 70px;
 }
+
+
  </style>
 </head>
 
