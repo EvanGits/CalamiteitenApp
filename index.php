@@ -19,69 +19,65 @@
 
   }
 
-
-  .button1 {
-      top: 49rem;
+  .button1{
+      top: 39rem;
       left: 392px;
   }
 
   .button2{
-      top: 118rem;
-      left: 359px;
+      top: 111rem;
+      left: 375px;
   }
 
-
   .button3{
-      top: 102rem;
-      left: 427px;
+      top: 93rem;
+      left: 491px;
   }
 
   .button4{
-      top: 60rem;
+      top: 49rem;
       left: -3px;
   }
 
   .button5{
-      top: 83rem;
-      left: 174px;
+      top: 74rem;
+      left: 227px;
   }
 
-
   .button6{
-      top: 69rem;
+      top: 60rem;
       left: -235px;
   }
 
   .button7{
-      top: 94rem;
-      right: 249px;
+      top: 87rem;
+      right: 230px;
   }
 
   .button8{
-      top: 115rem;
-      right: 96px;
+      top: 109rem;
+      right: 72px;
   }
 
   .button9{
-      top: 71rem;
-      right: 423px;
+      top: 61rem;
+      right: 455px;
   }
 
-
   .button10{
-      top: 131rem;
-      left: 644px;
+      top: 130rem;
+      left: 684px;
   }
 
   .button11{
-      top: 111rem;
+      top: 107rem;
+      left: -13px;
   }
 
   .button12{
-      top: 87rem;
-      left: 427px;
+      top: 81rem;
+      left: 453px;
   }
-
 
 
 
@@ -190,13 +186,13 @@
 
   .flatgebouw {
       background-image: url(images/Achtergrond.jpg);
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center top 266px;
+      background-position: center;
       height: 110vh;
       margin-top: 62vh;
   }
-  }
+
 
 
 
