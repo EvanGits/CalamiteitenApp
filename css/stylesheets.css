@@ -23,10 +23,9 @@
     
     /*footer van de pagina*/ 
        .rodebalkonderaan{
-        position: relative; 
+        position: absolute; 
         background-color: var(--theme-color);
         display: flex;
-        bottom: 0;
         left: 0;
         right: 0;
         height: 3.7vh; 

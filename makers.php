@@ -14,6 +14,7 @@ include("includes/header.php");
       <!-- Opmaak --> 
       <link rel="stylesheet" href="css/stylesheets.css">
 
+
     <!-- Titel --> 
         <title>Makers</title>
 
@@ -174,14 +175,12 @@ include("includes/header.php");
         </div> 
     </div> 
     </div>
-</div>
-
 </body>
-
+</html>
 
 <!--Footer--> 
 <footer> 
 <div class="rodebalkonderaan">
     </div>
 </footer>
-<html> 
+ 

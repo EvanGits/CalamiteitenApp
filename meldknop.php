@@ -25,9 +25,7 @@ include("includes/header.php");
         </a>
     </div>
 
-
     <!-- Kop --> 
-
     <div class="col-12">
         <h1 class="meldknop-titel">KW1C Alarmnummers</h1>
     </div>
@@ -139,11 +137,12 @@ include("includes/header.php");
         </il>
 </div>
 </body> 
-
+</html> 
 
 <!--Footer--> 
 <footer> 
 <div class="rodebalkonderaan">
     </div>
 </footer>
-<html> 
+
+
