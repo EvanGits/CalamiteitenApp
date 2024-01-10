@@ -1,522 +1,506 @@
-<?php
-?>
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
- <title>Home</title>
+    <title>Home</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
- <style>
-  *{
-   margin: 0;
-   padding: 0;
-  }
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
-  .buttons
-  {
-      width: 100px;
-      position: relative;
 
-  }
+        .buttons-container{
+            display: flex;
+            position: relative;
+        }
 
-
-  .button1{
-      top: 46rem;
-      left: 374px;
-  }
-
-  .button2{
-      top: 135rem;
-      left: 391px;
-  }
-
-
-  .button3{
-      top: 112rem;
-      left: 545px;
-  }
-
-  .button4{
-      top: 58rem;
-      left: -70px;
-  }
-
-
-  .button5{
-      top: 91rem;
-      left: 273px;
-  }
-
-
-  .button6{
-      top: 73rem;
-      left: -320px;
-  }
-
-  .button7{
-      top: 106rem;
-      right: 230px;
-  }
-
-
-  .button8{
-      top: 138rem;
-      right: 16px;
-  }
-
-
-
-  .button9{
-      top: 76rem;
-      right: 490px;
-  }
-
-
-
-  .button10{
-      top: 159rem;
-      left: 768px;
-  }
-
-
-  .button11{
-      top: 131rem;
-      left: -101px;
-  }
-
-
-  .button12{
-      top: 99rem;
-      left: 506px;
-  }
-
-
-
-  .rodebalktop{
-   background-color: #F9100C;
-   height: 45px;
-  }
-
-  .Index-logo img{
-      width: 783px;
-      position: absolute;
-      left: 93px;
-      top: 61px;
-  }
-
-  .makersbutton{
-      font-size: 86px;
-      background-color: #F9100C;
-      border-color: #F9100C;
-      font-family: Tahoma, serif;
-      padding-left: 150px;
-      padding-right: 150px;
-      position: absolute;
-      right: 200px;
-      top: 500px;
-
-  }
-
-  .Quizbutton{
-      font-family: Tahoma, serif;
-      font-size: 86px;
-      background-color: #F9100C;
-      border-color: #F9100C;
-      padding-right: 205px;
-      padding-left: 203px;
-      position: absolute;
-      top: 668px;
-      right: 194px;
-      z-index: 100;
-  }
-
-
-
-  .vierkantlogo.fixed{
-      position: fixed;
-      top: 0;
-      margin-top: 30px;
-      height: 100px;
-
-  }
-
-
-  /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
-  .Quizbutton.fixed {
-      position: fixed;
-      top: 0;
-      right: 250px;
-      margin-top: 40px;
-      width: 50px;
-      font-size: 70px;
-      padding-left: 82px;
-      padding-right: 218px;
-  }
-
-  .makersbutton.fixed{
-      position: fixed;
-      top: 0;
-      left: 32px;
-      margin-top: 40px;
-      width: 50px;
-      font-size: 70px;
-      padding-right: 257px;
-      padding-left: 43px;
-      z-index: 100;
-  }
-
-
-
-  .Quiztitel,
-  .makerstitel{
-   color: white;
-   text-decoration: none;
-
-  }
-
-
-  .vierkantlogo {
-      background-color: #F9100C;
-      width: 80px;
-      font-size: 95px;
-      position: absolute;
-      right: 0;
-      margin-top: 30px;
-      height: 122px;
-      font-family: Tahoma, serif;
-      text-align: center;
-
-  }
-
-
-   .meldknopi{
-    text-decoration: none;
-    color: white;
-   }
-
-
-  .flatgebouw {
-      background-image: url(images/Achtergrond.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 134vh;
-      margin-top: 62vh;
-      background-size: 138%;
-  }
-
-
-
-
-
-
-
-  .intro-wizard-background {
-      width: 816px;
-      margin-top: -62px;
-  }
-
-  .intro-tekst {
-      margin-top: -104rem;
-      padding-right: 410px;
-      padding-left: 20px;
-  }
-
-.pijltje-wizard{
-    width: 398px;
-    position: fixed;
-    top: 64rem;
-    left: 36rem;
-}
-
-
-
-  .wizard-container-intro {
-      display: none;
-      position: fixed;
-      top: 424px;
-      z-index: 110;
-  }
-
-
-  .wizard-content-intro{
-      color: white;
-      FONT-FAMILY: Tahoma, serif;
-      font-size: 48px;
-
-  }
-
-
-  .wizard-container {
-      display: none;
-      position: relative;
-      top: 0;
-      left: 0;
-      right: 0;
-      justify-content: center;
-      align-items: center;
-      z-index: 8;
-  }
-
-
-
- .wizard-content {
-     position: fixed;
-     bottom: 0;
-     font-family: Tahoma, serif;
-     color: white;
-     width: 100vw;
-     height: 100vh;
-     z-index: 10;
-  }
-
-
-  .info-wizard  {
-      position: absolute;
-      margin-top: 72rem;
-      font-size: 28px;
-      margin-left: 77px;
-  }
-
-  .wizard2-tekst{
-      position: absolute;
-      margin-top: 1163px;
-      font-size: 28px;
-      margin-left: 77px;
-      padding-left: 10px;
-      padding-right: 70px;
-  }
-
-
-
-  .wizard-gebouw {
-      width: 967px;
-      position: fixed;
-      top: 32rem;
-      height: 1001px;
-  }
-
-
-  .close-button {
-      font-size: 50px;
-      position: absolute;
-      top: 46rem;
-      left: 54rem;
-      font-family: cursive;
-  }
-
-
-
-  .wizard-container#wizard6 {
-      z-index: 20;
-  }
-
-  .wizard-container#wizard7 {
-      z-index: 30;
-  }
-
-  .wizard-container#wizard8 {
-      z-index: 40;
-  }
-
-  .wizard-container#wizard9 {
-      z-index: 50;
-  }
-
-  .wizard-container#wizard10 {
-      z-index: 60;
-  }
-
-  .wizard-container#wizard11 {
-      z-index: 70;
-  }
-
-  .wizard-container#wizard12 {
-      z-index: 80;
-  }
-
-  .bhv-vest{
-      width: 245px;
-      position: absolute;
-      top: 47rem;
-      left: 331px;
-      border: solid white 10px;
-  }
-.plattegrond{
-    width: 245px;
-    position: absolute;
-    top: 46rem;
-    left: 22rem;
-    border: solid white 10px;
-}
-
-.rookmelder{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.wizard3-tekst{
-    position: absolute;
-    margin-top: 1044px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-
-.wizard4-tekst{
-    position: absolute;
-    margin-top: 1045px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-
-.blusdeken{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.wizard5-tekst{
-    position: absolute;
-    margin-top: 1119px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-
-.brandblusser{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.evacuatiestoel{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.wizard7-tekst{
-    position: absolute;
-    margin-top: 1050px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-
-.aed{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.wizard8-tekst{
-    position: absolute;
-    margin-top: 1050px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-.handbrandmelder{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.wizard10-tekst{
-    position: absolute;
-    margin-top: 1053px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-.verzamelplaats{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.wizard11-tekst{
-    position: absolute;
-    margin-top: 1060px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-
-.wizard12-tekst{
-    position: absolute;
-    margin-top: 918px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-.nooddeur{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.ehbo{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-
-.wizard6-tekst{
-    position: absolute;
-    margin-top: 1054px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-
-.noodstop{
-    width: 245px;
-    position: absolute;
-    top: 47rem;
-    left: 335px;
-    border: solid white 10px;
-}
-.wizard9-tekst{
-    position: absolute;
-    margin-top: 1063px;
-    font-size: 28px;
-    margin-left: 77px;
-    padding-left: 21px;
-    padding-right: 70px;
-}
-
-
- </style>
+        .buttons{
+            width: 100px;
+        }
+
+        .button1{
+            position: absolute;
+            top: 35vh;
+            left: 39vw;
+        }
+
+
+        .button2 {
+            position: absolute;
+            top: 99vh;
+            left: 51vw;
+        }
+
+
+        .button3{
+            position: absolute;
+            top: 83vh;
+            left: 71vw;
+        }
+
+        .button4{
+            position: absolute;
+            top: 43vh;
+            left: 24vw;
+        }
+
+        .button5{
+            position: absolute;
+            top: 67vh;
+            left: 69vw;
+        }
+
+        .button6{
+            position: absolute;
+            top: 56vh;
+            left: 23vw;
+        }
+
+        .button7{
+            position: absolute;
+            top: 77vh;
+            left: 41vw;
+        }
+
+
+        .button8{
+            position: absolute;
+            top: 100vh;
+            left: 73vw;
+        }
+
+        .button9{
+            position: absolute;
+            top: 56vh;
+            left: 37vw;
+        }
+
+        .button10{
+            position: absolute;
+            top: 121vh;
+            left: 75vw;
+        }
+
+        .button11{
+            position: absolute;
+            top: 100vh;
+            left: 10vw;
+        }
+
+
+        .button12{
+            position: absolute;
+            top: 77vh;
+            left: 72vw;
+        }
+
+
+
+
+
+
+
+        .rodebalktop{
+            background-color: #F9100C;
+            height: 45px;
+        }
+
+        .Index-logo img{
+            width: 783px;
+            position: absolute;
+            left: 93px;
+            top: 61px;
+        }
+
+        .makersbutton{
+            font-size: 86px;
+            background-color: #F9100C;
+            border-color: #F9100C;
+            font-family: Tahoma, serif;
+            padding-left: 150px;
+            padding-right: 150px;
+            position: absolute;
+            right: 200px;
+            top: 500px;
+
+        }
+
+        .Quizbutton{
+            font-family: Tahoma, serif;
+            font-size: 86px;
+            background-color: #F9100C;
+            border-color: #F9100C;
+            padding-right: 205px;
+            padding-left: 203px;
+            position: absolute;
+            top: 668px;
+            right: 194px;
+            z-index: 100;
+        }
+
+
+
+        .vierkantlogo.fixed{
+            position: fixed;
+            top: 0;
+            margin-top: 30px;
+            height: 100px;
+
+        }
+
+
+        /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
+        .Quizbutton.fixed {
+            position: fixed;
+            top: 0;
+            right: 250px;
+            margin-top: 40px;
+            width: 50px;
+            font-size: 70px;
+            padding-left: 82px;
+            padding-right: 218px;
+        }
+
+        .makersbutton.fixed{
+            position: fixed;
+            top: 0;
+            left: 32px;
+            margin-top: 40px;
+            width: 50px;
+            font-size: 70px;
+            padding-right: 257px;
+            padding-left: 43px;
+            z-index: 100;
+        }
+
+
+
+        .Quiztitel,
+        .makerstitel{
+            color: white;
+            text-decoration: none;
+
+        }
+
+
+        .vierkantlogo {
+            background-color: #F9100C;
+            width: 80px;
+            font-size: 95px;
+            position: absolute;
+            right: 0;
+            margin-top: 30px;
+            height: 122px;
+            font-family: Tahoma, serif;
+            text-align: center;
+
+        }
+
+
+        .meldknopi{
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .flatgebouw-content {
+                background-image: url(images/Achtergrond.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height: 130vh;
+                margin-top: 1100px;
+                background-size: cover;
+                overflow: hidden;
+            }
+
+
+
+
+
+
+
+        .intro-wizard-background {
+            width: 816px;
+            margin-top: -62px;
+        }
+
+        .intro-tekst {
+            margin-top: -104rem;
+            padding-right: 410px;
+            padding-left: 20px;
+        }
+
+        .pijltje-wizard{
+            width: 398px;
+            position: fixed;
+            top: 64rem;
+            left: 36rem;
+        }
+
+
+
+        .wizard-container-intro {
+            display: none;
+            position: fixed;
+            top: 424px;
+            z-index: 110;
+        }
+
+
+        .wizard-content-intro{
+            color: white;
+            FONT-FAMILY: Tahoma, serif;
+            font-size: 48px;
+
+        }
+
+
+        .wizard-container {
+            display: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+
+
+        .wizard-content {
+            position: fixed;
+            bottom: 0;
+            font-family: Tahoma, serif;
+            color: white;
+            width: 100vw;
+            height: 100vh;
+            z-index: 200;
+        }
+
+
+        .info-wizard  {
+            position: fixed;
+            margin-top: 72rem;
+            font-size: 28px;
+            margin-left: 77px;
+        }
+
+        .wizard2-tekst{
+            position: fixed;
+            margin-top: 1163px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 10px;
+            padding-right: 70px;
+        }
+
+
+
+        .wizard-gebouw {
+            width: 967px;
+            position: fixed;
+            top: 32rem;
+            height: 1001px;
+        }
+
+
+        .close-button {
+            font-size: 50px;
+            position: absolute;
+            top: 46rem;
+            left: 54rem;
+            font-family: Tahoma;
+        }
+
+
+
+        .bhv-vest{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 331px;
+            border: solid white 10px;
+        }
+        .plattegrond{
+            width: 245px;
+            position: fixed;
+            top: 46rem;
+            left: 22rem;
+            border: solid white 10px;
+        }
+
+        .rookmelder{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .wizard3-tekst{
+            position: fixed;
+            margin-top: 1044px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+
+        .wizard4-tekst{
+            position: fixed;
+            margin-top: 1045px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+
+        .blusdeken{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .wizard5-tekst{
+            position: fixed;
+            margin-top: 1119px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+
+        .brandblusser{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .evacuatiestoel{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .wizard7-tekst{
+            position: fixed;
+            margin-top: 1050px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+
+        .aed{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .wizard8-tekst{
+            position: fixed;
+            margin-top: 1050px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+        .handbrandmelder{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .wizard10-tekst{
+            position: fixed;
+            margin-top: 1053px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+        .verzamelplaats{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .wizard11-tekst{
+            position: fixed;
+            margin-top: 1060px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+
+        .wizard12-tekst{
+            position: fixed;
+            margin-top: 918px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+        .nooddeur{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .ehbo{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+
+        .wizard6-tekst{
+            position: fixed;
+            margin-top: 1054px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+
+        .noodstop{
+            width: 245px;
+            position: fixed;
+            top: 47rem;
+            left: 335px;
+            border: solid white 10px;
+        }
+        .wizard9-tekst{
+            position: fixed;
+            margin-top: 1063px;
+            font-size: 28px;
+            margin-left: 77px;
+            padding-left: 21px;
+            padding-right: 70px;
+        }
+
+
+    </style>
 </head>
 
 
@@ -530,15 +514,15 @@
         <img src="images/Pijltjes_wizard-01.png" alt="pijltje-wizard" class="pijltje-wizard" id="closeIntroWizard">
         <div class="intro-tekst">
 
-        <h2>Welkom bij de Applicatie</h2>
-        <br>
-        <p>Een ongeval op het Koning Willem I College… wat nu? <br> <br>
-            Iedereen wil aan het einde van de dag weer veilig naar huis. Daarom
-            streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
-            Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
-            Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
-            wij jou te hebben geïnformeerd als dat gebeurt.
-        </p>
+            <h2>Welkom bij de Applicatie</h2>
+            <br>
+            <p>Een ongeval op het Koning Willem I College… wat nu? <br> <br>
+                Iedereen wil aan het einde van de dag weer veilig naar huis. Daarom
+                streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
+                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
+                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
+                wij jou te hebben geïnformeerd als dat gebeurt.
+            </p>
 
         </div>
     </div>
@@ -549,27 +533,27 @@
 </div>
 
 <div class="vierkantlogo">
- <a href="meldknop.php" class="meldknopi">i</a>
+    <a href="meldknop.php" class="meldknopi">i</a>
 </div>
 
 <h1 class="Index-logo">
-<img src="images/logo_def-01.png" alt="calmlogo">
+    <img src="images/logo_def-01.png" alt="calmlogo">
 </h1>
 
 <button class="makersbutton">
- <a href="makers.php" class="makerstitel">Makers</a>
+    <a href="makers.php" class="makerstitel">Makers</a>
 </button>
 
 <button class="Quizbutton">
- <a href="quiztest.php" class="Quiztitel">Quiz</a>
+    <a href="quiztest.php" class="Quiztitel">Quiz</a>
 </button>
 
 
 
 
 <!--Flat als achtergrond en buttons-->
-<div class="flatgebouw">
-
+<div class="flatgebouw-content">
+    <div class="buttons-container">
     <img src="images/Gif1.gif"  alt="button1" class="button1 buttons" id="button1">
 
     <img src="images/Gif1.gif" alt="button2" class="button2 buttons" id="button2">
@@ -593,7 +577,8 @@
     <img src="images/Gif1.gif" alt="button11" class="button11 buttons" id="button11">
 
     <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
-</div>
+    </div>
+    </div>
 
 
 <!-- Wizard-vensters -->
@@ -602,14 +587,16 @@
 <div class="wizard-container" id="wizard1">
     <div class="wizard-content">
         <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
+        <div>
         <span class="close-button" id="close1">X</span>
         <img src="images/bhv-vest.jpg" alt="bhv-vest" class="bhv-vest">
         <div class="info-wizard">
-        <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning<br> Willem I College is het team van
-            bedrijfshulpverleners (bhv’ers). <br>Bhv’ers zijn getrainde medewerkers die specifieke taken en
-            verantwoordelijkheden hebben als zich een calamiteit voordoet. </p>
+            <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning<br> Willem I College is het team van
+                bedrijfshulpverleners (bhv’ers). <br>Bhv’ers zijn getrainde medewerkers die specifieke taken en
+                verantwoordelijkheden hebben als zich een calamiteit voordoet. </p>
         </div>
     </div>
+</div>
 </div>
 
 <div class="wizard-container" id="wizard2">
@@ -618,9 +605,9 @@
         <span class="close-button" id="close2">X</span>
         <img src="images/plattegrond.png" alt="plattegrond" class="plattegrond">
         <div class="wizard2-tekst">
-        <p>Veiligheid heeft bij het Koning Willem I College een hoge prioriteit.
-            Een belangrijk hulpmiddel dat
-            we hiervoor gebruiken, is de ontruimingsplattegrond.</p>
+            <p>Veiligheid heeft bij het Koning Willem I College een hoge prioriteit.
+                Een belangrijk hulpmiddel dat
+                we hiervoor gebruiken, is de ontruimingsplattegrond.</p>
         </div>
     </div>
 </div>
@@ -632,10 +619,10 @@
         <span class="close-button" id="close3">X</span>
         <img src="images/rookmelder.png" alt="rookmelder" class="rookmelder">
         <div class="wizard3-tekst">
-        <p>Automatische melders activeren zelf het brandalarm wanneer er rook
-            of hitte wordt gedetecteerd. <br> <br>  Een verschil met de handbrandmelders is
-            dat het ontruimingsalarm alleen in dat specifiek deel van het gebouw
-            afgaat. De andere delen van het gebouw volgen als de brand niet wordt gedoofd.</p>
+            <p>Automatische melders activeren zelf het brandalarm wanneer er rook
+                of hitte wordt gedetecteerd. <br> <br>  Een verschil met de handbrandmelders is
+                dat het ontruimingsalarm alleen in dat specifiek deel van het gebouw
+                afgaat. De andere delen van het gebouw volgen als de brand niet wordt gedoofd.</p>
         </div>
     </div>
 </div>
@@ -648,12 +635,12 @@
         <span class="close-button" id="close4">X</span>
         <img src="images/blusdeken.png" alt="blusdeken" class="blusdeken">
         <div class="wizard4-tekst">
-        <p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om
-            kleine branden te doven door de zuurstof af te snijden en de vlammen te smoren.
-        <br> <br>
-            De blusdekens worden in de regel alleen gebruikt door de bhv’ers tijdens een
-            calamiteit. Veiligheid is een gedeelde verantwoordelijkheid.
-        </p>
+            <p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om
+                kleine branden te doven door de zuurstof af te snijden en de vlammen te smoren.
+                <br> <br>
+                De blusdekens worden in de regel alleen gebruikt door de bhv’ers tijdens een
+                calamiteit. Veiligheid is een gedeelde verantwoordelijkheid.
+            </p>
         </div>
     </div>
 </div>
@@ -665,8 +652,8 @@
         <span class="close-button" id="close5">X</span>
         <img src="images/brandblusser.png" alt="brandblusser" class="brandblusser">
         <div class="wizard5-tekst">
-        <p>Een brandblusser is een draagbaar apparaat dat specifiek is ontworpen om beginnende
-            branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat een kleine brand zich uitbreidt..</p>
+            <p>Een brandblusser is een draagbaar apparaat dat specifiek is ontworpen om beginnende
+                branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat een kleine brand zich uitbreidt..</p>
         </div>
     </div>
 </div>
@@ -678,13 +665,13 @@
         <span class="close-button" id="close6">X</span>
         <img src="images/ehbo.png" alt="ehbo" class="ehbo">
         <div class="wizard6-tekst">
-        <p>De EHBO-koffers zijn strategisch geplaatst binnen de locaties van het
-            Koning Willem I College en bevatten een verscheidenheid aan benodigdheden en
-            apparatuur om eerste hulp te verlenen. Denk hierbij aan verbandmiddelen, ontsmettingsmiddelen,
-            handschoenen en een reddingsdeken.De EHBO-koffer is een van de hulpmiddelen van de bedrijfshulpverlener
-            (bhv’er). </p>
+            <p>De EHBO-koffers zijn strategisch geplaatst binnen de locaties van het
+                Koning Willem I College en bevatten een verscheidenheid aan benodigdheden en
+                apparatuur om eerste hulp te verlenen. Denk hierbij aan verbandmiddelen, ontsmettingsmiddelen,
+                handschoenen en een reddingsdeken.De EHBO-koffer is een van de hulpmiddelen van de bedrijfshulpverlener
+                (bhv’er). </p>
         </div>
-        </div>
+    </div>
 </div>
 
 <div class="wizard-container" id="wizard7">
@@ -709,14 +696,14 @@
         <span class="close-button" id="close8">X</span>
         <img src="images/aed.png" alt="aed" class="aed">
         <div class="wizard8-tekst">
-        <p>De Automatische Externe Defibrillator (AED) wordt ingezet
-            in het geval dat iemand een hartstilstand krijgt. Op iedere
-            locatie van het Koning Willem I College is minstens een AED
-            aanwezig. Op sommige locaties zijn meerdere AED’s aanwezig.
-            De AED is een draagbaar apparaat dat specifiek ontworpen is om een
-            elektrische schok te leveren aan het hart van een persoon met een hartritmestoornis</p>
+            <p>De Automatische Externe Defibrillator (AED) wordt ingezet
+                in het geval dat iemand een hartstilstand krijgt. Op iedere
+                locatie van het Koning Willem I College is minstens een AED
+                aanwezig. Op sommige locaties zijn meerdere AED’s aanwezig.
+                De AED is een draagbaar apparaat dat specifiek ontworpen is om een
+                elektrische schok te leveren aan het hart van een persoon met een hartritmestoornis</p>
         </div>
-        </div>
+    </div>
 </div>
 
 
@@ -726,13 +713,13 @@
     <div class="wizard-content">
         <span class="close-button" id="close9">X</span>
         <img src="images/noodstop.png" alt="noodstop" class="noodstop">
-      <div class="wizard9-tekst">
-        <p>Op sommige plekken bij het Koning Willem I College zijn
-            er specifieke veiligheidsvoorzieningen aanwezig om snel en
-            doeltreffend te reageren als er (mogelijk) een ongeval plaatsvindt.
-            Denk hierbij aan noodstoppen.Noodstoppen zijn ontworpen om onmiddellijk
-            de werking van machines, apparatuur of gasstromen te laten stoppen in geval van een noodsituatie.</p>
-      </div>
+        <div class="wizard9-tekst">
+            <p>Op sommige plekken bij het Koning Willem I College zijn
+                er specifieke veiligheidsvoorzieningen aanwezig om snel en
+                doeltreffend te reageren als er (mogelijk) een ongeval plaatsvindt.
+                Denk hierbij aan noodstoppen.Noodstoppen zijn ontworpen om onmiddellijk
+                de werking van machines, apparatuur of gasstromen te laten stoppen in geval van een noodsituatie.</p>
+        </div>
     </div>
 </div>
 
@@ -743,13 +730,13 @@
         <span class="close-button" id="close10">X</span>
         <img src="images/handbrandmelder.png" alt="handbrandmelder" class="handbrandmelder">
         <div class="wizard10-tekst">
-        <p>Handbrandmelders zijn hulpmiddelen die een aanwezige
-            in staat stelt om handmatig een brandalarm te activeren
-            als er brand of rook wordt waargenomen. Het activeren van
-            een handbrandmelder zorgt ervoor dat er in het hele gebouw
-            een ontruimingsalarm afgaat en de bedrijfshulpverleners (bhv’ers) worden gealarmeerd.</p>
+            <p>Handbrandmelders zijn hulpmiddelen die een aanwezige
+                in staat stelt om handmatig een brandalarm te activeren
+                als er brand of rook wordt waargenomen. Het activeren van
+                een handbrandmelder zorgt ervoor dat er in het hele gebouw
+                een ontruimingsalarm afgaat en de bedrijfshulpverleners (bhv’ers) worden gealarmeerd.</p>
         </div>
-        </div>
+    </div>
 </div>
 
 
@@ -758,13 +745,13 @@
     <div class="wizard-content">
         <span class="close-button" id="close11">X</span>
         <img src="images/verzamelplaats.png" alt="verzamelplaats" class="verzamelplaats">
-     <div class="wizard11-tekst">
-        <p>De verzamelplaats is een essentieel onderdeel
-            van de brandveiligheidsmaatregelen bij het Koning Willem I
-            College. Als er sprake is van een calamiteit, bijvoorbeeld
-            wanneer het ontruimingsalarm afgaat, is de verzamelplaats de
-            aangewezen locatie waar alle studenten, medewerkers en bezoekers zich moeten verzamelen.</p>
-     </div>
+        <div class="wizard11-tekst">
+            <p>De verzamelplaats is een essentieel onderdeel
+                van de brandveiligheidsmaatregelen bij het Koning Willem I
+                College. Als er sprake is van een calamiteit, bijvoorbeeld
+                wanneer het ontruimingsalarm afgaat, is de verzamelplaats de
+                aangewezen locatie waar alle studenten, medewerkers en bezoekers zich moeten verzamelen.</p>
+        </div>
     </div>
 </div>
 
@@ -774,159 +761,159 @@
     <div class="wizard-content">
         <span class="close-button" id="close12">X</span>
         <img src="images/nooddeur.png" alt="nooddeur" class="nooddeur">
-       <div class="wizard12-tekst">
-        <p>Het Koning Willem I College wil graag voorkomen dat er calamiteiten plaatsvinden.
-            Toch kan er soms iets misgaan, waardoor er kleine of grotere calamiteiten plaatsvinden.
-            Om ervoor te zorgen dat studenten, medewerkers en bezoekers veilig de gebouwen kunnen
-            verlaten tijdens zo’n calamiteit zijn er vluchtroutes en nooddeuren aanwezig.<br> <br>Nooddeuren
-            zijn speciaal ontworpen deuren die gemakkelijk en snel kunnen worden geopend
-            calamiteiten. Ze mogen niet worden geblokkeerd, moeten zonder sleutel te openen zijn en moeten altijd duidelijk herkenbaar zijn.
-        </p>
-       </div>
+        <div class="wizard12-tekst">
+            <p>Het Koning Willem I College wil graag voorkomen dat er calamiteiten plaatsvinden.
+                Toch kan er soms iets misgaan, waardoor er kleine of grotere calamiteiten plaatsvinden.
+                Om ervoor te zorgen dat studenten, medewerkers en bezoekers veilig de gebouwen kunnen
+                verlaten tijdens zo’n calamiteit zijn er vluchtroutes en nooddeuren aanwezig.<br> <br>Nooddeuren
+                zijn speciaal ontworpen deuren die gemakkelijk en snel kunnen worden geopend
+                calamiteiten. Ze mogen niet worden geblokkeerd, moeten zonder sleutel te openen zijn en moeten altijd duidelijk herkenbaar zijn.
+            </p>
+        </div>
     </div>
 </div>
 
 
-    <script>
-        // Functie om een cookie in te stellen
-        function setCookie(cname, cvalue, exdays) {
-            var d = new Date();
-            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-            var expires = "expires=" + d.toUTCString();
-            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        }
+<script>
+    // Functie om een cookie in te stellen
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
 
-        // Functie om de waarde van een cookie op te halen
-        function getCookie(cname) {
-            var name = cname + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var ca = decodedCookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
+    // Functie om de waarde van een cookie op te halen
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
             }
-            return "";
-        }
-
-        // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
-        function handleIntroWizard() {
-            var introWizard = document.getElementById('introWizard');
-            var closeButton = document.getElementById('closeIntroWizard');
-
-            // Controleer of de cookie is ingesteld
-            if (getCookie('introWizardClosed') !== 'true') {
-                // Toon de intro-wizard als de cookie niet is ingesteld
-                introWizard.style.display = "flex";
-            } else {
-                // Verberg de intro-wizard als de cookie is ingesteld
-                introWizard.style.display = "none";
-                // Toon de close button, zodat gebruikers de wizard opnieuw kunnen openen
-                closeButton.style.display = "block";
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
             }
         }
+        return "";
+    }
 
-        // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
-        function closeIntroWizard() {
-            var introWizard = document.getElementById('introWizard');
-            var closeButton = document.getElementById('closeIntroWizard');
+    // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
+    function handleIntroWizard() {
+        var introWizard = document.getElementById('introWizard');
+        var closeButton = document.getElementById('closeIntroWizard');
 
-            // Sluit de intro wizard
-            introWizard.style.display = "none";
-            // Toon de close button voor heropenen
-            closeButton.style.display = "block";
-
-            // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
-            setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
-        }
-
-        // Functie om de introductiewizard opnieuw te openen wanneer de gebruiker op 'close' klikt
-        function reopenIntroWizard() {
-            var introWizard = document.getElementById('introWizard');
-            var closeButton = document.getElementById('closeIntroWizard');
-
-            // Toon de intro-wizard
+        // Controleer of de cookie is ingesteld
+        if (getCookie('introWizardClosed') !== 'true') {
+            // Toon de intro-wizard als de cookie niet is ingesteld
             introWizard.style.display = "flex";
-            // Verberg de close button
-            closeButton.style.display = "none";
+        } else {
+            // Verberg de intro-wizard als de cookie is ingesteld
+            introWizard.style.display = "none";
+            // Toon de close button, zodat gebruikers de wizard opnieuw kunnen openen
+            closeButton.style.display = "block";
         }
+    }
 
-        window.addEventListener('load', function () {
-            handleIntroWizard();
+    // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
+    function closeIntroWizard() {
+        var introWizard = document.getElementById('introWizard');
+        var closeButton = document.getElementById('closeIntroWizard');
+
+        // Sluit de intro wizard
+        introWizard.style.display = "none";
+        // Toon de close button voor heropenen
+        closeButton.style.display = "block";
+
+        // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
+        setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
+    }
+
+    // Functie om de introductiewizard opnieuw te openen wanneer de gebruiker op 'close' klikt
+    function reopenIntroWizard() {
+        var introWizard = document.getElementById('introWizard');
+        var closeButton = document.getElementById('closeIntroWizard');
+
+        // Toon de intro-wizard
+        introWizard.style.display = "flex";
+        // Verberg de close button
+        closeButton.style.display = "none";
+    }
+
+    window.addEventListener('load', function () {
+        handleIntroWizard();
+    });
+
+    document.getElementById('closeIntroWizard').addEventListener('click', function () {
+        closeIntroWizard();
+    });
+</script>
+
+
+
+
+<script>
+    // Function to open the wizard window
+    function openWizard(wizardId) {
+        document.getElementById(wizardId).style.display = "flex";
+    }
+
+    // Function to close the wizard window
+    function closeWizard(wizardId) {
+        document.getElementById(wizardId).style.display = "none";
+    }
+
+    $(document).ready(function () {
+        // Vierkantlogo
+        var logo = $(".vierkantlogo");
+        var logoOffset = logo.offset().top;
+
+        $(window).scroll(function () {
+            logo.toggleClass("fixed", $(window).scrollTop() > logoOffset);
         });
 
-        document.getElementById('closeIntroWizard').addEventListener('click', function () {
-            closeIntroWizard();
-        });
-    </script>
+        // Makersbutton
+        var makersButton = $(".makersbutton");
+        var makersOffset = makersButton.offset().top;
 
-
-
-
-    <script>
-        // Function to open the wizard window
-        function openWizard(wizardId) {
-            document.getElementById(wizardId).style.display = "flex";
-        }
-
-        // Function to close the wizard window
-        function closeWizard(wizardId) {
-            document.getElementById(wizardId).style.display = "none";
-        }
-
-        $(document).ready(function () {
-            // Vierkantlogo
-            var logo = $(".vierkantlogo");
-            var logoOffset = logo.offset().top;
-
-            $(window).scroll(function () {
-                logo.toggleClass("fixed", $(window).scrollTop() > logoOffset);
-            });
-
-            // Makersbutton
-            var makersButton = $(".makersbutton");
-            var makersOffset = makersButton.offset().top;
-
-            $(window).scroll(function () {
-                makersButton.toggleClass("fixed", $(window).scrollTop() > makersOffset);
-            });
-
-            // Quizbutton
-            var quizButton = $(".Quizbutton");
-            var quizOffset = quizButton.offset().top;
-
-            $(window).scroll(function () {
-                quizButton.toggleClass("fixed", $(window).scrollTop() > quizOffset);
-            });
-
-            // Add click event listeners for all buttons
-            for (let i = 1; i <= 12; i++) {
-                const buttonId = "button" + i;
-                const wizardId = "wizard" + i;
-
-                // Open the wizard when the button is clicked
-                document.getElementById(buttonId).addEventListener("click", function() {
-                    openWizard(wizardId);
-                });
-
-                // Close the wizard when the close button is clicked
-                document.getElementById("close" + i).addEventListener("click", function() {
-                    closeWizard(wizardId);
-
-                });
-            }
+        $(window).scroll(function () {
+            makersButton.toggleClass("fixed", $(window).scrollTop() > makersOffset);
         });
 
-        function openIntroWizard() {
-            document.getElementById('introWizard').style.display = "flex";
-            $(".vierkantlogo, .makersbutton, .Quizbutton").removeClass("fixed");
-        }
+        // Quizbutton
+        var quizButton = $(".Quizbutton");
+        var quizOffset = quizButton.offset().top;
 
-    </script>
+        $(window).scroll(function () {
+            quizButton.toggleClass("fixed", $(window).scrollTop() > quizOffset);
+        });
+
+        // Add click event listeners for all buttons
+        for (let i = 1; i <= 12; i++) {
+            const buttonId = "button" + i;
+            const wizardId = "wizard" + i;
+
+            // Open the wizard when the button is clicked
+            document.getElementById(buttonId).addEventListener("click", function() {
+                openWizard(wizardId);
+            });
+
+            // Close the wizard when the close button is clicked
+            document.getElementById("close" + i).addEventListener("click", function() {
+                closeWizard(wizardId);
+
+            });
+        }
+    });
+
+    function openIntroWizard() {
+        document.getElementById('introWizard').style.display = "flex";
+        $(".vierkantlogo, .makersbutton, .Quizbutton").removeClass("fixed");
+    }
+
+</script>
 
 </body>
 </html>
