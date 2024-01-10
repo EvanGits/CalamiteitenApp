@@ -145,7 +145,7 @@
                 "correctAnswer" => 1,],
             ["question" => "Aan welk bord herken je een verzamelplaats?",
                 "options" => [
-                    ["type" => "image", "content" => "images/verzamel-fout.png"],
+                    ["type" => "image", "content" => "images/ehbo.png"],
                     ["type" => "image", "content" => "images/verzamelplaats.png"],
                 ],
                 "correctAnswer" => 2,],
@@ -371,8 +371,8 @@
                     if (currentQuestionIndex < questionsArray.length) {
                         showQuestionAndAnswer(currentQuestionIndex);
                     } else {
-                        const resultMessage = `Je hebt ${correctAnswers} goede antwoorden, yay?`;
-                        questionsContainer.innerHTML = `<div class="end2"><div class="end"> <p>Je bent klaar met de quiz! Jippie, </p><br>${resultMessage} </div> <a class="homeLink quiz-buttons end-button" href="index.php">Home</a></div>`;
+                        const resultMessage = `Je hebt ${correctAnswers} goede antwoorden.`;
+                        questionsContainer.innerHTML = `<div class="end2"><div class="end"> ${resultMessage} </div> <a class="homeLink quiz-buttons end-button" href="index.php">Home</a></div>`;
 
                     }
                 });
