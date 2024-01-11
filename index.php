@@ -97,7 +97,11 @@
             left: 72vw;
         }
 
-
+        .button13{
+            position: absolute;
+            top: 48vh;
+            left: 23vw;
+        }
 
 
 
@@ -210,7 +214,7 @@
                 background-image: url(images/Achtergrond.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
-                min-height: 130vh;
+                min-height: 136vh;
                 margin-top: 1100px;
                 background-size: cover;
                 overflow: hidden;
@@ -499,6 +503,11 @@
             padding-right: 70px;
         }
 
+        .wizard13-tekst{
+            position: fixed;
+            top: 69rem;
+            left: 422px;
+        }
 
     </style>
 </head>
@@ -577,6 +586,8 @@
     <img src="images/Gif1.gif" alt="button11" class="button11 buttons" id="button11">
 
     <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
+
+   <img src="images/Gif1.gif" alt="button13" class="button13 buttons" id="button13">
     </div>
     </div>
 
@@ -774,7 +785,29 @@
 </div>
 
 
+<div class="wizard-container" id="wizard13">
+    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
+    <div class="wizard-content">
+        <span class="close-button" id="close13">X</span>
+        <div class="wizard13-tekst">
+            <p> wizard 3
+            </p>
+        </div>
+    </div>
+</div>
+
+
 <script>
+    window.addEventListener('load', function () {
+        // Voeg de event listener toe voor het sluiten van de wizard
+        document.getElementById('closeIntroWizard').addEventListener('click', function () {
+            closeIntroWizard();
+        });
+
+        // Roep de handleIntroWizard functie op om de wizard te tonen/verbergen op basis van de cookie-status
+        handleIntroWizard();
+    });
+
     // Functie om een cookie in te stellen
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
@@ -841,14 +874,49 @@
         // Verberg de close button
         closeButton.style.display = "none";
     }
+    }
 
-    window.addEventListener('load', function () {
-        handleIntroWizard();
-    });
+    // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
+    function handleIntroWizard() {
+        var introWizard = document.getElementById('introWizard');
+        var closeButton = document.getElementById('closeIntroWizard');
 
-    document.getElementById('closeIntroWizard').addEventListener('click', function () {
-        closeIntroWizard();
-    });
+        // Controleer of de cookie is ingesteld
+        if (getCookie('introWizardClosed') !== 'true') {
+            // Toon de intro-wizard als de cookie niet is ingesteld
+            introWizard.style.display = "flex";
+        } else {
+            // Verberg de intro-wizard als de cookie is ingesteld
+            introWizard.style.display = "none";
+            // Toon de close button, zodat gebruikers de wizard opnieuw kunnen openen
+            closeButton.style.display = "block";
+        }
+    }
+
+    // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
+    function closeIntroWizard() {
+        var introWizard = document.getElementById('introWizard');
+        var closeButton = document.getElementById('closeIntroWizard');
+
+        // Sluit de intro wizard
+        introWizard.style.display = "none";
+        // Toon de close button voor heropenen
+        closeButton.style.display = "block";
+
+        // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
+        setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
+    }
+
+    // Functie om de introductiewizard opnieuw te openen wanneer de gebruiker op 'close' klikt
+    function reopenIntroWizard() {
+        var introWizard = document.getElementById('introWizard');
+        var closeButton = document.getElementById('closeIntroWizard');
+
+        // Toon de intro-wizard
+        introWizard.style.display = "flex";
+        // Verberg de close button
+        closeButton.style.display = "none";
+    }
 </script>
 
 
@@ -891,7 +959,7 @@
         });
 
         // Add click event listeners for all buttons
-        for (let i = 1; i <= 12; i++) {
+        for (let i = 1; i <= 13; i++) {
             const buttonId = "button" + i;
             const wizardId = "wizard" + i;
 
