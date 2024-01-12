@@ -263,7 +263,7 @@
 
 
         .wizard-container {
-            display: none;
+            display: none; 
             position: relative;
             top: 0;
             left: 0;
@@ -277,20 +277,25 @@
 
         .wizard-content {
             position: fixed;
-            bottom: 0;
+            top: 40%;
             font-family: Tahoma, serif;
             color: white;
-            width: 100vw;
-            height: 100vh;
+            width: 80vw;
+            background-color: #00000080;
+            border-radius: 5%;
             z-index: 200;
         }
-
+        
+        .wizard-menu{
+            display: flex;
+            justify-content: center;
+        }
 
         .info-wizard  {
-            position: fixed;
-            margin-top: 72rem;
-            font-size: 28px;
-            margin-left: 77px;
+            font-size: 3.3vw;
+            position: relative;
+            bottom: 0;
+            padding: 2.5vw;
         }
 
         .wizard2-tekst{
@@ -313,22 +318,24 @@
 
 
         .close-button {
-            font-size: 50px;
+            font-size: 6vw;
             position: absolute;
-            top: 46rem;
-            left: 54rem;
+            left: 90%;
             font-family: Tahoma;
         }
 
 
 
-        .bhv-vest{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 331px;
+        .img-default{
+            margin-top: 2.7vh;
+            width: 20vw;
             border: solid white 10px;
         }
+
+        .bhv-vest{
+
+        }
+
         .plattegrond{
             width: 245px;
             position: fixed;
@@ -597,191 +604,224 @@
 
 <div class="wizard-container" id="wizard1">
     <div class="wizard-content">
-        <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
-        <div>
-        <span class="close-button" id="close1">X</span>
-        <img src="images/bhv-vest.jpg" alt="bhv-vest" class="bhv-vest">
-        <div class="info-wizard">
-            <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning<br> Willem I College is het team van
-                bedrijfshulpverleners (bhv’ers). <br>Bhv’ers zijn getrainde medewerkers die specifieke taken en
-                verantwoordelijkheden hebben als zich een calamiteit voordoet. </p>
-        </div>
-    </div>
-</div>
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/bhv-vest.jpg" alt="bhv-vest" class="img-default">
+            </div> 
+            <span class="close-button" id="close1">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning<br> Willem I College is het team van
+                    bedrijfshulpverleners (bhv’ers). <br>Bhv’ers zijn getrainde medewerkers die specifieke taken en
+                    verantwoordelijkheden hebben als zich een calamiteit voordoet. </p>
+            </div>
+      </div>
 </div>
 
+
 <div class="wizard-container" id="wizard2">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close2">X</span>
-        <img src="images/plattegrond.png" alt="plattegrond" class="plattegrond">
-        <div class="wizard2-tekst">
-            <p>Veiligheid heeft bij het Koning Willem I College een hoge prioriteit.
-                Een belangrijk hulpmiddel dat
-                we hiervoor gebruiken, is de ontruimingsplattegrond.</p>
-        </div>
-    </div>
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/plattegrond.png" alt="plattegrond" class="img-default">
+            </div> 
+            <span class="close-button" id="close2">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>Veiligheid heeft het Koning Willem I College een hoge prioriteit.<br>
+                Een belangrijk hulpmiddel dat we hiervoor gebruiken is de ontruimingsplattegrond </p>
+            </div>
+      </div>
 </div>
 
 
 <div class="wizard-container" id="wizard3">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close3">X</span>
-        <img src="images/rookmelder.png" alt="rookmelder" class="rookmelder">
-        <div class="wizard3-tekst">
-            <p>Automatische melders activeren zelf het brandalarm wanneer er rook
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/rookmelder.png" alt="rookmelder" class="img-default">
+            </div> 
+            <span class="close-button" id="close3">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>Automatische melders activeren zelf het brandalarm wanneer er rook
                 of hitte wordt gedetecteerd. <br> <br>  Een verschil met de handbrandmelders is
                 dat het ontruimingsalarm alleen in dat specifiek deel van het gebouw
                 afgaat. De andere delen van het gebouw volgen als de brand niet wordt gedoofd.</p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
 
 <div class="wizard-container" id="wizard4">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close4">X</span>
-        <img src="images/blusdeken.png" alt="blusdeken" class="blusdeken">
-        <div class="wizard4-tekst">
-            <p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/blusdeken.png" alt="blusdeken" class="img-default">
+            </div> 
+            <span class="close-button" id="close4">X</span>
+            </div> 
+            <div class="info-wizard">
+            	<p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om
                 kleine branden te doven door de zuurstof af te snijden en de vlammen te smoren.
                 <br> <br>
                 De blusdekens worden in de regel alleen gebruikt door de bhv’ers tijdens een
                 calamiteit. Veiligheid is een gedeelde verantwoordelijkheid.
-            </p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
+
 <div class="wizard-container" id="wizard5">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close5">X</span>
-        <img src="images/brandblusser.png" alt="brandblusser" class="brandblusser">
-        <div class="wizard5-tekst">
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/brandblusser.png" alt="brandblusser" class="img-default">
+            </div> 
+            <span class="close-button" id="close5">X</span>
+            </div> 
+            <div class="info-wizard">
             <p>Een brandblusser is een draagbaar apparaat dat specifiek is ontworpen om beginnende
-                branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat een kleine brand zich uitbreidt..</p>
-        </div>
-    </div>
+            branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat een kleine brand zich uitbreidt.</p>
+            </div>
+      </div>
 </div>
 
 
 <div class="wizard-container" id="wizard6">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close6">X</span>
-        <img src="images/ehbo.png" alt="ehbo" class="ehbo">
-        <div class="wizard6-tekst">
-            <p>De EHBO-koffers zijn strategisch geplaatst binnen de locaties van het
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/ehbo.png" alt="ehbo" class="img-default">
+            </div> 
+            <span class="close-button" id="close6">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>De EHBO-koffers zijn strategisch geplaatst binnen de locaties van het
                 Koning Willem I College en bevatten een verscheidenheid aan benodigdheden en
                 apparatuur om eerste hulp te verlenen. Denk hierbij aan verbandmiddelen, ontsmettingsmiddelen,
                 handschoenen en een reddingsdeken.De EHBO-koffer is een van de hulpmiddelen van de bedrijfshulpverlener
                 (bhv’er). </p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 <div class="wizard-container" id="wizard7">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close7">X</span>
-        <img src="images/Evacuatiestoel.png" alt="evacuatiestoel" class="evacuatiestoel">
-        <div class="wizard7-tekst">
-            <p>De evacuatiestoel (evac-chair) is een van de hulpmiddelen
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/Evacuatiestoel.png" alt="evacuatiestoel" class="img-default">
+            </div> 
+            <span class="close-button" id="close7">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>De evacuatiestoel (evac-chair) is een van de hulpmiddelen
                 van de bedrijfshulpverlener (bhv’er). De bhv’er zal de evac-chair
                 gebruiken bij het vervoeren van mensen met een beperkte mobiliteit
                 (zoals rolstoelgebruikers) of slachtoffers die niet meer kunnen lopen.
                 Met name wordt de evac-chair ingezet om hen naar een andere verdieping te brengen tijdens een calamiteit.</p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
 <div class="wizard-container" id="wizard8">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close8">X</span>
-        <img src="images/aed.png" alt="aed" class="aed">
-        <div class="wizard8-tekst">
-            <p>De Automatische Externe Defibrillator (AED) wordt ingezet
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/aed.png" alt="aed" class="img-default">
+            </div> 
+            <span class="close-button" id="close8">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>De Automatische Externe Defibrillator (AED) wordt ingezet
                 in het geval dat iemand een hartstilstand krijgt. Op iedere
                 locatie van het Koning Willem I College is minstens een AED
                 aanwezig. Op sommige locaties zijn meerdere AED’s aanwezig.
                 De AED is een draagbaar apparaat dat specifiek ontworpen is om een
                 elektrische schok te leveren aan het hart van een persoon met een hartritmestoornis</p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
 
 <div class="wizard-container" id="wizard9">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close9">X</span>
-        <img src="images/noodstop.png" alt="noodstop" class="noodstop">
-        <div class="wizard9-tekst">
-            <p>Op sommige plekken bij het Koning Willem I College zijn
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/noodstop.png" alt="noodstop" class="img-default">
+            </div> 
+            <span class="close-button" id="close9">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>Op sommige plekken bij het Koning Willem I College zijn
                 er specifieke veiligheidsvoorzieningen aanwezig om snel en
                 doeltreffend te reageren als er (mogelijk) een ongeval plaatsvindt.
                 Denk hierbij aan noodstoppen.Noodstoppen zijn ontworpen om onmiddellijk
                 de werking van machines, apparatuur of gasstromen te laten stoppen in geval van een noodsituatie.</p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
 <div class="wizard-container" id="wizard10">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close10">X</span>
-        <img src="images/handbrandmelder.png" alt="handbrandmelder" class="handbrandmelder">
-        <div class="wizard10-tekst">
-            <p>Handbrandmelders zijn hulpmiddelen die een aanwezige
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/handbrandmelder.png" alt="handbrandmelder" class="img-default">
+            </div> 
+            <span class="close-button" id="close10">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>Handbrandmelders zijn hulpmiddelen die een aanwezige
                 in staat stelt om handmatig een brandalarm te activeren
                 als er brand of rook wordt waargenomen. Het activeren van
                 een handbrandmelder zorgt ervoor dat er in het hele gebouw
                 een ontruimingsalarm afgaat en de bedrijfshulpverleners (bhv’ers) worden gealarmeerd.</p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
 <div class="wizard-container" id="wizard11">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close11">X</span>
-        <img src="images/verzamelplaats.png" alt="verzamelplaats" class="verzamelplaats">
-        <div class="wizard11-tekst">
-            <p>De verzamelplaats is een essentieel onderdeel
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/verzamelplaats.png" alt="verzamelplaats" class="img-default">
+            </div> 
+            <span class="close-button" id="close11">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>De verzamelplaats is een essentieel onderdeel
                 van de brandveiligheidsmaatregelen bij het Koning Willem I
                 College. Als er sprake is van een calamiteit, bijvoorbeeld
                 wanneer het ontruimingsalarm afgaat, is de verzamelplaats de
                 aangewezen locatie waar alle studenten, medewerkers en bezoekers zich moeten verzamelen.</p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
 <div class="wizard-container" id="wizard12">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close12">X</span>
-        <img src="images/nooddeur.png" alt="nooddeur" class="nooddeur">
-        <div class="wizard12-tekst">
-            <p>Het Koning Willem I College wil graag voorkomen dat er calamiteiten plaatsvinden.
+        <div class="wizard-menu">
+            <div class="img-fluid"> 
+            <img src="images/nooddeur.png" alt="nooddeur" class="img-default">
+            </div> 
+            <span class="close-button" id="close12">X</span>
+            </div> 
+            <div class="info-wizard">
+                <p>Het Koning Willem I College wil graag voorkomen dat er calamiteiten plaatsvinden.
                 Toch kan er soms iets misgaan, waardoor er kleine of grotere calamiteiten plaatsvinden.
                 Om ervoor te zorgen dat studenten, medewerkers en bezoekers veilig de gebouwen kunnen
                 verlaten tijdens zo’n calamiteit zijn er vluchtroutes en nooddeuren aanwezig.<br> <br>Nooddeuren
                 zijn speciaal ontworpen deuren die gemakkelijk en snel kunnen worden geopend
                 calamiteiten. Ze mogen niet worden geblokkeerd, moeten zonder sleutel te openen zijn en moeten altijd duidelijk herkenbaar zijn.
-            </p>
-        </div>
-    </div>
+            </div>
+      </div>
 </div>
 
 
