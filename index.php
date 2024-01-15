@@ -516,6 +516,18 @@
             left: 422px;
         }
 
+        #openNextButton {
+            background-color: #00000080;
+            color: #fff;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 150;
+        }
+
     </style>
 </head>
 
@@ -539,9 +551,10 @@
                 Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
                 wij jou te hebben geïnformeerd als dat gebeurt.
             </p>
-
         </div>
     </div>
+    <!-- Knop voor volgende stap -->
+    <div id="openNextButton" style="display: none">►</div>
 </div>
 
 
@@ -830,19 +843,35 @@
     <div class="wizard-content">
         <span class="close-button" id="close13">X</span>
         <div class="wizard13-tekst">
-            <p> wizard 3
+            <p> wizard 13
             </p>
         </div>
     </div>
 </div>
 
-
 <script>
     window.addEventListener('load', function () {
+        console.log("Pagina geladen");
+
+        // Voeg een eventlistener toe aan de openNextButton
+        var openNextButton = document.getElementById('openNextButton');
+        if (openNextButton) {
+            openNextButton.addEventListener('click', openIntroWizard);
+            console.log("openNextButton gevonden");
+        } else {
+            console.log("openNextButton niet gevonden");
+        }
+
         // Voeg de event listener toe voor het sluiten van de wizard
-        document.getElementById('closeIntroWizard').addEventListener('click', function () {
-            closeIntroWizard();
-        });
+        var closeButton = document.getElementById('closeIntroWizard');
+        if (closeButton) {
+            closeButton.addEventListener('click', function () {
+                closeIntroWizard();
+            });
+            console.log("closeButton gevonden");
+        } else {
+            console.log("closeButton niet gevonden");
+        }
 
         // Roep de handleIntroWizard functie op om de wizard te tonen/verbergen op basis van de cookie-status
         handleIntroWizard();
@@ -873,10 +902,48 @@
         return "";
     }
 
+    // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
+    function closeIntroWizard() {
+        var introWizard = document.getElementById('introWizard');
+        var closeButton = document.getElementById('closeIntroWizard');
+
+        // Toon de close button voor heropenen
+        closeButton.style.display = "block";
+
+        // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
+        setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
+
+        // Toon de openNextButton
+        var openNextButton = document.getElementById('openNextButton');
+        if (openNextButton) {
+            openNextButton.style.display = 'block';
+        } else {
+            console.log("openNextButton niet gevonden");
+        }
+
+        // Verberg de intro wizard
+        introWizard.style.display = "none";
+    }
+
+    // Functie om de introductiewizard opnieuw te openen
+    function openIntroWizard() {
+        // Voeg hier de logica toe om de introductiewizard opnieuw te openen
+        console.log("Introductiewizard opnieuw geopend.");
+
+        // Verberg de openNextButton
+        var openNextButton = document.getElementById('openNextButton');
+        if (openNextButton) {
+            openNextButton.style.display = 'none';
+        } else {
+            console.log("openNextButton niet gevonden");
+        }
+    }
+
     // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
     function handleIntroWizard() {
         var introWizard = document.getElementById('introWizard');
         var closeButton = document.getElementById('closeIntroWizard');
+        var openNextButton = document.getElementById('openNextButton');
 
         // Controleer of de cookie is ingesteld
         if (getCookie('introWizardClosed') !== 'true') {
@@ -887,78 +954,16 @@
             introWizard.style.display = "none";
             // Toon de close button, zodat gebruikers de wizard opnieuw kunnen openen
             closeButton.style.display = "block";
+
+            // Toon de openNextButton
+            if (openNextButton) {
+                openNextButton.style.display = 'block';
+            } else {
+                console.log("openNextButton niet gevonden");
+            }
         }
-    }
-
-    // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
-    function closeIntroWizard() {
-        var introWizard = document.getElementById('introWizard');
-        var closeButton = document.getElementById('closeIntroWizard');
-
-        // Sluit de intro wizard
-        introWizard.style.display = "none";
-        // Toon de close button voor heropenen
-        closeButton.style.display = "block";
-
-        // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
-        setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
-    }
-
-    // Functie om de introductiewizard opnieuw te openen wanneer de gebruiker op 'close' klikt
-    function reopenIntroWizard() {
-        var introWizard = document.getElementById('introWizard');
-        var closeButton = document.getElementById('closeIntroWizard');
-
-        // Toon de intro-wizard
-        introWizard.style.display = "flex";
-        // Verberg de close button
-        closeButton.style.display = "none";
-    }
-    }
-
-    // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
-    function handleIntroWizard() {
-        var introWizard = document.getElementById('introWizard');
-        var closeButton = document.getElementById('closeIntroWizard');
-
-        // Controleer of de cookie is ingesteld
-        if (getCookie('introWizardClosed') !== 'true') {
-            // Toon de intro-wizard als de cookie niet is ingesteld
-            introWizard.style.display = "flex";
-        } else {
-            // Verberg de intro-wizard als de cookie is ingesteld
-            introWizard.style.display = "none";
-            // Toon de close button, zodat gebruikers de wizard opnieuw kunnen openen
-            closeButton.style.display = "block";
-        }
-    }
-
-    // Functie om de introductiewizard te sluiten en de cookie in te stellen wanneer de gebruiker op 'sluiten' klikt
-    function closeIntroWizard() {
-        var introWizard = document.getElementById('introWizard');
-        var closeButton = document.getElementById('closeIntroWizard');
-
-        // Sluit de intro wizard
-        introWizard.style.display = "none";
-        // Toon de close button voor heropenen
-        closeButton.style.display = "block";
-
-        // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
-        setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
-    }
-
-    // Functie om de introductiewizard opnieuw te openen wanneer de gebruiker op 'close' klikt
-    function reopenIntroWizard() {
-        var introWizard = document.getElementById('introWizard');
-        var closeButton = document.getElementById('closeIntroWizard');
-
-        // Toon de intro-wizard
-        introWizard.style.display = "flex";
-        // Verberg de close button
-        closeButton.style.display = "none";
     }
 </script>
-
 
 
 
