@@ -554,7 +554,7 @@
         </div>
     </div>
     <!-- Knop voor volgende stap -->
-    <div id="openNextButton" style="display: none">►</div>
+    <div id="openNextButton" style="display: flex">►</div>
 </div>
 
 
