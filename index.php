@@ -28,83 +28,93 @@
         }
 
 
-        .button2 {
+        .button2{
             position: absolute;
-            top: 99vh;
+            top: 104vh;
             left: 51vw;
         }
-
+        
 
         .button3{
             position: absolute;
-            top: 83vh;
-            left: 71vw;
+            top: 87vh;
+            left: 76vw;
         }
 
         .button4{
             position: absolute;
-            top: 43vh;
-            left: 24vw;
+            top: 48vh;
+            left: 23vw;
         }
 
         .button5{
             position: absolute;
-            top: 67vh;
-            left: 69vw;
+            top: 70vh;
+            left: 72vw;
         }
 
         .button6{
             position: absolute;
             top: 56vh;
-            left: 23vw;
+            left: 20vw;
         }
 
         .button7{
             position: absolute;
-            top: 77vh;
+            top: 78vh;
             left: 41vw;
         }
 
 
         .button8{
             position: absolute;
-            top: 100vh;
+            top: 102vh;
             left: 73vw;
         }
 
         .button9{
             position: absolute;
-            top: 56vh;
-            left: 37vw;
+            top: 58vh;
+            left: 34vw;
         }
 
         .button10{
             position: absolute;
-            top: 121vh;
-            left: 75vw;
+            top: 69vh;
+            left: 40vw;
         }
 
         .button11{
             position: absolute;
-            top: 100vh;
-            left: 10vw;
+            top: 104vh;
+            left: 9vw;
         }
 
 
         .button12{
             position: absolute;
-            top: 77vh;
+            top: 81vh;
             left: 72vw;
         }
 
         .button13{
             position: absolute;
-            top: 48vh;
-            left: 23vw;
+            top: 43vh;
+            left: 24vw;
+
         }
 
+        .button14{
+            position: absolute;
+            top: 125vh;
+            left: 45vw;
+        }
 
-
+        .button15{
+            position: absolute;
+            top: 103vh;
+            left: 34vw;
+        }
 
 
         .rodebalktop{
@@ -298,23 +308,10 @@
             padding: 2.5vw;
         }
 
-        .wizard2-tekst{
-            position: fixed;
-            margin-top: 1163px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 10px;
-            padding-right: 70px;
-        }
 
 
 
-        .wizard-gebouw {
-            width: 967px;
-            position: fixed;
-            top: 32rem;
-            height: 1001px;
-        }
+
 
 
         .close-button {
@@ -332,189 +329,9 @@
             border: solid white 10px;
         }
 
-        .bhv-vest{
 
-        }
 
-        .plattegrond{
-            width: 245px;
-            position: fixed;
-            top: 46rem;
-            left: 22rem;
-            border: solid white 10px;
-        }
 
-        .rookmelder{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .wizard3-tekst{
-            position: fixed;
-            margin-top: 1044px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-
-        .wizard4-tekst{
-            position: fixed;
-            margin-top: 1045px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-
-        .blusdeken{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .wizard5-tekst{
-            position: fixed;
-            margin-top: 1119px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-
-        .brandblusser{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .evacuatiestoel{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .wizard7-tekst{
-            position: fixed;
-            margin-top: 1050px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-
-        .aed{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .wizard8-tekst{
-            position: fixed;
-            margin-top: 1050px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-        .handbrandmelder{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .wizard10-tekst{
-            position: fixed;
-            margin-top: 1053px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-        .verzamelplaats{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .wizard11-tekst{
-            position: fixed;
-            margin-top: 1060px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-
-        .wizard12-tekst{
-            position: fixed;
-            margin-top: 918px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-        .nooddeur{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .ehbo{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-
-        .wizard6-tekst{
-            position: fixed;
-            margin-top: 1054px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-
-        .noodstop{
-            width: 245px;
-            position: fixed;
-            top: 47rem;
-            left: 335px;
-            border: solid white 10px;
-        }
-        .wizard9-tekst{
-            position: fixed;
-            margin-top: 1063px;
-            font-size: 28px;
-            margin-left: 77px;
-            padding-left: 21px;
-            padding-right: 70px;
-        }
-
-        .wizard13-tekst{
-            position: fixed;
-            top: 69rem;
-            left: 422px;
-        }
 
         #openNextButton {
             background-color: #00000080;
@@ -608,6 +425,11 @@
     <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
 
    <img src="images/Gif1.gif" alt="button13" class="button13 buttons" id="button13">
+
+  <img src="images/Gif1.gif" alt="button14" class="button14 buttons" id="button14">
+
+   <img src="images/Gif1.gif" alt="button15" class="button15 buttons" id="button15">
+
     </div>
     </div>
 
@@ -619,8 +441,8 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/bhv-vest.jpg" alt="bhv-vest" class="img-default">
-            </div> 
+            <img src="images/wizardfoto/bhv.jpg" alt="bhv-vest" class="img-default">
+            </div>
             <span class="close-button" id="close1">X</span>
             </div> 
             <div class="info-wizard">
@@ -636,7 +458,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/plattegrond.png" alt="plattegrond" class="img-default">
+            <img src="images/wizardfoto/ontruimingsplattegrond_lobby.jpg" alt="plattegrond" class="img-default">
             </div> 
             <span class="close-button" id="close2">X</span>
             </div> 
@@ -652,7 +474,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/rookmelder.png" alt="rookmelder" class="img-default">
+            <img src="images/rookmelder0.png" alt="rookmelder" class="img-default">
             </div> 
             <span class="close-button" id="close3">X</span>
             </div> 
@@ -671,7 +493,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/blusdeken.png" alt="blusdeken" class="img-default">
+            <img src="images/wizardfoto/blusdeken.jpg" alt="blusdeken" class="img-default">
             </div> 
             <span class="close-button" id="close4">X</span>
             </div> 
@@ -691,7 +513,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/brandblusser.png" alt="brandblusser" class="img-default">
+            <img src="images/wizardfoto/brandblusser.jpg" alt="brandblusser" class="img-default">
             </div> 
             <span class="close-button" id="close5">X</span>
             </div> 
@@ -707,7 +529,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/ehbo.png" alt="ehbo" class="img-default">
+            <img src="images/wizardfoto/EHBO.jpg" alt="ehbo" class="img-default">
             </div> 
             <span class="close-button" id="close6">X</span>
             </div> 
@@ -725,7 +547,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/Evacuatiestoel.png" alt="evacuatiestoel" class="img-default">
+            <img src="images/wizardfoto/evacuatiestoel.jpg" alt="evacuatiestoel" class="img-default">
             </div> 
             <span class="close-button" id="close7">X</span>
             </div> 
@@ -744,7 +566,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/aed.png" alt="aed" class="img-default">
+            <img src="images/wizardfoto/AED_lobby.jpg" alt="aed" class="img-default">
             </div> 
             <span class="close-button" id="close8">X</span>
             </div> 
@@ -765,7 +587,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/noodstop.png" alt="noodstop" class="img-default">
+            <img src="images/wizardfoto/noodknop.jpg" alt="noodstop" class="img-default">
             </div> 
             <span class="close-button" id="close9">X</span>
             </div> 
@@ -784,7 +606,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/handbrandmelder.png" alt="handbrandmelder" class="img-default">
+            <img src="images/wizardfoto/3e_verdieping_brand_alarm.jpg"alt="handbrandmelder" class="img-default">
             </div> 
             <span class="close-button" id="close10">X</span>
             </div> 
@@ -803,7 +625,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/verzamelplaats.png" alt="verzamelplaats" class="img-default">
+            <img src="images/wizardfoto/verzamelplek.jpg" alt="verzamelplaats" class="img-default">
             </div> 
             <span class="close-button" id="close11">X</span>
             </div> 
@@ -822,7 +644,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/nooddeur.png" alt="nooddeur" class="img-default">
+            <img src="images/wizardfoto/noodroute.jpg" alt="nooddeur" class="img-default">
             </div> 
             <span class="close-button" id="close12">X</span>
             </div> 
@@ -838,16 +660,63 @@
 </div>
 
 
+
 <div class="wizard-container" id="wizard13">
-    <img src="images/wizard_gebouw_png-01.png" alt="wizard-gebouw" class="wizard-gebouw">
     <div class="wizard-content">
-        <span class="close-button" id="close13">X</span>
-        <div class="wizard13-tekst">
-            <p> wizard 13
+        <div class="wizard-menu">
+            <div class="img-fluid">
+                <img src="images/wizardfoto/nooddouche.jpg" alt="nooddouche" class="img-default">
+            </div>
+            <span class="close-button" id="close13">X</span>
+        </div>
+        <div class="info-wizard">
+            <p>Nooddouches zijn speciaal ontworpen om onmiddellijk hulp
+                te bieden wanneer er gevaarlijke stoffen op het lichaam terecht
+                zijn gekomen. Deze nooddouches zijn aanwezig op de specifieke plekken
+                waar er met gevaarlijke stoffen wordt gewerkt.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard14">
+    <div class="wizard-content">
+        <div class="wizard-menu">
+            <div class="img-fluid">
+                <img src="images/wizardfoto/alarmnummers.png" alt="alarmnummersweb" class="img-default">
+            </div>
+            <span class="close-button" id="close14">X</span>
+        </div>
+        <div class="info-wizard">
+            <p>Oh, daar gaat Pietje Panik weer, struikelend over zijn eigen voeten
+                als een ware kluns! Maar vrees niet, want gelukkig had Pietje net op
+                tijd onze website bezocht. Hij heeft zich aardig kunnen navigeren op
+                onze website en heeft de knop ingedrukt met alle alarmnummers van het KW1C.</p>
+        </div>
+    </div>
+</div>
+
+<div class="wizard-container" id="wizard15">
+    <div class="wizard-content">
+        <div class="wizard-menu">
+            <div class="img-fluid">
+                <img src="images/wizardfoto/alarmkaart_lobby.jpg" alt="alarmkaart" class="img-default">
+            </div>
+            <span class="close-button" id="close15">X</span>
+        </div>
+        <div class="info-wizard">
+            <p>Op alle locaties van het Koning Willem I College hangen alarmkaarten door het hele gebouw heen.
+                In nagenoeg alle ruimtes hangt een alarmkaart.
+
+                Op de alarmkaart vind je informatie over wat te doen als er een calamiteit plaatsvindt.
+                De alarmkaart geeft korte richtlijnen aan om snel en doeltreffend te handelen bij drie meest
+                waarschijnlijke calamiteiten; brand, ongeval en ontruiming.
             </p>
         </div>
     </div>
 </div>
+
+
 
 <script>
     window.addEventListener('load', function () {
@@ -1004,7 +873,7 @@
         });
 
         // Add click event listeners for all buttons
-        for (let i = 1; i <= 13; i++) {
+        for (let i = 1; i <= 15; i++) {
             const buttonId = "button" + i;
             const wizardId = "wizard" + i;
 
