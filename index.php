@@ -350,7 +350,6 @@
             left: 20px;
             z-index: 150;
         }
-
     </style>
 </head>
 
@@ -376,9 +375,10 @@
             </p>
         </div>
     </div>
-    <!-- Knop voor volgende stap -->
-    <div id="openNextButton" style="display: flex">►</div>
 </div>
+
+<!-- Knop voor volgende stap -->
+<div id="openNextButton" style="display: flex">►</div>
 
 
 <div class="rodebalktop">
@@ -748,6 +748,8 @@
             console.log("closeButton niet gevonden");
         }
 
+       
+
         // Roep de handleIntroWizard functie op om de wizard te tonen/verbergen op basis van de cookie-status
         handleIntroWizard();
     });
@@ -799,6 +801,20 @@
         // Verberg de intro wizard
         introWizard.style.display = "none";
     }
+
+var introWizard = document.getElementById('introWizard'); 
+var openNextButton = document.getElementById('openNextButton')
+function hideShow(){
+    if(display == 'flex'){
+        openNextButton.style.display = "none"; 
+    }
+    else{
+        openNextButton.style.display = 'flex'; 
+    }
+}
+
+
+
 
     // Functie om de introductiewizard opnieuw te openen
     function openIntroWizard() {
