@@ -24,7 +24,7 @@ body
 
 body, button
 {
-    font-family: "Tahoma";
+    font-family: helvetica, serif;
 }
 /*text*/
 h1, .choice
