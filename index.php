@@ -133,7 +133,7 @@
             font-size: 86px;
             background-color: #F9100C;
             border-color: #F9100C;
-            font-family: Tahoma, serif;
+            font-family: helvetica, serif;
             padding-left: 150px;
             padding-right: 150px;
             position: absolute;
@@ -143,7 +143,7 @@
         }
 
         .Quizbutton{
-            font-family: Tahoma, serif;
+            font-family: helvetica, serif;
             font-size: 86px;
             background-color: #F9100C;
             border-color: #F9100C;
@@ -208,7 +208,7 @@
             right: 0;
             margin-top: 30px;
             height: 122px;
-            font-family: Tahoma, serif;
+            font-family: helvetica, serif;
             text-align: center;
 
         }
@@ -266,7 +266,7 @@
 
         .wizard-content-intro{
             color: white;
-            FONT-FAMILY: Tahoma, serif;
+            font-family: helvetica, serif;
             font-size: 48px;
 
         }
@@ -288,7 +288,7 @@
         .wizard-content {
             position: fixed;
             top: 40%;
-            font-family: Tahoma, serif;
+            font-family: helvetica, serif;
             color: white;
             width: 80vw;
             background-color: #00000080;
@@ -318,7 +318,7 @@
             font-size: 6vw;
             position: absolute;
             left: 90%;
-            font-family: Tahoma;
+            font-family: helvetica;
         }
 
 
