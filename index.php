@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <title>Home</title>
+    <title>Index</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <style>
@@ -325,7 +325,13 @@
 
         .img-default{
             margin-top: 2.7vh;
-            width: 20vw;
+            width: 40vw;
+            border: solid white 10px;
+        }
+
+        .img-nondefault{
+            margin-top: 2.7vh;
+            width: 18vw;
             border: solid white 10px;
         }
 
@@ -446,8 +452,8 @@
             <span class="close-button" id="close1">X</span>
             </div> 
             <div class="info-wizard">
-                <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning<br> Willem I College is het team van
-                    bedrijfshulpverleners (bhv’ers). <br>Bhv’ers zijn getrainde medewerkers die specifieke taken en
+                <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning Willem I College is het team van
+                    bedrijfshulpverleners (bhv’ers). Bhv’ers zijn getrainde medewerkers die specifieke taken en
                     verantwoordelijkheden hebben als zich een calamiteit voordoet. </p>
             </div>
       </div>
@@ -463,7 +469,7 @@
             <span class="close-button" id="close2">X</span>
             </div> 
             <div class="info-wizard">
-                <p>Veiligheid heeft het Koning Willem I College een hoge prioriteit.<br>
+                <p>Veiligheid heeft het Koning Willem I College een hoge prioriteit.
                 Een belangrijk hulpmiddel dat we hiervoor gebruiken is de ontruimingsplattegrond </p>
             </div>
       </div>
@@ -474,13 +480,13 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/rookmelder0.png" alt="rookmelder" class="img-default">
+            <img src="images/rookmelder0.png" alt="rookmelder" class="img-nondefault">
             </div> 
             <span class="close-button" id="close3">X</span>
             </div> 
             <div class="info-wizard">
                 <p>Automatische melders activeren zelf het brandalarm wanneer er rook
-                of hitte wordt gedetecteerd. <br> <br>  Een verschil met de handbrandmelders is
+                of hitte wordt gedetecteerd. Een verschil met de handbrandmelders is
                 dat het ontruimingsalarm alleen in dat specifiek deel van het gebouw
                 afgaat. De andere delen van het gebouw volgen als de brand niet wordt gedoofd.</p>
             </div>
@@ -500,7 +506,6 @@
             <div class="info-wizard">
             	<p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om
                 kleine branden te doven door de zuurstof af te snijden en de vlammen te smoren.
-                <br> <br>
                 De blusdekens worden in de regel alleen gebruikt door de bhv’ers tijdens een
                 calamiteit. Veiligheid is een gedeelde verantwoordelijkheid.
             </div>
@@ -519,7 +524,8 @@
             </div> 
             <div class="info-wizard">
             <p>Een brandblusser is een draagbaar apparaat dat specifiek is ontworpen om beginnende
-            branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat een kleine brand zich uitbreidt.</p>
+            branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat
+                een kleine brand zich uitbreidt.</p>
             </div>
       </div>
 </div>
@@ -652,9 +658,10 @@
                 <p>Het Koning Willem I College wil graag voorkomen dat er calamiteiten plaatsvinden.
                 Toch kan er soms iets misgaan, waardoor er kleine of grotere calamiteiten plaatsvinden.
                 Om ervoor te zorgen dat studenten, medewerkers en bezoekers veilig de gebouwen kunnen
-                verlaten tijdens zo’n calamiteit zijn er vluchtroutes en nooddeuren aanwezig.<br> <br>Nooddeuren
+                verlaten tijdens zo’n calamiteit zijn er vluchtroutes en nooddeuren aanwezig.Nooddeuren
                 zijn speciaal ontworpen deuren die gemakkelijk en snel kunnen worden geopend
-                calamiteiten. Ze mogen niet worden geblokkeerd, moeten zonder sleutel te openen zijn en moeten altijd duidelijk herkenbaar zijn.
+                calamiteiten. Ze mogen niet worden geblokkeerd, moeten zonder sleutel te openen zijn en
+                    moeten altijd duidelijk herkenbaar zijn.
             </div>
       </div>
 </div>
@@ -683,12 +690,12 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid">
-                <img src="images/wizardfoto/alarmnummers.png" alt="alarmnummersweb" class="img-default">
+                <img src="images/wizardfoto/alarmnummers.png" alt="alarmnummersweb" class="img-nondefault">
             </div>
             <span class="close-button" id="close14">X</span>
         </div>
         <div class="info-wizard">
-            <p>Oh, daar gaat Pietje Paniek weer. Hij keek weer eens niet voor zich uit en gleed uit. Maar vrees niet, want gelukkig had Pietje net op
+            <p>Oh, daar gaat Pietje Paniek weer, Hij keek weer eens niet voor zich en glee uit. Maar vrees niet, want gelukkig had Pietje net op
                 tijd onze website bezocht. Hij heeft zich aardig kunnen navigeren op
                 onze website en heeft de knop ingedrukt met alle alarmnummers van het KW1C.</p>
         </div>
