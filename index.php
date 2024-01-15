@@ -319,13 +319,14 @@
             position: absolute;
             left: 90%;
             font-family: helvetica;
+            top: 5%;
         }
 
 
 
         .img-default{
             margin-top: 2.7vh;
-            width: 40vw;
+            width: 51vw;
             border: solid white 10px;
         }
 
@@ -859,14 +860,30 @@ function hideShow(){
 
 
 <script>
+    // Houd bij welke wizard geopend is
+    var openWizardId = null;
+
     // Function to open the wizard window
     function openWizard(wizardId) {
+        // Controleer of er al een andere wizard open is
+        if (openWizardId !== null) {
+            // Sluit de huidige open wizard voordat je een nieuwe opent
+            closeWizard(openWizardId);
+        }
+
+        // Open de nieuwe wizard
         document.getElementById(wizardId).style.display = "flex";
+
+        // Update de openWizardId variabele
+        openWizardId = wizardId;
     }
 
     // Function to close the wizard window
     function closeWizard(wizardId) {
         document.getElementById(wizardId).style.display = "none";
+
+        // Reset de openWizardId variabele
+        openWizardId = null;
     }
 
     $(document).ready(function () {
@@ -907,7 +924,6 @@ function hideShow(){
             // Close the wizard when the close button is clicked
             document.getElementById("close" + i).addEventListener("click", function() {
                 closeWizard(wizardId);
-
             });
         }
     });
@@ -916,6 +932,8 @@ function hideShow(){
         document.getElementById('introWizard').style.display = "flex";
         $(".vierkantlogo, .makersbutton, .Quizbutton").removeClass("fixed");
     }
+
+
 
 </script>
 
