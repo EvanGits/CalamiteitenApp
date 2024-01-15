@@ -688,8 +688,7 @@
             <span class="close-button" id="close14">X</span>
         </div>
         <div class="info-wizard">
-            <p>Oh, daar gaat Pietje Panik weer, struikelend over zijn eigen voeten
-                als een ware kluns! Maar vrees niet, want gelukkig had Pietje net op
+            <p>Oh, daar gaat Pietje Paniek weer. Hij keek weer eens niet voor zich uit en gleed uit. Maar vrees niet, want gelukkig had Pietje net op
                 tijd onze website bezocht. Hij heeft zich aardig kunnen navigeren op
                 onze website en heeft de knop ingedrukt met alle alarmnummers van het KW1C.</p>
         </div>
