@@ -5,10 +5,12 @@
     <title>Index</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+
     <style>
         *{
             margin: 0;
             padding: 0;
+
         }
 
 
@@ -33,7 +35,7 @@
             top: 104vh;
             left: 51vw;
         }
-        
+
 
         .button3{
             position: absolute;
@@ -133,7 +135,7 @@
             font-size: 86px;
             background-color: #F9100C;
             border-color: #F9100C;
-            font-family: helvetica, serif;
+
             padding-left: 150px;
             padding-right: 150px;
             position: absolute;
@@ -273,7 +275,7 @@
 
 
         .wizard-container {
-            display: none; 
+            display: none;
             position: relative;
             top: 0;
             left: 0;
@@ -295,7 +297,7 @@
             border-radius: 5%;
             z-index: 200;
         }
-        
+
         .wizard-menu{
             display: flex;
             justify-content: center;
@@ -318,7 +320,7 @@
             font-size: 6vw;
             position: absolute;
             left: 90%;
-            font-family: helvetica;
+            font-family: helvetica,serif;
             top: 5%;
         }
 
@@ -332,7 +334,7 @@
 
         .img-nondefault{
             margin-top: 2.7vh;
-            width: 18vw;
+            width: 22vw;
             border: solid white 10px;
         }
 
@@ -407,35 +409,35 @@
 <!--Flat als achtergrond en buttons-->
 <div class="flatgebouw-content">
     <div class="buttons-container">
-    <img src="images/Gif1.gif"  alt="button1" class="button1 buttons" id="button1">
+    <img src="images/groen.gif"  alt="button1" class="button1 buttons" id="button1">
 
-    <img src="images/Gif1.gif" alt="button2" class="button2 buttons" id="button2">
+    <img src="images/groen.gif" alt="button2" class="button2 buttons" id="button2">
 
-    <img src="images/Gif1.gif" alt="button3" class="button3 buttons" id="button3">
+    <img src="images/groen.gif" alt="button3" class="button3 buttons" id="button3">
 
-    <img src="images/Gif1.gif" alt="button4" class="button4 buttons" id="button4">
+    <img src="images/groen.gif" alt="button4" class="button4 buttons" id="button4">
 
-    <img src="images/Gif1.gif" alt="button5" class="button5 buttons" id="button5">
+    <img src="images/groen.gif" alt="button5" class="button5 buttons" id="button5">
 
-    <img src="images/Gif1.gif" alt="button6" class="button6 buttons" id="button6">
+    <img src="images/groen.gif" alt="button6" class="button6 buttons" id="button6">
 
-    <img src="images/Gif1.gif" alt="button7" class="button7 buttons" id="button7">
+    <img src="images/groen.gif" alt="button7" class="button7 buttons" id="button7">
 
-    <img src="images/Gif1.gif" alt="button8" class="button8 buttons" id="button8">
+    <img src="images/groen.gif" alt="button8" class="button8 buttons" id="button8">
 
-    <img src="images/Gif1.gif" alt="button9" class="button9 buttons" id="button9">
+    <img src="images/groen.gif" alt="button9" class="button9 buttons" id="button9">
 
-    <img src="images/Gif1.gif" alt="button10" class="button10 buttons" id="button10">
+    <img src="images/groen.gif" alt="button10" class="button10 buttons" id="button10">
 
-    <img src="images/Gif1.gif" alt="button11" class="button11 buttons" id="button11">
+    <img src="images/groen.gif" alt="button11" class="button11 buttons" id="button11">
 
-    <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
+    <img src="images/groen.gif" alt="button12" class="button12 buttons" id="button12">
 
-   <img src="images/Gif1.gif" alt="button13" class="button13 buttons" id="button13">
+   <img src="images/groen.gif" alt="button13" class="button13 buttons" id="button13">
 
-  <img src="images/Gif1.gif" alt="button14" class="button14 buttons" id="button14">
+  <img src="images/groen.gif" alt="button14" class="button14 buttons" id="button14">
 
-   <img src="images/Gif1.gif" alt="button15" class="button15 buttons" id="button15">
+   <img src="images/groen.gif" alt="button15" class="button15 buttons" id="button15">
 
     </div>
     </div>
@@ -696,7 +698,7 @@
             <span class="close-button" id="close14">X</span>
         </div>
         <div class="info-wizard">
-            <p>Oh, daar gaat Pietje Paniek weer, Hij keek weer eens niet voor zich en glee uit. Maar vrees niet, want gelukkig had Pietje net op
+            <p>Oh, daar gaat Pietje Paniek weer, Hij keek weer eens niet voor zich en gleed uit. Maar vrees niet, want gelukkig had Pietje net op
                 tijd onze website bezocht. Hij heeft zich aardig kunnen navigeren op
                 onze website en heeft de knop ingedrukt met alle alarmnummers van het KW1C.</p>
         </div>
