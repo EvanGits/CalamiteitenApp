@@ -19,9 +19,20 @@
             display: flex;
             position: relative;
         }
-    /* grootte alle buttons */
+
+
+
+            .animated-gif {
+                transition: transform 0.5s ease; /* Voeg een overgangseffect toe op de grootte */
+                cursor: pointer; /* Maak de cursor een wijzer wanneer erop wordt geklikt */
+                transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
+                filter: brightness(0) saturate(100%) invert(75%) sepia(59%) saturate(5786%) hue-rotate(89deg) brightness(129%) contrast(114%);
+            }
+
+
         .buttons{
-            width: 100px;
+            width: 50px;
+            height: auto;
         }
 
     /* positie button 1 */
@@ -59,13 +70,14 @@
         }
 
     /* positie button 6 */
-        .button6{
+        .button6 {
             position: absolute;
             top: 56vh;
-            left: 20vw;
+            left: 24vw;
         }
 
-    /* positie button 7 */
+
+        /* positie button 7 */
         .button7{
             position: absolute;
             top: 78vh;
@@ -80,13 +92,13 @@
         }
 
     /* positie button 9 */
-        .button9{
+        .button9 {
             position: absolute;
-            top: 58vh;
+            top: 60vh;
             left: 34vw;
         }
 
-    /* positie button 10 */
+        /* positie button 10 */
         .button10{
             position: absolute;
             top: 69vh;
@@ -107,11 +119,10 @@
         }
 
     /* positie button 13 */
-        .button13{
+        .button13 {
             position: absolute;
             top: 43vh;
-            left: 24vw;
-
+            left: 28vw;
         }
     
     /* positie button 14 */
@@ -385,9 +396,8 @@
             <p>Een ongeval op het Koning Willem I College… wat nu? <br> <br>
                 Iedereen wil aan het einde van de dag weer veilig naar huis. Daarom
                 streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
-                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
-                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
-                wij jou te hebben geïnformeerd als dat gebeurt.
+                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie
+                hopen wij jou te informeren als dat gebeurt. Druk deze tekst weg en verken de knoppen in het gebouw.
             </p>
         </div>
     </div>
@@ -425,36 +435,36 @@
 
 <!--Flat als achtergrond en buttons-->
 <div class="flatgebouw-content">
-    <div class="buttons-container">
-    <img src="images/groen.gif"  alt="button1" class="button1 buttons" id="button1">
+    <div class="buttons-container gif-container">
+    <img src="images/Gif1.gif"  alt="button1" class="button1 buttons animated-gif" id="button1">
 
-    <img src="images/groen.gif" alt="button2" class="button2 buttons" id="button2">
+    <img src="images/Gif1.gif" alt="button2" class="button2 buttons animated-gif" id="button2">
 
-    <img src="images/groen.gif" alt="button3" class="button3 buttons" id="button3">
+    <img src="images/Gif1.gif" alt="button3" class="button3 buttons animated-gif " id="button3">
 
-    <img src="images/groen.gif" alt="button4" class="button4 buttons" id="button4">
+    <img src="images/Gif1.gif" alt="button4" class="button4 buttons animated-gif" id="button4">
 
-    <img src="images/groen.gif" alt="button5" class="button5 buttons" id="button5">
+    <img src="images/Gif1.gif" alt="button5" class="button5 buttons animated-gif" id="button5">
 
-    <img src="images/groen.gif" alt="button6" class="button6 buttons" id="button6">
+    <img src="images/Gif1.gif" alt="button6" class="button6 buttons animated-gif" id="button6">
 
-    <img src="images/groen.gif" alt="button7" class="button7 buttons" id="button7">
+    <img src="images/Gif1.gif" alt="button7" class="button7 buttons animated-gif" id="button7">
 
-    <img src="images/groen.gif" alt="button8" class="button8 buttons" id="button8">
+    <img src="images/Gif1.gif" alt="button8" class="button8 buttons animated-gif" id="button8">
 
-    <img src="images/groen.gif" alt="button9" class="button9 buttons" id="button9">
+    <img src="images/Gif1.gif" alt="button9" class="button9 buttons animated-gif" id="button9">
 
-    <img src="images/groen.gif" alt="button10" class="button10 buttons" id="button10">
+    <img src="images/Gif1.gif" alt="button10" class="button10 buttons animated-gif" id="button10">
 
-    <img src="images/groen.gif" alt="button11" class="button11 buttons" id="button11">
+    <img src="images/Gif1.gif" alt="button11" class="button11 buttons animated-gif" id="button11">
 
-    <img src="images/groen.gif" alt="button12" class="button12 buttons" id="button12">
+    <img src="images/Gif1.gif" alt="button12" class="button12 buttons animated-gif" id="button12">
 
-   <img src="images/groen.gif" alt="button13" class="button13 buttons" id="button13">
+   <img src="images/Gif1.gif" alt="button13" class="button13 buttons animated-gif" id="button13">
 
-  <img src="images/groen.gif" alt="button14" class="button14 buttons" id="button14">
+  <img src="images/Gif1.gif" alt="button14" class="button14 buttons animated-gif" id="button14">
 
-   <img src="images/groen.gif" alt="button15" class="button15 buttons" id="button15">
+   <img src="images/Gif1.gif" alt="button15" class="button15 buttons animated-gif" id="button15">
 
     </div>
     </div>
@@ -630,7 +640,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/3e_verdieping_brand_alarm.jpg"alt="handbrandmelder" class="img-default">
+            <img src="images/wizardfoto/3e_verdieping_brand_alarm.jpg" alt="handbrandmelder" class="img-default">
             </div> 
             <span class="close-button" id="close10">X</span>
             </div> 
