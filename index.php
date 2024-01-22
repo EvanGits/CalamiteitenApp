@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!-- titel --> 
     <title>Index</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -13,117 +14,128 @@
 
         }
 
-
+    /* container van alle buttons */
         .buttons-container{
             display: flex;
             position: relative;
         }
-
+    /* grootte alle buttons */
         .buttons{
             width: 100px;
         }
 
+    /* positie button 1 */
         .button1{
             position: absolute;
             top: 35vh;
             left: 39vw;
         }
 
-
+    /* positie button 2 */
         .button2{
             position: absolute;
             top: 104vh;
             left: 51vw;
         }
 
-
+    /* positie button 3 */
         .button3{
             position: absolute;
             top: 87vh;
             left: 76vw;
         }
-
+    /* positie button 4 */
         .button4{
             position: absolute;
             top: 48vh;
             left: 23vw;
         }
 
+    /* positie button 5 */
         .button5{
             position: absolute;
             top: 70vh;
             left: 72vw;
         }
 
+    /* positie button 6 */
         .button6{
             position: absolute;
             top: 56vh;
             left: 20vw;
         }
 
+    /* positie button 7 */
         .button7{
             position: absolute;
             top: 78vh;
             left: 41vw;
         }
 
-
+    /* positie button 8 */
         .button8{
             position: absolute;
             top: 102vh;
             left: 73vw;
         }
 
+    /* positie button 9 */
         .button9{
             position: absolute;
             top: 58vh;
             left: 34vw;
         }
 
+    /* positie button 10 */
         .button10{
             position: absolute;
             top: 69vh;
             left: 40vw;
         }
-
+    /* positie button 11 */
         .button11{
             position: absolute;
             top: 104vh;
             left: 9vw;
         }
 
-
+    /* positie button 12*/
         .button12{
             position: absolute;
             top: 81vh;
             left: 72vw;
         }
 
+    /* positie button 13 */
         .button13{
             position: absolute;
             top: 43vh;
             left: 24vw;
 
         }
-
+    
+    /* positie button 14 */
         .button14{
             position: absolute;
             top: 125vh;
             left: 45vw;
         }
-
+    
+    /* positie button 15 */
         .button15{
             position: absolute;
             top: 103vh;
             left: 34vw;
         }
-
+    
+    /* bovenste rode balk */
 
         .rodebalktop{
             background-color: #F9100C;
             height: 45px;
         }
 
+    /* CALM logo */
         .Index-logo img{
             width: 783px;
             position: absolute;
@@ -131,6 +143,7 @@
             top: 61px;
         }
 
+    /* knop naar makers-pagina */
         .makersbutton{
             font-size: 86px;
             background-color: #F9100C;
@@ -143,7 +156,8 @@
             top: 500px;
 
         }
-
+    
+    /* knop naar quiz-pagina */
         .Quizbutton{
             font-family: helvetica, serif;
             font-size: 86px;
@@ -158,7 +172,7 @@
         }
 
 
-
+    /* knop naar quiz-pagina */
         .vierkantlogo.fixed{
             position: fixed;
             top: 0;
@@ -168,7 +182,7 @@
         }
 
 
-        /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
+    /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
         .Quizbutton.fixed {
             position: fixed;
             top: 0;
@@ -180,6 +194,7 @@
             padding-right: 218px;
         }
 
+    /* knop makers-pagina ná scrollen */
         .makersbutton.fixed{
             position: fixed;
             top: 0;
@@ -193,7 +208,7 @@
         }
 
 
-
+    /* titels pagina's */
         .Quiztitel,
         .makerstitel{
             color: white;
@@ -201,7 +216,7 @@
 
         }
 
-
+    /* meldknop (i) logo */
         .vierkantlogo {
             background-color: #F9100C;
             width: 80px;
@@ -215,13 +230,13 @@
 
         }
 
-
+    /* knop naar meldknop-pagina */
         .meldknopi{
             text-decoration: none;
             color: white;
         }
 
-
+    /* flatgebouw */
         .flatgebouw-content {
                 background-image: url(images/Achtergrond.jpg);
                 background-repeat: no-repeat;
@@ -237,27 +252,25 @@
 
 
 
-
+    /* intro-wizard */
         .intro-wizard-background {
             width: 816px;
             margin-top: -62px;
         }
-
+        /* tekst */
         .intro-tekst {
             margin-top: -104rem;
             padding-right: 410px;
             padding-left: 20px;
         }
-
+        /* pijltje */
         .pijltje-wizard{
             width: 398px;
             position: fixed;
             top: 64rem;
             left: 36rem;
         }
-
-
-
+        /* container */
         .wizard-container-intro {
             display: none;
             position: fixed;
@@ -265,15 +278,15 @@
             z-index: 110;
         }
 
-
+        /* content */
         .wizard-content-intro{
             color: white;
             font-family: helvetica, serif;
             font-size: 48px;
-
         }
+    
 
-
+    /* wizards */
         .wizard-container {
             display: none;
             position: relative;
@@ -286,7 +299,7 @@
         }
 
 
-
+        /* content */
         .wizard-content {
             position: fixed;
             top: 40%;
@@ -298,11 +311,13 @@
             z-index: 200;
         }
 
+        /* menu waar de wizards in zitten*/
         .wizard-menu{
             display: flex;
             justify-content: center;
         }
 
+        /* wizard tekst */
         .info-wizard  {
             font-size: 3.3vw;
             position: relative;
@@ -310,37 +325,35 @@
             padding: 2.5vw;
         }
 
-
-
-
-
-
-
+        /* sluiten van wizard */
         .close-button {
             font-size: 6vw;
             position: absolute;
-            left: 90%;
+            left: 93%;
             font-family: helvetica,serif;
             top: 5%;
         }
 
-
-
+        /* schalen van afbeelding (versie 1) */
         .img-default{
             margin-top: 2.7vh;
             width: 51vw;
             border: solid white 10px;
         }
 
+        /* schalen van afbeelding (versie 2) */
+        .img-default-2{
+            margin-top: 2.7vh;
+            width: 65vw;
+            border: solid white 10px;
+        }
+
+        /* afbeeldingen buiten de default marge */
         .img-nondefault{
             margin-top: 2.7vh;
             width: 22vw;
             border: solid white 10px;
         }
-
-
-
-
 
         #openNextButton {
             background-color: #00000080;
@@ -383,22 +396,26 @@
 <!-- Knop voor volgende stap -->
 <div id="openNextButton" style="display: flex">►</div>
 
-
+<!-- rode balk --> 
 <div class="rodebalktop">
 </div>
 
+<!-- knop naar meldknop-pagina  --> 
 <div class="vierkantlogo">
     <a href="meldknop.php" class="meldknopi">i</a>
 </div>
 
+<!-- CALM logo --> 
 <h1 class="Index-logo">
     <img src="images/logo_def-01.png" alt="calmlogo">
 </h1>
 
+<!-- knop naar makers-pagina --> 
 <button class="makersbutton">
     <a href="makers.php" class="makerstitel">Makers</a>
 </button>
 
+<!-- knop naar quiz-pagina --> 
 <button class="Quizbutton">
     <a href="quiztest.php" class="Quiztitel">Quiz</a>
 </button>
@@ -444,8 +461,6 @@
 
 
 <!-- Wizard-vensters -->
-
-
 <div class="wizard-container" id="wizard1">
     <div class="wizard-content">
         <div class="wizard-menu">
@@ -467,7 +482,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/ontruimingsplattegrond_lobby.jpg" alt="plattegrond" class="img-default">
+            <img src="images/wizardfoto/ontruimingsplattegrond_lobby.jpg" alt="plattegrond" class="img-default-2">
             </div> 
             <span class="close-button" id="close2">X</span>
             </div> 
@@ -521,7 +536,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/brandblusser.jpg" alt="brandblusser" class="img-default">
+            <img src="images/wizardfoto/brandblusser.jpg" alt="brandblusser" class="img-default-2">
             </div> 
             <span class="close-button" id="close5">X</span>
             </div> 
@@ -653,7 +668,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/noodroute.jpg" alt="nooddeur" class="img-default">
+            <img src="images/wizardfoto/noodroute.jpg" alt="nooddeur" class="img-default-2">
             </div> 
             <span class="close-button" id="close12">X</span>
             </div> 
@@ -675,7 +690,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid">
-                <img src="images/wizardfoto/nooddouche.jpg" alt="nooddouche" class="img-default">
+                <img src="images/wizardfoto/nooddouche.jpg" alt="nooddouche" class="img-default-2">
             </div>
             <span class="close-button" id="close13">X</span>
         </div>
@@ -709,7 +724,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid">
-                <img src="images/wizardfoto/alarmkaart_lobby.jpg" alt="alarmkaart" class="img-default">
+                <img src="images/wizardfoto/alarmkaart_lobby.jpg" alt="alarmkaart" class="img-default-2">
             </div>
             <span class="close-button" id="close15">X</span>
         </div>
