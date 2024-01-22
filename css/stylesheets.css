@@ -215,6 +215,7 @@
         margin: 0 auto; 
         background-color: var(--bs-accordion-btn-bg);
         font-family: var(--text-font);
+        line-height: 80%; 
     }
     
     /*opmaak van nummertekst*/ 

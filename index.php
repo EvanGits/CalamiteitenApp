@@ -2,126 +2,151 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!-- titel --> 
     <title>Index</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 
     <style>
         *{
             margin: 0;
             padding: 0;
+
         }
 
-
+    /* container van alle buttons */
         .buttons-container{
             display: flex;
             position: relative;
         }
 
+
+
+            .animated-gif {
+                transition: transform 0.5s ease; /* Voeg een overgangseffect toe op de grootte */
+                cursor: pointer; /* Maak de cursor een wijzer wanneer erop wordt geklikt */
+                transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
+                filter: brightness(0) saturate(100%) invert(75%) sepia(59%) saturate(5786%) hue-rotate(89deg) brightness(129%) contrast(114%);
+            }
+
+
         .buttons{
-            width: 100px;
+            width: 50px;
+            height: auto;
         }
 
+    /* positie button 1 */
         .button1{
             position: absolute;
             top: 35vh;
             left: 39vw;
         }
 
-
+    /* positie button 2 */
         .button2{
             position: absolute;
             top: 104vh;
             left: 51vw;
         }
-        
 
+    /* positie button 3 */
         .button3{
             position: absolute;
             top: 87vh;
             left: 76vw;
         }
-
+    /* positie button 4 */
         .button4{
             position: absolute;
             top: 48vh;
             left: 23vw;
         }
 
+    /* positie button 5 */
         .button5{
             position: absolute;
             top: 70vh;
             left: 72vw;
         }
 
-        .button6{
+    /* positie button 6 */
+        .button6 {
             position: absolute;
             top: 56vh;
-            left: 20vw;
+            left: 24vw;
         }
 
+
+        /* positie button 7 */
         .button7{
             position: absolute;
             top: 78vh;
             left: 41vw;
         }
 
-
+    /* positie button 8 */
         .button8{
             position: absolute;
             top: 102vh;
             left: 73vw;
         }
 
-        .button9{
+    /* positie button 9 */
+        .button9 {
             position: absolute;
-            top: 58vh;
+            top: 60vh;
             left: 34vw;
         }
 
+        /* positie button 10 */
         .button10{
             position: absolute;
             top: 69vh;
             left: 40vw;
         }
-
+    /* positie button 11 */
         .button11{
             position: absolute;
             top: 104vh;
             left: 9vw;
         }
 
-
+    /* positie button 12*/
         .button12{
             position: absolute;
             top: 81vh;
             left: 72vw;
         }
 
-        .button13{
+    /* positie button 13 */
+        .button13 {
             position: absolute;
             top: 43vh;
-            left: 24vw;
-
+            left: 28vw;
         }
-
+    
+    /* positie button 14 */
         .button14{
             position: absolute;
             top: 125vh;
             left: 45vw;
         }
-
+    
+    /* positie button 15 */
         .button15{
             position: absolute;
             top: 103vh;
             left: 34vw;
         }
-
+    
+    /* bovenste rode balk */
 
         .rodebalktop{
             background-color: #F9100C;
             height: 45px;
         }
 
+    /* CALM logo */
         .Index-logo img{
             width: 783px;
             position: absolute;
@@ -129,11 +154,12 @@
             top: 61px;
         }
 
+    /* knop naar makers-pagina */
         .makersbutton{
             font-size: 86px;
             background-color: #F9100C;
             border-color: #F9100C;
-            font-family: helvetica, serif;
+
             padding-left: 150px;
             padding-right: 150px;
             position: absolute;
@@ -141,7 +167,8 @@
             top: 500px;
 
         }
-
+    
+    /* knop naar quiz-pagina */
         .Quizbutton{
             font-family: helvetica, serif;
             font-size: 86px;
@@ -156,7 +183,7 @@
         }
 
 
-
+    /* knop naar quiz-pagina */
         .vierkantlogo.fixed{
             position: fixed;
             top: 0;
@@ -166,7 +193,7 @@
         }
 
 
-        /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
+    /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
         .Quizbutton.fixed {
             position: fixed;
             top: 0;
@@ -178,6 +205,7 @@
             padding-right: 218px;
         }
 
+    /* knop makers-pagina ná scrollen */
         .makersbutton.fixed{
             position: fixed;
             top: 0;
@@ -191,7 +219,7 @@
         }
 
 
-
+    /* titels pagina's */
         .Quiztitel,
         .makerstitel{
             color: white;
@@ -199,7 +227,7 @@
 
         }
 
-
+    /* meldknop (i) logo */
         .vierkantlogo {
             background-color: #F9100C;
             width: 80px;
@@ -213,13 +241,13 @@
 
         }
 
-
+    /* knop naar meldknop-pagina */
         .meldknopi{
             text-decoration: none;
             color: white;
         }
 
-
+    /* flatgebouw */
         .flatgebouw-content {
                 background-image: url(images/Achtergrond.jpg);
                 background-repeat: no-repeat;
@@ -235,27 +263,25 @@
 
 
 
-
+    /* intro-wizard */
         .intro-wizard-background {
             width: 816px;
             margin-top: -62px;
         }
-
+        /* tekst */
         .intro-tekst {
             margin-top: -104rem;
             padding-right: 410px;
             padding-left: 20px;
         }
-
+        /* pijltje */
         .pijltje-wizard{
             width: 398px;
             position: fixed;
             top: 64rem;
             left: 36rem;
         }
-
-
-
+        /* container */
         .wizard-container-intro {
             display: none;
             position: fixed;
@@ -263,17 +289,17 @@
             z-index: 110;
         }
 
-
+        /* content */
         .wizard-content-intro{
             color: white;
             font-family: helvetica, serif;
             font-size: 48px;
-
         }
+    
 
-
+    /* wizards */
         .wizard-container {
-            display: none; 
+            display: none;
             position: relative;
             top: 0;
             left: 0;
@@ -284,7 +310,7 @@
         }
 
 
-
+        /* content */
         .wizard-content {
             position: fixed;
             top: 40%;
@@ -295,12 +321,14 @@
             border-radius: 5%;
             z-index: 200;
         }
-        
+
+        /* menu waar de wizards in zitten*/
         .wizard-menu{
             display: flex;
             justify-content: center;
         }
 
+        /* wizard tekst */
         .info-wizard  {
             font-size: 3.3vw;
             position: relative;
@@ -308,36 +336,35 @@
             padding: 2.5vw;
         }
 
-
-
-
-
-
-
+        /* sluiten van wizard */
         .close-button {
             font-size: 6vw;
             position: absolute;
-            left: 90%;
-            font-family: helvetica;
+            left: 93%;
+            font-family: helvetica,serif;
+            top: 5%;
         }
 
-
-
+        /* schalen van afbeelding (versie 1) */
         .img-default{
             margin-top: 2.7vh;
-            width: 40vw;
+            width: 51vw;
             border: solid white 10px;
         }
 
+        /* schalen van afbeelding (versie 2) */
+        .img-default-2{
+            margin-top: 2.7vh;
+            width: 65vw;
+            border: solid white 10px;
+        }
+
+        /* afbeeldingen buiten de default marge */
         .img-nondefault{
             margin-top: 2.7vh;
-            width: 18vw;
+            width: 22vw;
             border: solid white 10px;
         }
-
-
-
-
 
         #openNextButton {
             background-color: #00000080;
@@ -369,9 +396,8 @@
             <p>Een ongeval op het Koning Willem I College… wat nu? <br> <br>
                 Iedereen wil aan het einde van de dag weer veilig naar huis. Daarom
                 streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
-                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
-                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie hopen
-                wij jou te hebben geïnformeerd als dat gebeurt.
+                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie
+                hopen wij jou te informeren als dat gebeurt. Druk deze tekst weg en verken de knoppen in het gebouw.
             </p>
         </div>
     </div>
@@ -380,22 +406,26 @@
 <!-- Knop voor volgende stap -->
 <div id="openNextButton" style="display: flex">►</div>
 
-
+<!-- rode balk --> 
 <div class="rodebalktop">
 </div>
 
+<!-- knop naar meldknop-pagina  --> 
 <div class="vierkantlogo">
     <a href="meldknop.php" class="meldknopi">i</a>
 </div>
 
+<!-- CALM logo --> 
 <h1 class="Index-logo">
     <img src="images/logo_def-01.png" alt="calmlogo">
 </h1>
 
+<!-- knop naar makers-pagina --> 
 <button class="makersbutton">
     <a href="makers.php" class="makerstitel">Makers</a>
 </button>
 
+<!-- knop naar quiz-pagina --> 
 <button class="Quizbutton">
     <a href="quiztest.php" class="Quiztitel">Quiz</a>
 </button>
@@ -405,44 +435,42 @@
 
 <!--Flat als achtergrond en buttons-->
 <div class="flatgebouw-content">
-    <div class="buttons-container">
-    <img src="images/Gif1.gif"  alt="button1" class="button1 buttons" id="button1">
+    <div class="buttons-container gif-container">
+    <img src="images/Gif1.gif"  alt="button1" class="button1 buttons animated-gif" id="button1">
 
-    <img src="images/Gif1.gif" alt="button2" class="button2 buttons" id="button2">
+    <img src="images/Gif1.gif" alt="button2" class="button2 buttons animated-gif" id="button2">
 
-    <img src="images/Gif1.gif" alt="button3" class="button3 buttons" id="button3">
+    <img src="images/Gif1.gif" alt="button3" class="button3 buttons animated-gif " id="button3">
 
-    <img src="images/Gif1.gif" alt="button4" class="button4 buttons" id="button4">
+    <img src="images/Gif1.gif" alt="button4" class="button4 buttons animated-gif" id="button4">
 
-    <img src="images/Gif1.gif" alt="button5" class="button5 buttons" id="button5">
+    <img src="images/Gif1.gif" alt="button5" class="button5 buttons animated-gif" id="button5">
 
-    <img src="images/Gif1.gif" alt="button6" class="button6 buttons" id="button6">
+    <img src="images/Gif1.gif" alt="button6" class="button6 buttons animated-gif" id="button6">
 
-    <img src="images/Gif1.gif" alt="button7" class="button7 buttons" id="button7">
+    <img src="images/Gif1.gif" alt="button7" class="button7 buttons animated-gif" id="button7">
 
-    <img src="images/Gif1.gif" alt="button8" class="button8 buttons" id="button8">
+    <img src="images/Gif1.gif" alt="button8" class="button8 buttons animated-gif" id="button8">
 
-    <img src="images/Gif1.gif" alt="button9" class="button9 buttons" id="button9">
+    <img src="images/Gif1.gif" alt="button9" class="button9 buttons animated-gif" id="button9">
 
-    <img src="images/Gif1.gif" alt="button10" class="button10 buttons" id="button10">
+    <img src="images/Gif1.gif" alt="button10" class="button10 buttons animated-gif" id="button10">
 
-    <img src="images/Gif1.gif" alt="button11" class="button11 buttons" id="button11">
+    <img src="images/Gif1.gif" alt="button11" class="button11 buttons animated-gif" id="button11">
 
-    <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
+    <img src="images/Gif1.gif" alt="button12" class="button12 buttons animated-gif" id="button12">
 
-   <img src="images/Gif1.gif" alt="button13" class="button13 buttons" id="button13">
+   <img src="images/Gif1.gif" alt="button13" class="button13 buttons animated-gif" id="button13">
 
-  <img src="images/Gif1.gif" alt="button14" class="button14 buttons" id="button14">
+  <img src="images/Gif1.gif" alt="button14" class="button14 buttons animated-gif" id="button14">
 
-   <img src="images/Gif1.gif" alt="button15" class="button15 buttons" id="button15">
+   <img src="images/Gif1.gif" alt="button15" class="button15 buttons animated-gif" id="button15">
 
     </div>
     </div>
 
 
 <!-- Wizard-vensters -->
-
-
 <div class="wizard-container" id="wizard1">
     <div class="wizard-content">
         <div class="wizard-menu">
@@ -464,7 +492,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/ontruimingsplattegrond_lobby.jpg" alt="plattegrond" class="img-default">
+            <img src="images/wizardfoto/ontruimingsplattegrond_lobby.jpg" alt="plattegrond" class="img-default-2">
             </div> 
             <span class="close-button" id="close2">X</span>
             </div> 
@@ -518,7 +546,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/brandblusser.jpg" alt="brandblusser" class="img-default">
+            <img src="images/wizardfoto/brandblusser.jpg" alt="brandblusser" class="img-default-2">
             </div> 
             <span class="close-button" id="close5">X</span>
             </div> 
@@ -612,7 +640,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/3e_verdieping_brand_alarm.jpg"alt="handbrandmelder" class="img-default">
+            <img src="images/wizardfoto/3e_verdieping_brand_alarm.jpg" alt="handbrandmelder" class="img-default">
             </div> 
             <span class="close-button" id="close10">X</span>
             </div> 
@@ -650,7 +678,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid"> 
-            <img src="images/wizardfoto/noodroute.jpg" alt="nooddeur" class="img-default">
+            <img src="images/wizardfoto/noodroute.jpg" alt="nooddeur" class="img-default-2">
             </div> 
             <span class="close-button" id="close12">X</span>
             </div> 
@@ -672,7 +700,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid">
-                <img src="images/wizardfoto/nooddouche.jpg" alt="nooddouche" class="img-default">
+                <img src="images/wizardfoto/nooddouche.jpg" alt="nooddouche" class="img-default-2">
             </div>
             <span class="close-button" id="close13">X</span>
         </div>
@@ -695,7 +723,7 @@
             <span class="close-button" id="close14">X</span>
         </div>
         <div class="info-wizard">
-            <p>Oh, daar gaat Pietje Paniek weer, Hij keek weer eens niet voor zich en glee uit. Maar vrees niet, want gelukkig had Pietje net op
+            <p>Oh, daar gaat Pietje Paniek weer, Hij keek weer eens niet voor zich en gleed uit. Maar vrees niet, want gelukkig had Pietje net op
                 tijd onze website bezocht. Hij heeft zich aardig kunnen navigeren op
                 onze website en heeft de knop ingedrukt met alle alarmnummers van het KW1C.</p>
         </div>
@@ -706,7 +734,7 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid">
-                <img src="images/wizardfoto/alarmkaart_lobby.jpg" alt="alarmkaart" class="img-default">
+                <img src="images/wizardfoto/alarmkaart_lobby.jpg" alt="alarmkaart" class="img-default-2">
             </div>
             <span class="close-button" id="close15">X</span>
         </div>
@@ -859,14 +887,30 @@ function hideShow(){
 
 
 <script>
+    // Houd bij welke wizard geopend is
+    var openWizardId = null;
+
     // Function to open the wizard window
     function openWizard(wizardId) {
+        // Controleer of er al een andere wizard open is
+        if (openWizardId !== null) {
+            // Sluit de huidige open wizard voordat je een nieuwe opent
+            closeWizard(openWizardId);
+        }
+
+        // Open de nieuwe wizard
         document.getElementById(wizardId).style.display = "flex";
+
+        // Update de openWizardId variabele
+        openWizardId = wizardId;
     }
 
     // Function to close the wizard window
     function closeWizard(wizardId) {
         document.getElementById(wizardId).style.display = "none";
+
+        // Reset de openWizardId variabele
+        openWizardId = null;
     }
 
     $(document).ready(function () {
@@ -907,7 +951,6 @@ function hideShow(){
             // Close the wizard when the close button is clicked
             document.getElementById("close" + i).addEventListener("click", function() {
                 closeWizard(wizardId);
-
             });
         }
     });
@@ -916,6 +959,8 @@ function hideShow(){
         document.getElementById('introWizard').style.display = "flex";
         $(".vierkantlogo, .makersbutton, .Quizbutton").removeClass("fixed");
     }
+
+
 
 </script>
 
