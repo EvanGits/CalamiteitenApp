@@ -35,19 +35,19 @@
                     ["type" => "text", "content" => "Aan je eigen veiligheid denken en de hulpverleners inlichten."],
                 ],
                 "correctAnswer" => 2,],
-            ["question" => "Wat is de juiste procedure om de Bhv'ers op de hoogte te brengen en de meldkamer te waarschuwen in geval van een brand?",
+            ["question" => "Wat is de juiste procedure om de bhv'ers op de hoogte te brengen en de meldkamer te waarschuwen in geval van een brand?",
                 "options" => [
                     ["type" => "text", "content" => "Door de handbrandmelder in te drukken en het interne alarmnummer te bellen."],
                     ["type" => "text", "content" => "Door het interne alarmnummer te bellen en de brand te blussen."],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Wat is de juiste manier om de bhv'ers te waarschuwen als je een brand ziet?",
+            ["question" => "Wat is de juiste manier om de bhv'ers te helpen bij een brand?",
                 "options" => [
                     ["type" => "text", "content" => "Verstop je ergens en wacht af todat de bv'er je vindt."],
                     ["type" => "text", "content" => "Volg de instructies van de bhv'er op en blijf rustig."],
                 ],
                 "correctAnswer" => 2,],
-            ["question" => "Wat doe je als je geconfronteerd met een calamiteit?",
+            ["question" => "Wat doe je als je geconfronteerd wordt met een calamiteit?",
                 "options" => [
                     ["type" => "text", "content" => "De deuren en ramen openhouden om te ventileren en er geen rook in de ruimte blijft hangen."],
                     ["type" => "text", "content" => "De deuren en ramen sluiten om de verspreiding van rook en vuur te voorkomen."],
@@ -68,7 +68,7 @@
             ["question" => "Wat moet je doen als er brand uitbreekt en je bent in de klas?",
                 "options" => [
                     ["type" => "text", "content" => "Ren zo snel mogelijk met jouw klas naar de dichtstbijzijnde uitgang."],
-                    ["type" => "text", "content" => "Blijf met de klas bij elkaar en help anderen die je onderweg vindt."],
+                    ["type" => "text", "content" => "Blijf met de klas bij elkaar en help anderen die hulp nodig hebben."],
                 ],
                 "correctAnswer" => 2,],
             ["question" => "Wat moet je doen als er een brand uitbreekt en je mist een klasgenoot?",
@@ -83,7 +83,7 @@
                     ["type" => "text", "content" => "Laat de mindervalide zelfstandig naar buiten gaan."],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Mag je de lift gebruiken tijdens een brand.",
+            ["question" => "Mag je de lift gebruiken tijdens een brand?",
                 "options" => [
                     ["type" => "text", "content" => "Ja, dit is de snelste manier om het gebouw te verlaten."],
                     ["type" => "text", "content" => "Nee, je mag de lift in dit gebouw/bouwdeel niet gebruiken. "],
@@ -98,7 +98,7 @@
             ["question" => "Wat moet je doen als een slachtoffer op de grond ziet liggen?",
                 "options" => [
                     ["type" => "text", "content" => "Ren meteen naar het slachtoffer toe en probeer te helpen."],
-                    ["type" => "text", "content" => "Neem afstand en geef de bhv'er ruimte om hulp te verlenen."],
+                    ["type" => "text", "content" => "Bel het alarmnummer, neem afstand en geef de bhv'er ruimte om hulp te verlenen."],
                 ],
                 "correctAnswer" => 2,],
             ["question" => "Wat moet je doen als het ontruimingsalarm (slow whoop) afgaat?",
@@ -107,7 +107,7 @@
                     ["type" => "text", "content" => "Blijf waar je bent, wacht tot de bhv'er aanwezig is en volg de instructie  op."],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Welke route neem je tijdens een ontuiming?",
+            ["question" => "Welke route neem je tijdens een ontruiming?",
                 "options" => [
                     ["type" => "text", "content" => "Volg de borden die de vluchtroute aangeven. Dit is de korste route naar buiten."],
                     ["type" => "text", "content" => "Door dezelfde route te nemen als je bent gekomen. Deze route is bekend en dus duidelijk. "],
@@ -121,8 +121,8 @@
                 "correctAnswer" => 2,],
             ["question" => "Hoe kun je het beste handelen tijdens een ontruiming?",
                 "options" => [
-                    ["type" => "text", "content" => "Rustig naar buiten gaan en niet terug naar binnengaan totdat de bhv'er aangeeft dat de calamiteiten is afgelopen."],
-                    ["type" => "text", "content" => "Rustig naar buiten gaan en niet terug naar binnengaan totdat je docent aangeeft dat de calamiteit is afgelopen."],
+                    ["type" => "text", "content" => "Rustig naar buiten gaan en niet terug naar binnen gaan totdat de bhv'er aangeeft dat de calamiteit voorbij is."],
+                    ["type" => "text", "content" => "Rustig naar buiten gaan en niet terug naar binnen gaan totdat je docent aangeeft dat de calamiteit voorbij is."],
                 ],
                 "correctAnswer" => 1,],
             ["question" => "Waar ga je tijdens een ontruiming naartoe om veilig te blijven?",
@@ -131,7 +131,7 @@
                     ["type" => "text", "content" => "Naar de dichtstbijzijnde hoofduitgang en/of hal bij de balie. "],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Wat is een interne alarmkaart?",
+            ["question" => "Op welk plaatje zie je een alarmkaart?",
                 "options" => [
                     ["type" => "image", "content" => "images/alarmkaart.jpg"],
                     ["type" => "image", "content" => "images/verkeers.png"],
@@ -145,8 +145,8 @@
                 "correctAnswer" => 1,],
             ["question" => "Aan welk bord herken je een verzamelplaats?",
                 "options" => [
-                    ["type" => "image", "content" => "images/ehbo.png"],
-                    ["type" => "image", "content" => "images/verzamelplaats.png"],
+                    ["type" => "image", "content" => "images/verbanddoos.jpg"],
+                    ["type" => "image", "content" => "images/verzamelplaats0.png"],
                 ],
                 "correctAnswer" => 2,],
             ["question" => "Op welke foto staat een AED?",
@@ -167,9 +167,9 @@
                     ["type" => "text", "content" => "Een hulpmiddel waarmee  je een klein brandje kunt doven en die hangen altijd naast de wc's in het hele gebouw."],
                 ],
                 "correctAnswer" => 1,],
-            ["question" => "Waaraan is een vluchtweg / nooduitgang te herkennen en waarom vrijhouden?",
+            ["question" => "Waaraan is een vluchtweg / nooduitgang te herkennen en waarom moet je die vrijhouden?",
                 "options" => [
-                    ["type" => "text", "content" => "Je kunt deze herkennen aan de groene bordjes met witte pijl boven de deur. Je moet ze vrijhouden om door te kunnen vluchten als er een calamiteit plaatsvindt voor het geval van nood."],
+                    ["type" => "text", "content" => "Je kunt deze herkennen aan de groene bordjes met witte pijl boven de deur. Je moet ze vrijhouden om door te kunnen vluchten als er een calamiteit plaatsvindt."],
                     ["type" => "text", "content" => "Vluchtwegen en nooduitgangen zijn nergens aan te herkennen, en je moet ze vrijhouden zodat hulpverleners er makkelijk uit kunnen gaan."],
                 ],
                 "correctAnswer" => 1,],
@@ -205,7 +205,7 @@
             "Ga nooit terug een brandend gebouw in. Ga ook niet zelf op zoek, maar geef dit door aan de bhv'er en/of docent, zodat de bhv'ers gericht kunnen zoeken naar de vermiste persoon. De bhv'ers zijn hiervoor opgeleid.",
             "Mindervaliden kunnen mogelijk niet zelfstandig gebruikmaken van de trap. Of ze kunnen niet zien welke kant het wel of juist niet veilig is. Sommige mindervaliden zijn niet-zelfredzaam. Door hen te helpen om veilig het gebouw te verlaten blijft er niemand achter in het gebouw. Mocht je de mindervaliden niet zelf kunnen helpen, bel dan het interne alarmnummer. De bhv'ers komen jou en de mindervaliden helpen.",
             "Reguliere liften zijn niet ontworpen om te gebruiken bij brand. Als de stroom uitvalt komt de lift stil te staan en zit je opgesloten.",
-            "Laat het slachtoffer niet alleen. Probeer het slachtoffer gerust te stellen en geef aan dat je het interne alarmnummer belt om de bhv'ers te informeren. Blijf bij het slachtoffer totdat de bhv'ers aanwezig zijn. Geen de bhv'ers ruimte, maar blijf wel in de buurt. Het kan zijn dat de bhv'ers (of ambulancemedewerkers) nog aanvullende vragen hebben.",
+            "Laat het slachtoffer niet alleen. Probeer het slachtoffer gerust te stellen en geef aan dat je het interne alarmnummer belt om de bhv'ers te informeren. Blijf bij het slachtoffer totdat de bhv'ers aanwezig zijn. Geef de bhv'ers ruimte, maar blijf wel in de buurt. Het kan zijn dat de bhv'ers (of ambulancemedewerkers) nog aanvullende vragen hebben.",
             "Je weet niet van welk letsel er sprake is. Als je niet bent opgeleid, kun je onbedoeld de toestand verergeren. Informeer daarom zo snel mogelijk de bhv'er door het interne alarmnummer te bellen. De bhv'er is opgeleid om op te treden bij deze omstandigheden.",
             "Op het moment dat het ontruimingsalarm afgaat, dan begeef je je direct naar buiten. Je gaat naar de dichtstbijzijnde verzamelplaats.",
             "De route waardoor je naar binnen bent gegaan is niet altijd de kortste en veiligste route. Let daarom altijd op de vluchtroute en nooddeuren die zijn aangegeven met de groen verlichte borden met een witte pijl.",
@@ -269,9 +269,7 @@
         <div id="startQuiz">
 
             <p class="startQuizText">
-                Hey! Fijn dat je de tijd neemt om deze test te maken. In deze test krijg je informatie over hoe je met
-                calamiteiten moet<br> omgaan en kun je ook voor jezelf zien hoe jouw kennis ervoor staat. Alvast
-                succes😊
+                Dit is de calaminator. Een quiz waarin jij je kennis over bhv en calamiteiten kunt testen. Succes!
             </p>
             <button id="start">Begin</button>
         </div>
