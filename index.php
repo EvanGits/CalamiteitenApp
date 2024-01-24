@@ -159,9 +159,8 @@
             font-size: 86px;
             background-color: #F9100C;
             border-color: #F9100C;
-
             padding-left: 150px;
-            padding-right: 150px;
+            padding-right: 153px;
             position: absolute;
             right: 200px;
             top: 500px;
@@ -181,6 +180,20 @@
             right: 194px;
             z-index: 100;
         }
+
+        .Uitlegbutton{
+            font-family: helvetica, serif;
+            font-size: 86px;
+            background-color: #F9100C;
+            border-color: #F9100C;
+            padding-right: 202px;
+            padding-left: 163px;
+            position: absolute;
+            top: 836px;
+            right: 194px;
+            z-index: 100;
+        }
+
 
 
     /* knop naar quiz-pagina */
@@ -221,7 +234,8 @@
 
     /* titels pagina's */
         .Quiztitel,
-        .makerstitel{
+        .makerstitel,
+        .Uitlegtitel{
             color: white;
             text-decoration: none;
 
@@ -263,39 +277,43 @@
 
 
 
-    /* intro-wizard */
-        .intro-wizard-background {
-            width: 816px;
-            margin-top: -62px;
-        }
         /* tekst */
         .intro-tekst {
-            margin-top: -104rem;
-            padding-right: 410px;
-            padding-left: 20px;
+            margin-top: 2vh;
+            padding-right: 11vw;
+            padding-left: 5vw;
         }
-        /* pijltje */
-        .pijltje-wizard{
-            width: 398px;
-            position: fixed;
-            top: 64rem;
-            left: 36rem;
+
+        /* close button intro */
+        .Sluiting-wizard{
+            width: 34vw;
+            position: absolute;
+            top: 4vh;
+            left: 91vw;
         }
         /* container */
         .wizard-container-intro {
             display: none;
             position: fixed;
-            top: 424px;
+            top: 20vh;
             z-index: 110;
         }
 
         /* content */
-        .wizard-content-intro{
+        .wizard-content-intro {
             color: white;
             font-family: helvetica, serif;
-            font-size: 48px;
+            font-size: 5vw;
         }
-    
+
+        /*introwizard achtergrond*/
+        .testbackground {
+            background-color: #00000080;
+            border-radius: 5%;
+            position: fixed;
+            width: 101vw;
+            max-height: 100%;
+            }
 
     /* wizards */
         .wizard-container {
@@ -366,17 +384,6 @@
             border: solid white 10px;
         }
 
-        #openNextButton {
-            background-color: #00000080;
-            color: #fff;
-            font-size: 24px;
-            border: none;
-            cursor: pointer;
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            z-index: 150;
-        }
     </style>
 </head>
 
@@ -387,8 +394,8 @@
 <!-- Wizard-venster voor introductie -->
 <div class="wizard-container-intro" id="introWizard">
     <div class="wizard-content-intro">
-        <img src="images/wizard.png" alt="wizard-background" class="intro-wizard-background">
-        <img src="images/Pijltjes_wizard-01.png" alt="pijltje-wizard" class="pijltje-wizard" id="closeIntroWizard">
+        <div class="testbackground">
+            <span class="Sluiting-wizard" id="closeIntroWizard">X</span>
         <div class="intro-tekst">
 
             <h2>Welkom bij de Applicatie</h2>
@@ -398,13 +405,12 @@
                 streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
                 Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie
                 hopen wij jou te informeren als dat gebeurt. Druk deze tekst weg en verken de knoppen in het gebouw.
+                <br> <br>
             </p>
         </div>
     </div>
 </div>
-
-<!-- Knop voor volgende stap -->
-<div id="openNextButton" style="display: flex">►</div>
+</div>
 
 <!-- rode balk --> 
 <div class="rodebalktop">
@@ -430,6 +436,10 @@
     <a href="quiztest.php" class="Quiztitel">Quiz</a>
 </button>
 
+<!-- knop naar quiz-pagina -->
+<button id="Uitlegbutton" class="Uitlegbutton">
+    <a href="#" class="Uitlegtitel">Uitleg</a>
+</button>
 
 
 
@@ -753,35 +763,6 @@
 
 
 <script>
-    window.addEventListener('load', function () {
-        console.log("Pagina geladen");
-
-        // Voeg een eventlistener toe aan de openNextButton
-        var openNextButton = document.getElementById('openNextButton');
-        if (openNextButton) {
-            openNextButton.addEventListener('click', openIntroWizard);
-            console.log("openNextButton gevonden");
-        } else {
-            console.log("openNextButton niet gevonden");
-        }
-
-        // Voeg de event listener toe voor het sluiten van de wizard
-        var closeButton = document.getElementById('closeIntroWizard');
-        if (closeButton) {
-            closeButton.addEventListener('click', function () {
-                closeIntroWizard();
-            });
-            console.log("closeButton gevonden");
-        } else {
-            console.log("closeButton niet gevonden");
-        }
-
-       
-
-        // Roep de handleIntroWizard functie op om de wizard te tonen/verbergen op basis van de cookie-status
-        handleIntroWizard();
-    });
-
     // Functie om een cookie in te stellen
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
@@ -818,70 +799,50 @@
         // Stel de cookie in om bij te houden dat de gebruiker de intro heeft gesloten
         setCookie('introWizardClosed', 'true', 365); // Hier is de cookie-instelling geldig voor 1 jaar
 
-        // Toon de openNextButton
-        var openNextButton = document.getElementById('openNextButton');
-        if (openNextButton) {
-            openNextButton.style.display = 'block';
-        } else {
-            console.log("openNextButton niet gevonden");
-        }
-
         // Verberg de intro wizard
         introWizard.style.display = "none";
     }
 
-var introWizard = document.getElementById('introWizard'); 
-var openNextButton = document.getElementById('openNextButton')
-function hideShow(){
-    if(display == 'flex'){
-        openNextButton.style.display = "none"; 
-    }
-    else{
-        openNextButton.style.display = 'flex'; 
-    }
-}
-
-
-
-
-    // Functie om de introductiewizard opnieuw te openen
-    function openIntroWizard() {
-        // Voeg hier de logica toe om de introductiewizard opnieuw te openen
-        console.log("Introductiewizard opnieuw geopend.");
-
-        // Verberg de openNextButton
-        var openNextButton = document.getElementById('openNextButton');
-        if (openNextButton) {
-            openNextButton.style.display = 'none';
-        } else {
-            console.log("openNextButton niet gevonden");
-        }
-    }
-
-    // Functie om de introductiewizard te openen of te sluiten op basis van de cookie-status
+    // Functie om de introductiewizard te tonen of te verbergen op basis van de cookie-status
     function handleIntroWizard() {
         var introWizard = document.getElementById('introWizard');
-        var closeButton = document.getElementById('closeIntroWizard');
-        var openNextButton = document.getElementById('openNextButton');
 
-        // Controleer of de cookie is ingesteld
-        if (getCookie('introWizardClosed') !== 'true') {
-            // Toon de intro-wizard als de cookie niet is ingesteld
-            introWizard.style.display = "flex";
-        } else {
-            // Verberg de intro-wizard als de cookie is ingesteld
-            introWizard.style.display = "none";
-            // Toon de close button, zodat gebruikers de wizard opnieuw kunnen openen
-            closeButton.style.display = "block";
-
-            // Toon de openNextButton
-            if (openNextButton) {
-                openNextButton.style.display = 'block';
-            } else {
-                console.log("openNextButton niet gevonden");
-            }
+        // Controleer of de introWizardClosed-cookie is ingesteld
+        var introWizardClosed = getCookie('introWizardClosed');
+        if (introWizardClosed !== 'true') {
+            // Toon de introductiewizard als de cookie niet is ingesteld
+            introWizard.style.display = 'flex';
         }
     }
+
+    // Voeg een eventlistener toe aan de Uitlegbutton
+    var Uitlegbutton = document.getElementById('Uitlegbutton');
+    if (Uitlegbutton) {
+        Uitlegbutton.addEventListener('click', function () {
+            openIntroWizard();
+        });
+        console.log("Uitlegbutton gevonden");
+    } else {
+        console.log("Uitlegbutton niet gevonden");
+    }
+
+    window.addEventListener('load', function () {
+        console.log("Pagina geladen");
+
+        // Voeg de event listener toe voor het sluiten van de wizard
+        var closeButton = document.getElementById('closeIntroWizard');
+        if (closeButton) {
+            closeButton.addEventListener('click', function () {
+                closeIntroWizard();
+            });
+            console.log("closeButton gevonden");
+        } else {
+            console.log("closeButton niet gevonden");
+        }
+
+        // Roep de handleIntroWizard functie op om de wizard te tonen/verbergen op basis van de cookie-status
+        handleIntroWizard();
+    });
 </script>
 
 
