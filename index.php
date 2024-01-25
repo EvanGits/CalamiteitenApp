@@ -404,7 +404,7 @@
                 Iedereen wil aan het einde van de dag weer veilig naar huis. Daarom
                 streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
                 Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie
-                hopen wij jou te informeren als dat gebeurt. Druk deze tekst weg en verken de knoppen in het gebouw.
+                hopen wij jou te informeren als dat gebeurt. Druk deze tekst weg en verken de groene knoppen in het gebouw.
                 <br> <br>
             </p>
         </div>
