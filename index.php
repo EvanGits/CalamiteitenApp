@@ -65,7 +65,6 @@
 </button>
 
 
-
 <!--Flat als achtergrond en buttons-->
 <div class="flatgebouw-content">
     <div class="buttons-container gif-container">

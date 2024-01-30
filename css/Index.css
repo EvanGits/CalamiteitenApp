@@ -328,7 +328,7 @@
     font-family: helvetica, serif;
     color: white;
     width: 80vw;
-    background-color: #00000080;
+    background-color: rgba(0, 0, 0, 0.73);
     border-radius: 5%;
     z-index: 200;
 }
