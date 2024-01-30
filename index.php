@@ -40,7 +40,7 @@
 <!-- knop naar meldknop-pagina  --> 
 <div class="vierkantlogo">
     <a href="meldknop.php" class="meldknopi">
-        <img src="images/redPhone.png" alt="red-phone" class="red-phone">
+        <img src="images/fullPhone2.jpg" alt="red-phone" class="red-phone">
     </a>
 </div>
 
