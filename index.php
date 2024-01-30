@@ -40,7 +40,7 @@
 <!-- knop naar meldknop-pagina  --> 
 <div class="vierkantlogo">
     <a href="meldknop.php" class="meldknopi">
-        <img src="images/wizardfoto/red-phone.jpg" class="red-phone">
+        <img src="images/wizardfoto/red-phone.jpg" alt="red-phone" class="red-phone">
     </a>
 </div>
 
@@ -100,6 +100,12 @@
    <img src="images/Gif1.gif" alt="button15" class="button15 buttons animated-gif" id="button15">
 
   <img src="images/Gif1.gif" alt="button16" class="button16 buttons animated-gif" id="button16">
+
+  <img src="images/Gif1.gif" alt="button17" class="button17 buttons animated-gif" id="button17">
+
+  <img src="images/Gif1.gif" alt="button18" class="button18 buttons animated-gif" id="button18">
+
+  <img src="images/Gif1.gif" alt="button19" class="button19 buttons animated-gif" id="button19">
     </div>
     </div>
 
@@ -415,6 +421,102 @@
     </div>
 </div>
 
+<div class="wizard-container" id="wizard17">
+    <div class="wizard-content">
+        <div class="wizard-menu">
+            <span class="close-button" id="close17">X</span>
+        </div>
+        <div class="info-wizard">
+            <h1>Wat te doen bij een ontruiming? Ontruimingsalarm</h1>
+            <p>Bij een ontruiming is het belangrijk om georganiseerd te handelen om de veiligheid van alle aanwezigen te waarborgen. Dus als er een ontruiming plaatsvindt, dan gelden de volgende stappen:
+                <br>-	Blijf kalm. Dit helpt om snel en effectief te handelen.
+                <br>-	Blijf bewust van je eigen veiligheid.
+                <br>-	Volg ontruimingsalarmen en instructies op. Als je een alarm hoort of instructies krijgt van een bedrijfshulpverlener (bhv’er), volg je deze onmiddellijk op. Dit is niet vrijblijvend.
+                <br>-	Laat persoonlijke bezittingen achter. Je veiligheid heeft prioriteit boven materiële zaken.
+                Tenzij er specifiek door de bhv’er wordt aangegeven dat je je persoonlijke bezittingen juist wel moet meenemen.
+                <br> -	Maak GEEN gebruik van de liften, omdat deze in geval van een calamiteit vast kunnen komen te zitten.
+                <br> -	Verlaat het gebouw via de dichtstbijzijnde en veilige vluchtroute en nooduitgang:
+                <br>o	als je in een klas zit, blijf dan als groep bij elkaar en volg de docent naar buiten;
+                <br>o	als je onderweg minder validen of slachtoffers tegenkomt, vraag of je hen kunt helpen.
+                <br>-	Verzamel op de een van de aangewezen verzamelplaatsen.
+                <br>o	als je een klasgenoot/collega mist, geef dit dan aan bij de docent of bhv’er.
+                <br>-	Blijf op de verzamelplaats totdat de bhv’er anders aangeeft.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="wizard-container" id="wizard18">
+    <div class="wizard-content">
+        <div class="wizard-menu">
+            <span class="close-button" id="close18">X</span>
+        </div>
+        <div class="info-wizard">
+            <h1>Wat te doen bij een ongeval?</h1>
+            <p>Als er een ongeval plaatsvindt waarbij sprake is van een slachtoffer en je ziet dit gebeuren of je komt hierbij uit dan gelden de volgende stappen:
+               <br> -	Blijf kalm. Dit helpt om snel en effectief te handelen.
+                <br>-	Denk eerst aan je eigen veiligheid. Zorg ervoor dat de plaats van het ongeval veilig is voor jou en anderen voordat je iets onderneemt. Schakel het gevaar uit als dat nodig/mogelijk is.
+                <br>-	Ga na of slachtoffer nog reageert of bewusteloos is. Stel een paar vragen:
+                <br>o	wat scheelt er?
+                <br>o	wat is er gebeurd?
+                <br>o	heb je ergens pijn?
+                <br>-	Bel het interne alarmnummer om de bedrijfshulpverleners (bhv’ers) op te roepen en geef in ieder geval door:
+                <br>o	je naam en hoe je bereikbaar bent;
+                <br>o	waar het ongeval heeft plaatsgevonden;
+                <br>o	wat er is gebeurd en/of hoe de situatie nu is;
+                <br>o	om hoeveel slachtoffers dat het gaat;
+                <br>o	of er al contact is opgenomen met het landelijke alarmnummer 112.
+                <br>-	Stel het slachtoffer gerust.
+                <br>-	Verleen hulp als je hiervoor getraind bent.
+                Verplaats het slachtoffer niet als je hier geen training voor hebt gevolgd.
+                <br> -	Blijf bij het slachtoffer totdat de bhv’ers aanwezig zijn. Observeer het slachtoffer of de toestand niet verslechtert.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard19">
+    <div class="wizard-content">
+        <div class="wizard-menu">
+            <span class="close-button" id="close19">X</span>
+        </div>
+        <div class="info-wizard19">
+            <h1>
+                Wat te doen bij brand?
+            </h1>
+            <br>
+            <p>Wanneer je vuur en rook ziet, rook ruikt en/of hitte voelt kan er sprake zijn van een brand. Mocht er sprake zijn van een brand dan is het cruciaal dat iedereen weet wat hij/zij moet doen. Volg daarom de volgende stappen:
+               <br> -	Blijf kalm. Dit helpt om snel en effectief te handelen.
+               <br> -	Denk eerst aan je eigen veiligheid. Stop waar je mee bezig bent en beoordeel de situatie.
+                <br>-	Druk een handbrandmelder in.
+                <br>-	Bel het interne alarmnummer en meld:
+                <br>o	je naam en hoe je bereikbaar bent;
+                <br>o	waar de brand plaatsvindt;
+                <br>o	wat er is in brand staat;
+                <br>o	of er mensen in gevaar zijn (en er slachtoffers aanwezig zijn).
+                <br>-	Laat het contact met het landelijke alarmnummer 112 over aan de bedrijfshulpverleners (bhv’ers). Doe dit NIET zelf, maar bel naar het interne alarmnummer om de bhv’ers te informeren.
+                <br> -	Ga NIET zelf blussen als je hier niet voor opgeleid bent. Laat dit over aan de opgeleide bhv’ers en/of de brandweer.
+                <br>-	Vermijd de rook, want deze is giftig. Blijf zo laag mogelijk door te bukken, maar ga niet kruipen.
+                <br>-	Voorkom uitbreiding van de brand en sluit ramen, deuren en ventilatieroosters.
+                <br> -	Laat alle persoonlijke bezittingen achter. Neem geen tassen of andere spullen mee naar buiten.
+                <br>-	Maak GEEN gebruik van de liften, omdat deze in geval van een calamiteit vast kunnen komen te zitten.
+                <br>-	Verlaat het gebouw via de dichtstbijzijnde en veilige vluchtroute en nooduitgang:
+                <br>o	als je in een klas zit, blijf dan als groep bij elkaar en volg de docent naar buiten;
+                <br>o	als je onderweg minder validen of slachtoffers tegenkomt, vraag of je hen kunt helpen.
+                <br> -	Verzamel op de een van de aangewezen verzamelplaatsen.
+                <br>o	als je een klasgenoot/collega mist, geef dit dan aan bij de docent of bhv’er.
+                <br>-	Blijf op de verzamelplaats totdat de bhv’er anders aangeeft en ga NIET kijken bij de brand.
+                <br>-	Volg de instructies op die de bhv’ers aangeven. Dit is niet vrijblijvend.
+
+                Op de alarmkaart kun je de verkorte versie van deze stappen terugvinden.
+
+
+            </p>
+        </div>
+    </div>
+</div>
+
 
 <script>
     // Functie om een cookie in te stellen
@@ -554,7 +656,7 @@
         });
 
         // Add click event listeners for all buttons
-        for (let i = 1; i <= 16; i++) {
+        for (let i = 1; i <= 19; i++) {
             const buttonId = "button" + i;
             const wizardId = "wizard" + i;
 
