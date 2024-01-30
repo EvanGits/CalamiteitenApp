@@ -40,7 +40,7 @@
 <!-- knop naar meldknop-pagina  --> 
 <div class="vierkantlogo">
     <a href="meldknop.php" class="meldknopi">
-        <img src="images/wizardfoto/red-phone.jpg" alt="red-phone" class="red-phone">
+        <img src="images/redPhone.png" alt="red-phone" class="red-phone">
     </a>
 </div>
 
@@ -57,7 +57,7 @@
 <!-- knop naar quiz-pagina --> 
 <button class="Quizbutton">
     <a href="quiztest.php" class="Quiztitel">Quiz</a>
-</button>
+</button>s
 
 <!-- knop naar quiz-pagina -->
 <button id="Uitlegbutton" class="Uitlegbutton">
