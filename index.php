@@ -5,386 +5,7 @@
     <!-- titel --> 
     <title>Index</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-
-        }
-
-    /* container van alle buttons */
-        .buttons-container{
-            display: flex;
-            position: relative;
-        }
-
-
-
-            .animated-gif {
-                transition: transform 0.5s ease; /* Voeg een overgangseffect toe op de grootte */
-                cursor: pointer; /* Maak de cursor een wijzer wanneer erop wordt geklikt */
-                transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
-                filter: brightness(0) saturate(100%) invert(75%) sepia(59%) saturate(5786%) hue-rotate(89deg) brightness(129%) contrast(114%);
-            }
-
-
-        .buttons{
-            width: 50px;
-            height: auto;
-        }
-
-    /* positie button 1 */
-        .button1{
-            position: absolute;
-            top: 35vh;
-            left: 39vw;
-        }
-
-    /* positie button 2 */
-        .button2{
-            position: absolute;
-            top: 104vh;
-            left: 51vw;
-        }
-
-    /* positie button 3 */
-        .button3{
-            position: absolute;
-            top: 87vh;
-            left: 76vw;
-        }
-    /* positie button 4 */
-        .button4{
-            position: absolute;
-            top: 48vh;
-            left: 23vw;
-        }
-
-    /* positie button 5 */
-        .button5{
-            position: absolute;
-            top: 70vh;
-            left: 72vw;
-        }
-
-    /* positie button 6 */
-        .button6 {
-            position: absolute;
-            top: 56vh;
-            left: 24vw;
-        }
-
-
-        /* positie button 7 */
-        .button7{
-            position: absolute;
-            top: 78vh;
-            left: 41vw;
-        }
-
-    /* positie button 8 */
-        .button8{
-            position: absolute;
-            top: 102vh;
-            left: 73vw;
-        }
-
-    /* positie button 9 */
-        .button9 {
-            position: absolute;
-            top: 60vh;
-            left: 34vw;
-        }
-
-        /* positie button 10 */
-        .button10{
-            position: absolute;
-            top: 69vh;
-            left: 40vw;
-        }
-    /* positie button 11 */
-        .button11{
-            position: absolute;
-            top: 104vh;
-            left: 9vw;
-        }
-
-    /* positie button 12*/
-        .button12{
-            position: absolute;
-            top: 81vh;
-            left: 72vw;
-        }
-
-    /* positie button 13 */
-        .button13 {
-            position: absolute;
-            top: 43vh;
-            left: 28vw;
-        }
-    
-    /* positie button 14 */
-        .button14{
-            position: absolute;
-            top: 125vh;
-            left: 45vw;
-        }
-    
-    /* positie button 15 */
-        .button15{
-            position: absolute;
-            top: 103vh;
-            left: 34vw;
-        }
-    
-    /* bovenste rode balk */
-
-        .rodebalktop{
-            background-color: #F9100C;
-            height: 45px;
-        }
-
-    /* CALM logo */
-        .Index-logo img{
-            width: 783px;
-            position: absolute;
-            left: 93px;
-            top: 61px;
-        }
-
-    /* knop naar makers-pagina */
-        .makersbutton{
-            font-size: 86px;
-            background-color: #F9100C;
-            border-color: #F9100C;
-            padding-left: 150px;
-            padding-right: 153px;
-            position: absolute;
-            right: 200px;
-            top: 500px;
-
-        }
-    
-    /* knop naar quiz-pagina */
-        .Quizbutton{
-            font-family: helvetica, serif;
-            font-size: 86px;
-            background-color: #F9100C;
-            border-color: #F9100C;
-            padding-right: 205px;
-            padding-left: 203px;
-            position: absolute;
-            top: 668px;
-            right: 194px;
-            z-index: 100;
-        }
-
-        .Uitlegbutton{
-            font-family: helvetica, serif;
-            font-size: 86px;
-            background-color: #F9100C;
-            border-color: #F9100C;
-            padding-right: 202px;
-            padding-left: 163px;
-            position: absolute;
-            top: 836px;
-            right: 194px;
-            z-index: 100;
-        }
-
-
-
-    /* knop naar quiz-pagina */
-        .vierkantlogo.fixed{
-            position: fixed;
-            top: 0;
-            margin-top: 30px;
-            height: 100px;
-
-        }
-
-
-    /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
-        .Quizbutton.fixed {
-            position: fixed;
-            top: 0;
-            right: 250px;
-            margin-top: 40px;
-            width: 50px;
-            font-size: 70px;
-            padding-left: 82px;
-            padding-right: 218px;
-        }
-
-    /* knop makers-pagina ná scrollen */
-        .makersbutton.fixed{
-            position: fixed;
-            top: 0;
-            left: 32px;
-            margin-top: 40px;
-            width: 50px;
-            font-size: 70px;
-            padding-right: 257px;
-            padding-left: 43px;
-            z-index: 100;
-        }
-
-
-    /* titels pagina's */
-        .Quiztitel,
-        .makerstitel,
-        .Uitlegtitel{
-            color: white;
-            text-decoration: none;
-
-        }
-
-    /* meldknop (i) logo */
-        .vierkantlogo {
-            background-color: #F9100C;
-            width: 80px;
-            font-size: 95px;
-            position: absolute;
-            right: 0;
-            margin-top: 30px;
-            height: 122px;
-            font-family: helvetica, serif;
-            text-align: center;
-
-        }
-
-    /* knop naar meldknop-pagina */
-        .meldknopi{
-            text-decoration: none;
-            color: white;
-        }
-
-    /* flatgebouw */
-        .flatgebouw-content {
-                background-image: url(images/Achtergrond.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
-                min-height: 136vh;
-                margin-top: 1100px;
-                background-size: cover;
-                overflow: hidden;
-            }
-
-
-
-
-
-
-        /* tekst */
-        .intro-tekst {
-            margin-top: 2vh;
-            padding-right: 11vw;
-            padding-left: 5vw;
-        }
-
-        /* close button intro */
-        .Sluiting-wizard{
-            width: 34vw;
-            position: absolute;
-            top: 4vh;
-            left: 91vw;
-        }
-        /* container */
-        .wizard-container-intro {
-            display: none;
-            position: fixed;
-            top: 20vh;
-            z-index: 110;
-        }
-
-        /* content */
-        .wizard-content-intro {
-            color: white;
-            font-family: helvetica, serif;
-            font-size: 5vw;
-        }
-
-        /*introwizard achtergrond*/
-        .testbackground {
-            background-color: #00000080;
-            border-radius: 5%;
-            position: fixed;
-            width: 101vw;
-            max-height: 100%;
-            }
-
-    /* wizards */
-        .wizard-container {
-            display: none;
-            position: relative;
-            top: 0;
-            left: 0;
-            right: 0;
-            justify-content: center;
-            align-items: center;
-            z-index: 100;
-        }
-
-
-        /* content */
-        .wizard-content {
-            position: fixed;
-            top: 40%;
-            font-family: helvetica, serif;
-            color: white;
-            width: 80vw;
-            background-color: #00000080;
-            border-radius: 5%;
-            z-index: 200;
-        }
-
-        /* menu waar de wizards in zitten*/
-        .wizard-menu{
-            display: flex;
-            justify-content: center;
-        }
-
-        /* wizard tekst */
-        .info-wizard  {
-            font-size: 3.3vw;
-            position: relative;
-            bottom: 0;
-            padding: 2.5vw;
-        }
-
-        /* sluiten van wizard */
-        .close-button {
-            font-size: 6vw;
-            position: absolute;
-            left: 93%;
-            font-family: helvetica,serif;
-            top: 5%;
-        }
-
-        /* schalen van afbeelding (versie 1) */
-        .img-default{
-            margin-top: 2.7vh;
-            width: 51vw;
-            border: solid white 10px;
-        }
-
-        /* schalen van afbeelding (versie 2) */
-        .img-default-2{
-            margin-top: 2.7vh;
-            width: 65vw;
-            border: solid white 10px;
-        }
-
-        /* afbeeldingen buiten de default marge */
-        .img-nondefault{
-            margin-top: 2.7vh;
-            width: 22vw;
-            border: solid white 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/Index.css">
 </head>
 
 
@@ -418,7 +39,9 @@
 
 <!-- knop naar meldknop-pagina  --> 
 <div class="vierkantlogo">
-    <a href="meldknop.php" class="meldknopi">i</a>
+    <a href="meldknop.php" class="meldknopi">
+        <img src="images/wizardfoto/red-phone.jpg" class="red-phone">
+    </a>
 </div>
 
 <!-- CALM logo --> 
@@ -476,6 +99,7 @@
 
    <img src="images/Gif1.gif" alt="button15" class="button15 buttons animated-gif" id="button15">
 
+  <img src="images/Gif1.gif" alt="button16" class="button16 buttons animated-gif" id="button16">
     </div>
     </div>
 
@@ -490,9 +114,11 @@
             <span class="close-button" id="close1">X</span>
             </div> 
             <div class="info-wizard">
-                <p>Een belangrijk aspect van de veiligheidsmaatregelen van het Koning Willem I College is het team van
-                    bedrijfshulpverleners (bhv’ers). Bhv’ers zijn getrainde medewerkers die specifieke taken en
-                    verantwoordelijkheden hebben als zich een calamiteit voordoet. </p>
+                <p>Bedrijfshulpverleners (bhv’ers) zijn getrainde medewerkers die specifieke taken
+                    hebben tijdens calamiteiten. Ze zijn opgeleid om eerste hulp te verlenen, kleine branden
+                    te blussen en een gebouw of locatie te ontruimen. Bhv’ers zijn het eerste aanspreekpunt
+                    bij calamiteiten en werken nauw samen met hulpdiensten om de veiligheid van iedereen te waarborgen.
+                    Je kunt de bhv’ers alarmeren door het interne alarmnummer te bellen.</p>
             </div>
       </div>
 </div>
@@ -507,8 +133,11 @@
             <span class="close-button" id="close2">X</span>
             </div> 
             <div class="info-wizard">
-                <p>Veiligheid heeft het Koning Willem I College een hoge prioriteit.
-                Een belangrijk hulpmiddel dat we hiervoor gebruiken is de ontruimingsplattegrond </p>
+                <p>De ontruimingsplattegronden zijn duidelijk zichtbare plattegronden die strategisch zijn
+                    geplaatst in de gebouwen. Ze tonen onder andere de locaties van nooduitgangen, vluchtroutes,
+                    verzamelplaatsen, blusmiddelen en AED’s. De ontruimingsplattegronden zijn een soort gids en
+                    kunnen worden bekeken als er geen calamiteit gaande is.
+                </p>
             </div>
       </div>
 </div>
@@ -542,10 +171,13 @@
             <span class="close-button" id="close4">X</span>
             </div> 
             <div class="info-wizard">
-            	<p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om
-                kleine branden te doven door de zuurstof af te snijden en de vlammen te smoren.
-                De blusdekens worden in de regel alleen gebruikt door de bhv’ers tijdens een
-                calamiteit. Veiligheid is een gedeelde verantwoordelijkheid.
+            	<p>Een blusdeken is een speciaal ontworpen deken die kan worden gebruikt om kleine
+                    branden te doven door de zuurstof af te snijden en de vlammen te smoren. De blusdeken wordt
+                    alleen gebruikt door een bhv’er.
+                    Er mogen geen spullen voor de blusdekens geplaatst worden.
+                    Veiligheid is een gedeelde verantwoordelijkheid. Alleen samen kunnen we ervoor
+                    zorgen dat de blusdekens beschikbaar en bereikbaar zijn.
+                </p>
             </div>
       </div>
 </div>
@@ -561,9 +193,12 @@
             <span class="close-button" id="close5">X</span>
             </div> 
             <div class="info-wizard">
-            <p>Een brandblusser is een draagbaar apparaat dat specifiek is ontworpen om beginnende
-            branden te bestrijden. Het biedt de mogelijkheid om snel in te grijpen en te voorkomen dat
-                een kleine brand zich uitbreidt.</p>
+            <p>De bhv’er gebruikt blusmiddelen bij (kleine) branden.
+                Een brandblusser is draagbaar om beginnende branden te bestrijden.
+                Een brandslanghaspel is rechtstreeks aangesloten op de watervoorziening.
+                Er mogen geen spullen voor de blusmiddelen geplaatst worden.
+                Veiligheid is een gedeelde verantwoordelijkheid. Alleen samen kunnen we ervoor zorgen dat
+                de blusmiddelen beschikbaar en bereikbaar zijn.</p>
             </div>
       </div>
 </div>
@@ -578,11 +213,11 @@
             <span class="close-button" id="close6">X</span>
             </div> 
             <div class="info-wizard">
-                <p>De EHBO-koffers zijn strategisch geplaatst binnen de locaties van het
-                Koning Willem I College en bevatten een verscheidenheid aan benodigdheden en
-                apparatuur om eerste hulp te verlenen. Denk hierbij aan verbandmiddelen, ontsmettingsmiddelen,
-                handschoenen en een reddingsdeken.De EHBO-koffer is een van de hulpmiddelen van de bedrijfshulpverlener
-                (bhv’er). </p>
+                <p>De bhv’er gebruikt de EHBO-koffer bij het verlenen van eerste hulp bij (kleine) verwondingen.
+                    De EHBO-koffers zijn strategisch geplaatst binnen de locaties van het KW1C en bevatten benodigdheden en apparatuur om
+                    eerste hulp te verlenen.
+                    Veiligheid is een gedeelde verantwoordelijkheid. Alleen samen kunnen we ervoor zorgen
+                    dat de EHBO-koffers beschikbaar zijn en er voldoende voorraad in zit. </p>
             </div>
       </div>
 </div>
@@ -596,11 +231,11 @@
             <span class="close-button" id="close7">X</span>
             </div> 
             <div class="info-wizard">
-                <p>De evacuatiestoel (evac-chair) is een van de hulpmiddelen
-                van de bedrijfshulpverlener (bhv’er). De bhv’er zal de evac-chair
-                gebruiken bij het vervoeren van mensen met een beperkte mobiliteit
-                (zoals rolstoelgebruikers) of slachtoffers die niet meer kunnen lopen.
-                Met name wordt de evac-chair ingezet om hen naar een andere verdieping te brengen tijdens een calamiteit.</p>
+                <p>De bhv’er gebruikt de evacuatiestoel (evac-chair) bij het vervoeren van mensen met een
+                    beperkte mobiliteit of slachtoffers tijdens een calamiteit.
+                    Alleen de bhv’ers zullen de evac-chair gebruiken, omdat zij hiervoor getraind zijn.
+                    Veiligheid is een gedeelde verantwoordelijkheid. Alleen samen kunnen we ervoor zorgen
+                    dat de evac-chairs beschikbaar en bereikbaar zijn</p>
             </div>
       </div>
 </div>
@@ -615,12 +250,13 @@
             <span class="close-button" id="close8">X</span>
             </div> 
             <div class="info-wizard">
-                <p>De Automatische Externe Defibrillator (AED) wordt ingezet
-                in het geval dat iemand een hartstilstand krijgt. Op iedere
-                locatie van het Koning Willem I College is minstens een AED
-                aanwezig. Op sommige locaties zijn meerdere AED’s aanwezig.
-                De AED is een draagbaar apparaat dat specifiek ontworpen is om een
-                elektrische schok te leveren aan het hart van een persoon met een hartritmestoornis</p>
+                <p>De Automatische Externe Defibrillator (AED) wordt ingezet in het geval dat iemand een hartstilstand krijgt.
+                    De AED is een draagbaar apparaat dat wordt gebruikt om het hartritme te herstellen. Op alle locaties is
+                    minstens een AED aanwezig.
+
+                    Alleen de bhv’ers zullen de AED gebruiken, omdat zij hiervoor getraind zijn.
+
+                    Bel zo snel mogelijk naar het interne alarmnummer als je een bewusteloos persoon aantreft.</p>
             </div>
       </div>
 </div>
@@ -636,11 +272,10 @@
             <span class="close-button" id="close9">X</span>
             </div> 
             <div class="info-wizard">
-                <p>Op sommige plekken bij het Koning Willem I College zijn
-                er specifieke veiligheidsvoorzieningen aanwezig om snel en
-                doeltreffend te reageren als er (mogelijk) een ongeval plaatsvindt.
-                Denk hierbij aan noodstoppen.Noodstoppen zijn ontworpen om onmiddellijk
-                de werking van machines, apparatuur of gasstromen te laten stoppen in geval van een noodsituatie.</p>
+                <p>Noodstoppen zijn ontworpen om direct de werking van machines, apparatuur of gasstromen te
+                    laten stoppen in geval van een noodsituatie. Hierdoor kunnen gevaarlijke situaties worden
+                    beëindigd. Het activeren van een noodstop is eenvoudig en effectief, en het kan levens redden.
+                    Het is belangrijk dat je weet waar de noodstoppen geplaatst zijn en begrijpt hoe ze geactiveerd worden.</p>
             </div>
       </div>
 </div>
@@ -655,11 +290,10 @@
             <span class="close-button" id="close10">X</span>
             </div> 
             <div class="info-wizard">
-                <p>Handbrandmelders zijn hulpmiddelen die een aanwezige
-                in staat stelt om handmatig een brandalarm te activeren
-                als er brand of rook wordt waargenomen. Het activeren van
-                een handbrandmelder zorgt ervoor dat er in het hele gebouw
-                een ontruimingsalarm afgaat en de bedrijfshulpverleners (bhv’ers) worden gealarmeerd.</p>
+                <p>Brandmelders zijn van groot belang bij het KW1C. Handbrandmelders zijn hulpmiddelen die
+                    een aanwezige in staat stelt om handmatig een brandalarm te activeren als er brand of
+                    rook wordt waargenomen. Het activeren van een handbrandmelder zorgt ervoor dat er in
+                    het hele gebouw een ontruimingsalarm afgaat en de bhv’ers worden gealarmeerd.</p>
             </div>
       </div>
 </div>
@@ -674,11 +308,12 @@
             <span class="close-button" id="close11">X</span>
             </div> 
             <div class="info-wizard">
-                <p>De verzamelplaats is een essentieel onderdeel
-                van de brandveiligheidsmaatregelen bij het Koning Willem I
-                College. Als er sprake is van een calamiteit, bijvoorbeeld
-                wanneer het ontruimingsalarm afgaat, is de verzamelplaats de
-                aangewezen locatie waar alle studenten, medewerkers en bezoekers zich moeten verzamelen.</p>
+                <p>Bij een ontruiming is de verzamelplaats het aangewezen ontmoetingspunt waar alle studenten,
+                    medewerkers en bezoekers zich moeten verzamelen. Hier wordt gecontroleerd of iedereen veilig is.
+
+                    Blijf op de verzamelplaats totdat je instructies ontvangt van de bhv’er om veilig terug te keren naar het gebouw.
+
+                    Kijk op de ontruimingsplattegrond om te zien waar de ontruimingsplaats van jouw locatie is.</p>
             </div>
       </div>
 </div>
@@ -693,13 +328,14 @@
             <span class="close-button" id="close12">X</span>
             </div> 
             <div class="info-wizard">
-                <p>Het Koning Willem I College wil graag voorkomen dat er calamiteiten plaatsvinden.
-                Toch kan er soms iets misgaan, waardoor er kleine of grotere calamiteiten plaatsvinden.
-                Om ervoor te zorgen dat studenten, medewerkers en bezoekers veilig de gebouwen kunnen
-                verlaten tijdens zo’n calamiteit zijn er vluchtroutes en nooddeuren aanwezig.Nooddeuren
-                zijn speciaal ontworpen deuren die gemakkelijk en snel kunnen worden geopend
-                calamiteiten. Ze mogen niet worden geblokkeerd, moeten zonder sleutel te openen zijn en
-                    moeten altijd duidelijk herkenbaar zijn.
+                <p>Het KW1C wil voorkomen dat er calamiteiten plaatsvinden. Toch kan er soms iets misgaan.
+                    Om ervoor te zorgen dat iedereen veilig de gebouwen kan verlaten tijdens een calamiteit zijn er
+                    vluchtroutes en nooddeuren aanwezig.
+                    Vluchtroutes zijn gangen die speciaal ontworpen zijn om een veilige en snelle ontruiming mogelijk
+                    te maken. Deze routes zijn duidelijk aangegeven en moeten te allen tijde vrij toegankelijk zijn.
+                    Nooddeuren zijn speciaal ontworpen deuren die gemakkelijk en snel kunnen worden geopend tijdens
+                    calamiteiten. Ze mogen niet worden geblokkeerd worden en ze zijn duidelijk herkenbaar
+                </p>
             </div>
       </div>
 </div>
@@ -715,10 +351,11 @@
             <span class="close-button" id="close13">X</span>
         </div>
         <div class="info-wizard">
-            <p>Nooddouches zijn speciaal ontworpen om onmiddellijk hulp
-                te bieden wanneer er gevaarlijke stoffen op het lichaam terecht
-                zijn gekomen. Deze nooddouches zijn aanwezig op de specifieke plekken
-                waar er met gevaarlijke stoffen wordt gewerkt.</p>
+            <p>Nooddouches en oogspoeldouches zijn speciaal ontworpen om direct hulp te bieden
+                wanneer er gevaarlijke stoffen op het lichaam of in het oog terecht zijn gekomen.
+                Deze hulpmiddelen zijn aanwezig als er met gevaarlijke stoffen wordt gewerkt.
+                Veiligheid is een gedeelde verantwoordelijkheid. Alleen samen kunnen we ervoor
+                zorgen dat de nooddouches en oogspoeldouches beschikbaar en bereikbaar zijn</p>
         </div>
     </div>
 </div>
@@ -728,14 +365,14 @@
     <div class="wizard-content">
         <div class="wizard-menu">
             <div class="img-fluid">
-                <img src="images/wizardfoto/alarmnummers.png" alt="alarmnummersweb" class="img-nondefault">
+                <img src="images/wizardfoto/red-phone.jpg" alt="alarmnummersweb" class="img-nondefault">
             </div>
             <span class="close-button" id="close14">X</span>
         </div>
         <div class="info-wizard">
             <p>Oh, daar gaat Pietje Paniek weer, Hij keek weer eens niet voor zich en gleed uit. Maar vrees niet, want gelukkig had Pietje net op
-                tijd onze website bezocht. Hij heeft zich aardig kunnen navigeren op
-                onze website en heeft de knop ingedrukt met alle alarmnummers van het KW1C.</p>
+                tijd de CALM-app bezocht. Hij heeft zich aardig kunnen navigeren op
+                onze website en heeft de knop ingedrukt met alle interne alarmnummers van het KW1C.</p>
         </div>
     </div>
 </div>
@@ -749,17 +386,34 @@
             <span class="close-button" id="close15">X</span>
         </div>
         <div class="info-wizard">
-            <p>Op alle locaties van het Koning Willem I College hangen alarmkaarten door het hele gebouw heen.
-                In nagenoeg alle ruimtes hangt een alarmkaart.
+            <p>De alarmkaart geeft korte richtlijnen aan om snel en doeltreffend te handelen
+                bij drie meest waarschijnlijke calamiteiten en toont het interne alarmnummer van de locatie.
 
-                Op de alarmkaart vind je informatie over wat te doen als er een calamiteit plaatsvindt.
-                De alarmkaart geeft korte richtlijnen aan om snel en doeltreffend te handelen bij drie meest
-                waarschijnlijke calamiteiten; brand, ongeval en ontruiming.
+                Krijg je te maken met een calamiteit bel dan dit nummer om de bhv’ers te alarmeren.
+
+                In bijna alle ruimtes hangt een alarmkaart. Zorg dat je weet wat je moet doen bij een calamiteit,
+                samen zorgen we voor een veilig KW1C.
             </p>
         </div>
     </div>
 </div>
 
+
+<div class="wizard-container" id="wizard16">
+    <div class="wizard-content">
+        <div class="wizard-menu">
+            <div class="img-fluid">
+                <img src="images/bijbrandgeenlift.gif" alt="alarmkaart" class="img-default-2">
+            </div>
+            <span class="close-button" id="close16">X</span>
+        </div>
+        <div class="info-wizard">
+            <p>De lift mag niet worden gebruikt tijdens een brand. De lift zal automatisch
+                naar beneden worden gestuurd, waar de deuren worden geopend. De lift is dan
+                ook niet meer te gebruiken. Maak dus altijd gebruik van de aangegeven vluchtroute en nooduitgang.</p>
+        </div>
+    </div>
+</div>
 
 
 <script>
@@ -900,7 +554,7 @@
         });
 
         // Add click event listeners for all buttons
-        for (let i = 1; i <= 15; i++) {
+        for (let i = 1; i <= 16; i++) {
             const buttonId = "button" + i;
             const wizardId = "wizard" + i;
 

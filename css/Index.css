@@ -1,0 +1,378 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* container van alle buttons */
+.buttons-container{
+    display: flex;
+    position: relative;
+}
+
+
+
+.animated-gif {
+    transition: transform 0.5s ease; /* Voeg een overgangseffect toe op de grootte */
+    cursor: pointer; /* Maak de cursor een wijzer wanneer erop wordt geklikt */
+    transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
+    filter: brightness(0) saturate(100%) invert(75%) sepia(59%) saturate(5786%) hue-rotate(89deg) brightness(129%) contrast(114%);
+}
+
+
+.buttons{
+    width: 50px;
+    height: auto;
+}
+
+/* positie button 1 */
+.button1{
+    position: absolute;
+    top: 35vh;
+    left: 39vw;
+}
+
+/* positie button 2 */
+.button2{
+    position: absolute;
+    top: 104vh;
+    left: 51vw;
+}
+
+/* positie button 3 */
+.button3{
+    position: absolute;
+    top: 87vh;
+    left: 76vw;
+}
+/* positie button 4 */
+.button4{
+    position: absolute;
+    top: 48vh;
+    left: 23vw;
+}
+
+/* positie button 5 */
+.button5{
+    position: absolute;
+    top: 70vh;
+    left: 72vw;
+}
+
+/* positie button 6 */
+.button6 {
+    position: absolute;
+    top: 56vh;
+    left: 24vw;
+}
+
+
+/* positie button 7 */
+.button7{
+    position: absolute;
+    top: 78vh;
+    left: 41vw;
+}
+
+/* positie button 8 */
+.button8{
+    position: absolute;
+    top: 102vh;
+    left: 73vw;
+}
+
+/* positie button 9 */
+.button9 {
+    position: absolute;
+    top: 60vh;
+    left: 34vw;
+}
+
+/* positie button 10 */
+.button10{
+    position: absolute;
+    top: 69vh;
+    left: 40vw;
+}
+/* positie button 11 */
+.button11{
+    position: absolute;
+    top: 104vh;
+    left: 9vw;
+}
+
+/* positie button 12*/
+.button12{
+    position: absolute;
+    top: 81vh;
+    left: 72vw;
+}
+
+/* positie button 13 */
+.button13 {
+    position: absolute;
+    top: 43vh;
+    left: 28vw;
+}
+
+/* positie button 14 */
+.button14{
+    position: absolute;
+    top: 125vh;
+    left: 45vw;
+}
+
+/* positie button 15 */
+.button15{
+    position: absolute;
+    top: 103vh;
+    left: 34vw;
+}
+
+/* positie button 16*/
+.button16{
+    position: absolute;
+    top: 60vh;
+    left: 70vw;
+}
+
+
+/* bovenste rode balk */
+
+.rodebalktop{
+    background-color: #F9100C;
+    height: 45px;
+}
+
+/* CALM logo */
+.Index-logo img{
+    width: 783px;
+    position: absolute;
+    left: 93px;
+    top: 61px;
+}
+
+.red-phone{
+    width: 11vw;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    border: solid 10px #F9100C;
+    position: absolute;
+    right: 0;
+}
+
+/* knop naar makers-pagina */
+.makersbutton{
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding-left: 150px;
+    padding-right: 153px;
+    position: absolute;
+    right: 200px;
+    top: 500px;
+    z-index: 100;
+    display: inline-block;
+
+}
+
+/* knop naar quiz-pagina */
+.Quizbutton{
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding-right: 205px;
+    padding-left: 203px;
+    position: absolute;
+    top: 668px;
+    right: 194px;
+    z-index: 100;
+    display: inline-block;
+}
+/* knop naar uitleg-button */
+.Uitlegbutton{
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding-right: 202px;
+    padding-left: 163px;
+    position: absolute;
+    top: 836px;
+    right: 194px;
+    z-index: 100;
+}
+
+
+
+/* knop naar quiz-pagina */
+.vierkantlogo.fixed{
+    position: fixed;
+    top: 0;
+    margin-top: 30px;
+    height: 100px;
+
+}
+
+
+/* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
+.Quizbutton.fixed {
+    position: fixed;
+    top: 0;
+    right: 250px;
+    margin-top: 40px;
+    width: 50px;
+    font-size: 70px;
+    padding-left: 82px;
+    padding-right: 218px;
+}
+
+/* knop makers-pagina ná scrollen */
+.makersbutton.fixed{
+    position: fixed;
+    top: 0;
+    left: 32px;
+    margin-top: 40px;
+    width: 50px;
+    font-size: 70px;
+    padding-right: 257px;
+    padding-left: 43px;
+    z-index: 100;
+}
+
+
+/* titels pagina's */
+.Quiztitel,
+.makerstitel,
+.Uitlegtitel{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+/* flatgebouw */
+.flatgebouw-content {
+    background-image: url(../images/Achtergrond.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 136vh;
+    margin-top: 1100px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* tekst */
+.intro-tekst {
+    margin-top: 2vh;
+    padding-right: 11vw;
+    padding-left: 5vw;
+}
+
+/* close button intro */
+.Sluiting-wizard{
+    width: 34vw;
+    position: absolute;
+    top: 4vh;
+    left: 91vw;
+}
+/* container */
+.wizard-container-intro {
+    display: none;
+    position: fixed;
+    top: 20vh;
+    z-index: 110;
+}
+
+/* content */
+.wizard-content-intro {
+    color: white;
+    font-family: helvetica, serif;
+    font-size: 5vw;
+}
+
+/*introwizard achtergrond*/
+.testbackground {
+    background-color: #00000080;
+    border-radius: 5%;
+    position: fixed;
+    width: 101vw;
+    max-height: 100%;
+}
+
+/* wizards */
+.wizard-container {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/* content */
+.wizard-content {
+    position: fixed;
+    top: 40%;
+    font-family: helvetica, serif;
+    color: white;
+    width: 80vw;
+    background-color: #00000080;
+    border-radius: 5%;
+    z-index: 200;
+}
+
+/* menu waar de wizards in zitten*/
+.wizard-menu{
+    display: flex;
+    justify-content: center;
+}
+
+/* wizard tekst */
+.info-wizard  {
+    font-size: 3.3vw;
+    position: relative;
+    bottom: 0;
+    padding: 2.5vw;
+}
+
+/* sluiten van wizard */
+.close-button {
+    font-size: 6vw;
+    position: absolute;
+    left: 93%;
+    font-family: helvetica,serif;
+    top: 5%;
+}
+
+/* schalen van afbeelding (versie 1) */
+.img-default{
+    margin-top: 2.7vh;
+    width: 51vw;
+    border: solid white 10px;
+}
+
+/* schalen van afbeelding (versie 2) */
+.img-default-2{
+    margin-top: 2.7vh;
+    width: 65vw;
+    border: solid white 10px;
+}
+
+/* afbeeldingen buiten de default marge */
+.img-nondefault{
+    margin-top: 2.7vh;
+    width: 22vw;
+    border: solid white 10px;
+}
