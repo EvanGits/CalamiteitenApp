@@ -43,7 +43,7 @@
                 "correctAnswer" => 1,],
             ["question" => "Wat is de juiste manier om de bhv'ers te helpen bij een brand?",
                 "options" => [
-                    ["type" => "text", "content" => "Verstop je ergens en wacht af todat de bv'er je vindt."],
+                    ["type" => "text", "content" => "Verstop je ergens en wacht af totdat de bv'er je vindt."],
                     ["type" => "text", "content" => "Volg de instructies van de bhv'er op en blijf rustig."],
                 ],
                 "correctAnswer" => 2,],
@@ -92,7 +92,7 @@
             ["question" => "Wat moet je doen als je getuige bent van een ongeval en er is een slachtoffer?",
                 "options" => [
                     ["type" => "text", "content" => "Blijf bij het slachtoffer en bel het interne alarmnummer."],
-                    ["type" => "text", "content" => "Ga hulp in de buurt zoeken, geef wel aan het slachctoffer door dat je dit gaat doen."],
+                    ["type" => "text", "content" => "Ga hulp in de buurt zoeken, geef wel aan het slachtoffer door dat je dit gaat doen."],
                 ],
                 "correctAnswer" => 1,],
             ["question" => "Wat moet je doen als een slachtoffer op de grond ziet liggen?",
@@ -145,14 +145,14 @@
                 "correctAnswer" => 1,],
             ["question" => "Aan welk bord herken je een verzamelplaats?",
                 "options" => [
-                    ["type" => "image", "content" => "images/verbanddoos.jpg"],
+                    ["type" => "image", "content" => "images/verbanddoosplaatje.jpg"],
                     ["type" => "image", "content" => "images/verzamelplaats0.png"],
                 ],
                 "correctAnswer" => 2,],
             ["question" => "Op welke foto staat een AED?",
                 "options" => [
                     ["type" => "image", "content" => "images/aed.jpg"],
-                    ["type" => "image", "content" => "images/verbanddoosplaatje.jpg"],
+                    ["type" => "image", "content" => "images/verbanddoos.jpg"],
                 ],
                 "correctAnswer" => 1,],
             ["question" => "Op welke foto staat een EHBO-koffer?",
@@ -269,7 +269,7 @@
         <div id="startQuiz">
 
             <p class="startQuizText">
-                Dit is de calaminator. Een quiz waarin jij je kennis over bhv en calamiteiten kunt testen. Succes!
+                Dit is de calaminator. Een quiz waarin jij je kennis over bhv en calamiteiten bij het KW1C kunt testen. Succes!
             </p>
             <button id="start">Begin</button>
         </div>
