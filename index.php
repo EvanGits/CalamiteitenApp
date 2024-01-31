@@ -57,7 +57,7 @@
 <!-- knop naar quiz-pagina --> 
 <button class="Quizbutton">
     <a href="quiztest.php" class="Quiztitel">Quiz</a>
-</button>s
+</button>
 
 <!-- knop naar quiz-pagina -->
 <button id="Uitlegbutton" class="Uitlegbutton">
