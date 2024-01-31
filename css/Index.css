@@ -136,7 +136,25 @@
     top: 60vh;
     left: 70vw;
 }
+/* positie button 17*/
+.button17{
+    position: absolute;
+    top: 106vh;
+    left: 24vw;
+}
 
+/* positie button 18*/
+.button18{
+    position: absolute;
+    top: 124vh;
+    left: 62vw;
+}
+/* positie button 19*/
+.button19{
+    position: absolute;
+    top: 70vh;
+    left: 24vw;
+}
 
 /* bovenste rode balk */
 
@@ -153,12 +171,17 @@
     top: 100px;
 }
 
+/* telefoon logo plaatsen*/
 .red-phone{
     width: 12vw;
     margin-top: 1vh;
     margin-right: 2vw;
     position: absolute;
     right: 0;
+}
+
+.vierkantlogo{
+
 }
 
 /* knop naar makers-pagina */
@@ -323,7 +346,7 @@
 /* content */
 .wizard-content {
     position: fixed;
-    top: 40%;
+    top: 30%;
     font-family: helvetica, serif;
     color: white;
     width: 80vw;
@@ -345,6 +368,13 @@
     bottom: 0;
     padding: 2.5vw;
 }
+.info-wizard19{
+        font-size: 3.3vw;
+        position: relative;
+        bottom: 0;
+        padding: 3.5vw;
+        padding-right: 6vw;
+}
 
 /* sluiten van wizard */
 .close-button {
@@ -353,6 +383,7 @@
     left: 93%;
     font-family: helvetica,serif;
     top: 5%;
+    z-index: 50;
 }
 
 /* schalen van afbeelding (versie 1) */
