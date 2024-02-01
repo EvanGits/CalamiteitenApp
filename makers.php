@@ -21,7 +21,7 @@
     <!-- Homeknop --> 
     <div class="homeknop-vak">
         <a href="index.php" class="homeknop-pijl">
-            <img class="pijl-img" src="images/">
+            <img class="pijl-img" src="images/arrow_left.jpg">
         </a>
     </div>
 
