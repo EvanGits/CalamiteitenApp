@@ -52,7 +52,7 @@ include("includes/header.php");
                         <br> 
 
                         <p>Onderwijsboulevard: </p> 
-                        <p><a class="number" href="tel:+073 - 6249 726">073 - 6249 726</a></p>
+                        <p><a class="number" href="tel:+073 - 6249 443">073 - 6249 443</a></p>
                         
                         <br> 
 
@@ -67,7 +67,7 @@ include("includes/header.php");
                         <br> 
 
                         <p>Weidonklaan: </p> 
-                        <p><a class="number" href="tel:+073 - 6249 626">073 - 6249 626</a></p>  
+                        <p><a class="number" href="tel:+073 - 6249 422">073 - 6249 422</a></p>
                 </div>
             </div>
         </il>

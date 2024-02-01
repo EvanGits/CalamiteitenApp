@@ -1,13 +1,12 @@
-<?php
-//Header 
-include("includes/header.php");  
-?>
-   
-   <!DOCTYPE html> 
-   <html lang="nl"> 
-   <!-- Header --> 
-    <head>
-   
+    <!DOCTYPE html>
+    <html lang="nl">
+    <?php
+    //Header
+    include("includes/header.php");
+    ?>
+
+
+   <!-- Header -->
     <div class="rodebalktop">
     </div>
 
@@ -22,13 +21,13 @@ include("includes/header.php");
     <!-- Homeknop --> 
     <div class="homeknop-vak">
         <a href="index.php" class="homeknop-pijl">
-            <img class="pijl-img" src="images/arrow_left.jpg">
+            <img class="pijl-img" src="images/">
         </a>
     </div>
 
     <!-- Meldknop --> 
     <div class="meldknop-vak">
-            <a href="meldknop.php" class="meldknop-tekst">i</a>
+            <a href="meldknop.php" class="meldknop-tekst"><img src="images/fullPhone2.jpg"> </a>
     </div>
 
     <!-- Kop --> 
