@@ -421,7 +421,7 @@
 </div>
 
 <div class="wizard-container" id="wizard17">
-    <div class="wizard-content">
+    <div class="wizard-content-lang">
         <div class="wizard-menu">
             <span class="close-button" id="close17">X</span>
         </div>
@@ -451,7 +451,7 @@
 </div>
 
 <div class="wizard-container" id="wizard18">
-    <div class="wizard-content">
+    <div class="wizard-content-lang">
         <div class="wizard-menu">
             <span class="close-button" id="close18">X</span>
         </div>
@@ -483,7 +483,7 @@
 
 
 <div class="wizard-container" id="wizard19">
-    <div class="wizard-content">
+    <div class="wizard-content-lang">
         <div class="wizard-menu">
             <span class="close-button" id="close19">X</span>
         </div>

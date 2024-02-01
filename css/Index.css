@@ -355,6 +355,18 @@
     z-index: 200;
 }
 
+
+.wizard-content-lang{
+    position: fixed;
+    top: 20%;
+    font-family: helvetica, serif;
+    color: white;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 5%;
+    z-index: 200;
+}
+
 /* menu waar de wizards in zitten*/
 .wizard-menu{
     display: flex;
