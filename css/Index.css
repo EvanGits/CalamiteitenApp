@@ -19,10 +19,15 @@
     transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
     filter: brightness(0) saturate(100%) invert(75%) sepia(59%) saturate(5786%) hue-rotate(89deg) brightness(129%) contrast(114%);
 }
+.animated-gif-blauw{
+    transition: transform 0.5s ease; /* Voeg een overgangseffect toe op de grootte */
+    cursor: pointer; /* Maak de cursor een wijzer wanneer erop wordt geklikt */
+    transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
+    filter: brightness(0) saturate(100%) invert(39%) sepia(52%) saturate(2358%) hue-rotate(182deg) brightness(105%) contrast(104%);
+}
 
-
-.buttons{
-    width: 50px;
+.buttons {
+    width: 62px;
     height: auto;
 }
 
@@ -157,7 +162,6 @@
 }
 
 /* bovenste rode balk */
-
 .rodebalktop{
     background-color: #F9100C;
     height: 45px;
@@ -180,64 +184,61 @@
     right: 0;
 }
 
-.vierkantlogo{
-
-}
-
-/* knop naar makers-pagina */
-.makersbutton{
+.makersbutton {
     font-family: helvetica, serif;
     font-size: 86px;
     background-color: #F9100C;
     border-color: #F9100C;
-    padding-left: 150px;
-    padding-right: 153px;
+    padding: 15px;
     position: absolute;
-    right: 200px;
-    top: 500px;
+    right: 20.4vw;
+    top: 23.3vh;
     z-index: 100;
     display: inline-block;
+    width: 61vw;
+}
 
+
+.Quizbutton {
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    width: 61vw;
+    right: 20.4vw;
+    top: 31.3vh;
+}
+
+
+
+.Uitlegbutton {
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    width: 61vw;
+    right: 20.4vw;
+    top: 39.3vh;
 }
 
 /* knop naar quiz-pagina */
-.Quizbutton{
-    font-family: helvetica, serif;
-    font-size: 86px;
-    background-color: #F9100C;
-    border-color: #F9100C;
-    padding-right: 205px;
-    padding-left: 203px;
-    position: absolute;
-    top: 668px;
-    right: 194px;
-    z-index: 100;
-    display: inline-block;
-}
-/* knop naar uitleg-button */
-.Uitlegbutton{
-    font-family: helvetica, serif;
-    font-size: 86px;
-    background-color: #F9100C;
-    border-color: #F9100C;
-    padding-right: 202px;
-    padding-left: 163px;
-    position: absolute;
-    top: 836px;
-    right: 194px;
-    z-index: 100;
-}
-
-
-
-/* knop naar quiz-pagina */
-.vierkantlogo.fixed{
+.vierkantlogo.fixed {
     position: fixed;
     top: 0;
     margin-top: 30px;
-    height: 100px;
-
+    height: auto;
+    width: 12vw;
 }
+
+
 
 
 /* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
@@ -323,7 +324,7 @@
 
 /*introwizard achtergrond*/
 .testbackground {
-    background-color: #00000080;
+    background-color: rgba(0, 0, 0, 0.73);
     border-radius: 5%;
     position: fixed;
     width: 101vw;

@@ -19,13 +19,14 @@
             <span class="Sluiting-wizard" id="closeIntroWizard">X</span>
         <div class="intro-tekst">
 
-            <h2>Welkom bij de Applicatie</h2>
+            <h2>Welkom bij CALM</h2>
             <br>
             <p>Een ongeval op het Koning Willem I College… wat nu? <br> <br>
                 Iedereen wil aan het einde van de dag weer veilig naar huis. Daarom
                 streeft het Koning Willem I College naar een veilige leer- en werkomgeving en naar het voorkomen van ongevallen.
-                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. Met deze applicatie
-                hopen wij jou te informeren als dat gebeurt. Druk deze tekst weg en verken de groene knoppen in het gebouw.
+                Helaas zit een ongeluk soms in een klein hoekje en kan zich toch een ongeval voordoen. <br> <br>Met deze applicatie
+                hopen wij jou te informeren over veiligheid en wat te doen bij calamiteiten. <br> <br>Sluit dit venster, scroll naar beneden en verken de blauwe en groene knoppen. Zoom in als
+                je de kamers beter wil bekijken en houd je telefoon in portret-weergave.
                 <br> <br>
             </p>
         </div>
@@ -38,9 +39,9 @@
 </div>
 
 <!-- knop naar meldknop-pagina  --> 
-<div class="vierkantlogo">
+<div >
     <a href="meldknop.php" class="meldknopi">
-        <img src="images/fullPhone2.jpg" alt="red-phone" class="red-phone">
+        <img src="images/fullPhone2.jpg" alt="red-phone" class="red-phone vierkantlogo ">
     </a>
 </div>
 
@@ -59,9 +60,9 @@
     <a href="quiztest.php" class="Quiztitel">Quiz</a>
 </button>
 
-<!-- knop naar quiz-pagina -->
+<!-- knop naar wizard -->
 <button id="Uitlegbutton" class="Uitlegbutton">
-    <a href="#" class="Uitlegtitel">Uitleg</a>
+    <a href="#" class="Uitlegtitel">Introductie</a>
 </button>
 
 
@@ -100,11 +101,11 @@
 
   <img src="images/Gif1.gif" alt="button16" class="button16 buttons animated-gif" id="button16">
 
-  <img src="images/Gif1.gif" alt="button17" class="button17 buttons animated-gif" id="button17">
+  <img src="images/Gif1.gif" alt="button17" class="button17 buttons animated-gif-blauw" id="button17">
 
-  <img src="images/Gif1.gif" alt="button18" class="button18 buttons animated-gif" id="button18">
+  <img src="images/Gif1.gif" alt="button18" class="button18 buttons animated-gif-blauw" id="button18">
 
-  <img src="images/Gif1.gif" alt="button19" class="button19 buttons animated-gif" id="button19">
+  <img src="images/Gif1.gif" alt="button19" class="button19 buttons animated-gif-blauw" id="button19">
     </div>
     </div>
 
@@ -489,7 +490,7 @@
         </div>
         <div class="info-wizard19">
             <h1>
-                Wat te doen bij brand?
+                Wat te doen bij een brand?
             </h1>
             <br>
             <p>Mocht er een brand zijn uitgebroken is het cruciaal dat iedereen weet wat hij/zij moet doen.

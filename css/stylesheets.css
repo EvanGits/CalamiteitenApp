@@ -63,7 +63,7 @@
     .meldknop-vak{
         float: right; 
         display: flex;
-        width: 10vw;
+        width: 12vw;
         margin-top: 2vh;
         height: 15vw;
         justify-content: center;
@@ -72,11 +72,8 @@
 
     /*tekst van de meldknop (i)*/ 
     .meldknop-tekst{
-        display: flex; 
-        color: inherit; 
-        text-decoration: none; 
-        font-size: 12vw; 
-        align-items: center; 
+        position: absolute;
+        right: 10px;
     }
     
     
@@ -221,4 +218,3 @@
         .number{
             color: #FFFF; 
         }
-    

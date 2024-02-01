@@ -49,7 +49,7 @@
 
                 <div class= "makers-tekst"> 
                     <b>Aisha Ambare</b>
-                    <p>Software-developer</p>
+                    <p>Software-developer <br> Student KW1C</p>
                 </div> 
             </div>
         </div>
@@ -62,7 +62,7 @@
 
                 <div class= "makers-tekst"> 
                     <b>Tygo Bovens</b> 
-                    <p>Software-developer</p>
+                    <p>Software-developer <br> Student KW1C</p>
                 </div> 
             </div>
         </div>
@@ -74,7 +74,7 @@
 
                 <div class= "makers-tekst"> 
                     <b>Evan Geerts</b>
-                    <p>Software-developer</p>
+                    <p>Software-developer <br> Student KW1C</p>
                 </div> 
             </div>
         </div>
@@ -86,7 +86,7 @@
 
                 <div class= "makers-tekst"> 
                     <b>Serezo Popelier</b>
-                    <p>Database-developer</p> 
+                    <p>Database-developer <br> Student KW1C</p>
                 </div> 
             </div>
         </div>  
@@ -100,7 +100,7 @@
 
                 <div class= "makers-tekst"> 
                     <b>Jens van Berkel</b>
-                    <p>Mediavormgever</p> 
+                    <p>Mediavormgever <br> Student KW1C</p>
                 </div> 
             </div>
         </div>  
@@ -112,7 +112,7 @@
 
                 <div class= "makers-tekst"> 
                     <b>Sem Ewouds</b>
-                    <p>Mediavormgever</p>
+                    <p>Mediavormgever <br> Student KW1C</p>
                 </div> 
             </div>
         </div>  
@@ -124,7 +124,7 @@
 
                 <div class= "makers-tekst"> 
                     <b>Colin Proctor</b>
-                    <p>Mediavormgever</p> 
+                    <p>Mediavormgever <br> Student KW1C</p>
                 </div> 
             </div>
         </div> 
@@ -137,7 +137,7 @@
 
             <div class= "makers-tekst"> 
                 <b>Rohan van den Braak</b>
-                <p>Stagebegeleider</p>
+                <p>Stagebegeleider <br> KW1C</p>
             </div> 
         </div>
     </div>
@@ -148,7 +148,7 @@
 
             <div class= "makers-tekst"> 
                 <b>Remco Evers</b>
-                <p>Stagebegeleider</p>
+                <p>Stagebegeleider <br> KW1C</p>
             </div> 
         </div>
     </div>
@@ -159,7 +159,7 @@
 
             <div class= "makers-tekst"> 
                 <b>Daan Simons</b>
-                <p>Stagebegeleider</p>
+                <p>Stagebegeleider <br> KW1C</p>
             </div> 
         </div>
     </div>
@@ -170,7 +170,7 @@
 
             <div class= "makers-tekst"> 
                 <b>Florain Verheijen</b>
-                <p>Stage-coördinator</p>
+                <p>Stage-coördinator <br> KW1C</p>
             </div> 
         </div>
     </div>
